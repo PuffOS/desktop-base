@@ -5,11 +5,11 @@ This package is comprised of bits and pieces from various sources.
 
 Copyright:
 
-The debblue "kit" (composed of the gdm themes located in the gdm/
-directory, the background and the splash) was created by Jaap Haitsma
-(jaap at haitsma dot org) and is licensed under the GNU General Public
-License (see below). They can be downloaded from the
-http://debblue.debian.net/downloads.php web page in various formats.
+The debblue "kit" (composed of the background and the splash) was
+created by Jaap Haitsma (jaap at haitsma dot org) and is licensed
+under the GNU General Public License (see below). They can be
+downloaded from the http://debblue.debian.net/downloads.php web page
+in various formats.
 
 The  Debian swirl  background  images included  in  this package  were
 created by  gfburke@earthlink.net (Gary Burke), and  were derived from

@@ -6,7 +6,6 @@ EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
-GDMTHEMES=$(wildcard gdm/*)
 
 all:
 
@@ -25,5 +24,3 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
-	mkdir -p $(DESTDIR)/usr/share/gdm/themes
-	cp -r $(GDMTHEMES) $(DESTDIR)/usr/share/gdm/themes
