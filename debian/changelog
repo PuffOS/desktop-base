@@ -1,0 +1,167 @@
+desktop-base (0.3.14) unstable; urgency=low
+
+  * pixmaps/debian-official-logo-small.png:
+  - remove official logo as it is not DFSG-free (Closes: #246784)
+  * debian/control:
+  - Recommends: epiphany-browser | konqueror | www-browser
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 11 May 2004 17:25:09 -0300
+
+desktop-base (0.3.13) unstable; urgency=low
+
+  * debian/postinst:
+  - modified the check for $2 being empty
+    (Closes: #242059)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Sun,  4 Apr 2004 16:43:11 -0300
+
+desktop-base (0.3.12) unstable; urgency=medium
+
+  * debian/preinst:
+  - remove the alternative stuff first to make it possible
+    to remove the diversion
+    (Closes: #241439, #241402, #241339, #241463)
+  * splash/Splash-EvolvingTux.png:
+  - remove while I try to sort out the legal issues
+    try to get this into sarge soon (urgency=medium)
+    (Closes: #241246)
+  * debian/postinst:
+  - regenerate the gconf default file by running libgnome2-common's
+    postinst when upgrading from an older version (Closes: #241403)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Thu,  1 Apr 2004 16:44:26 -0300
+
+desktop-base (0.3.11) unstable; urgency=low
+
+  * debian/prerm, debian/postinst, debian/postrm:
+  - remove them all
+  * debian/preinst:
+  - stop providing the diversion and the gnome-splash
+    alternative if upgrading from diversion-including
+    versions
+  * Makefile, gconf/:
+  - stop providing a default configuration for the
+    background
+  * debian/control:
+  - updated Standards-Version to 3.6.1
+  * debian/copyright:
+  - included GPL location in common-licenses
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 30 Mar 2004 16:35:49 -0300
+
+desktop-base (0.3.10) unstable; urgency=low
+
+  * debian/postrm:
+  - remove the unnecessary rm, sorry for the delay (Closes: #223925)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Sun, 18 Jan 2004 01:12:39 -0200
+
+desktop-base (0.3.9) unstable; urgency=low
+
+  * debian/preinst:
+  - really fix the problem with local diversion, by removing it and
+    readding it (Closes: #218091)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Wed, 12 Nov 2003 12:54:37 -0200
+
+desktop-base (0.3.8) unstable; urgency=low
+
+  * debian/postinst:
+  - change priorities to make Debian_red the default
+  * gconf/.../%gconf.xml:
+  - set the default background file to /usr/share/images/desktop-base/default
+  * Makefile:
+  - install the gconf file
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 11 Nov 2003 13:17:22 -0200
+
+desktop-base (0.3.7) unstable; urgency=low
+
+  * debian/preinst:
+  - remove the problematic local diversion, added the right thing
+    (Closes: #218091).
+  * splash/Debian-Splash.{xcf,png}:
+  - edited to remove the white border and enlarge the image a bit
+    (Closes: #218896)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 11 Nov 2003 00:27:50 -0200
+
+desktop-base (0.3.6) unstable; urgency=low
+
+  * New Maintainer
+  * debia/rules:
+  - use cdbs package
+  * debian/control:
+  - Depends on cdbs
+  * debian/{postinst,preinst,postrm,prerm}:
+  - set up a diversion and the alternatives system for the
+    /usr/share/pixmaps/splash/gnome-splash.png file, making
+    Splash-Debian the default.
+  * splash/{Splash-Debian_red.png,Splash-EvolvingTux.png}:
+  - added new splashs (Closes: #200007, #205258)
+  * Makefile:
+  - create /usr/share/pixmaps/splash
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Tue, 21 Oct 2003 15:22:12 -0200
+
+desktop-base (0.3.5) unstable; urgency=low
+
+  * debian-reference.desktop:
+    - Change URL to the actual reference guide, and fix typo "manaul" =>
+    "manual" (Closes: #172737).
+
+ -- Colin Walters <walters@debian.org>  Fri,  3 Jan 2003 14:57:55 -0500
+
+desktop-base (0.3.4) unstable; urgency=low
+
+  * Make a symlink /usr/share/images/desktop-base/default pointing to the
+    default background we want.
+  * debian/rules:
+    - Use the latest version of Colin's Build System.
+
+ -- Colin Walters <walters@debian.org>  Thu, 19 Dec 2002 19:19:14 -0500
+
+desktop-base (0.3.3) unstable; urgency=low
+
+  * debian/rules:
+    - Use the latest version of Colin's Build System.
+
+ -- Colin Walters <walters@debian.org>  Thu, 21 Nov 2002 00:47:57 -0500
+
+desktop-base (0.3.2) unstable; urgency=low
+
+  * debian/backgrounds/bluedeb-1024x768.jpg:
+    - New background from Roger So.
+
+ -- Colin Walters <walters@debian.org>  Wed, 20 Nov 2002 23:49:14 -0500
+
+desktop-base (0.3.1) unstable; urgency=low
+
+  * Update splash/Debian-Splash.xcf, splash/Debian-Splash.png.
+  * debian/rules:
+    - Use Colin's Build System.
+  * debian/desktop-base.install:
+    - New.
+
+ -- Colin Walters <walters@debian.org>  Wed, 06 Nov 2002 14:26:22 -0500
+
+desktop-base (0.3) unstable; urgency=low
+
+  * Remove debian-wallpaper1280x1024.png; it was big and useless.
+  * Add splash/Debian-Splash.xcf, splash/Debian-Splash.png.
+
+ -- Colin Walters <walters@debian.org>  Thu, 31 Oct 2002 15:01:53 -0500
+
+desktop-base (0.2-1) unstable; urgency=low
+
+  * Actually link to the installed images (Closes: #166245).
+    Oops.
+
+ -- Colin Walters <walters@debian.org>  Fri, 25 Oct 2002 00:55:19 -0400
+
+desktop-base (0.1-1) unstable; urgency=low
+
+  * Initial Version (Closes: #165928).
+
+ -- Colin Walters <walters@debian.org>  Tue, 22 Oct 2002 15:05:34 -0400
+
