@@ -1,3 +1,13 @@
+desktop-base (0.3.15) UNRELEASED; urgency=low
+
+  * emblems/emblem-debian.{png,icon}:
+  - added emblem for hicolor theme contributed by
+    Dan Korostelev <dan@ats.energo.ru> (Closes: #257923)
+  * Makefile:
+  - install emblem in /usr/share/icons/hicolor/48x48/emblems/
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Sat, 10 Jul 2004 13:57:44 -0300
+
 desktop-base (0.3.14) unstable; urgency=low
 
   * pixmaps/debian-official-logo-small.png:
