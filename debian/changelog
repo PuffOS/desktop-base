@@ -1,11 +1,11 @@
-desktop-base (0.3.15) UNRELEASED; urgency=low
+desktop-base (0.3.15) unstable; urgency=low
 
+  * postinst, prerm:
+  - use alternatives to provide the default background and splash
   * gdm/debblue{,-list}:
   - adding debblue gdm theme and its 'user list' counterpart
   * backgrounds/debblue-1600x1200.png:
   - added debblue's largest background
-  * grub/debblue.xpm.gz:
-  - added debblue's grub splash
   * debian/copyright:
   - updated to mention the debblue copyright/license
   * emblems/emblem-debian.{png,icon}:
@@ -14,7 +14,7 @@ desktop-base (0.3.15) UNRELEASED; urgency=low
   * Makefile:
   - install emblem in /usr/share/icons/hicolor/48x48/emblems/
   - install gdm themes in /usr/share/gdm/themes
-  - install debblue background, grub theme and splash and make them 
+  - install debblue background, and splash and make them 
     the default
 
  -- Gustavo Noronha Silva <kov@debian.org>  Sat, 23 Oct 2004 23:34:52 -0300
