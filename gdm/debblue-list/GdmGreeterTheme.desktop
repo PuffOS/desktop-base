@@ -1,0 +1,10 @@
+# This is not really a .desktop file like the rest, but it's useful to treat
+# it as such
+
+[GdmGreeterTheme]
+Greeter=debblue-list.xml
+Name=DebBlue List
+Description=DebBlue List is a simple blue GDM theme for Debian with a user list
+Author=Jaap Haitsma (jaap@haitsma.org)
+Copyright=(c) 2004 Jaap Haitsma. License GPL
+Screenshot=screenshot.png
