@@ -2,14 +2,13 @@ Source: desktop-base
 Section: x11
 Priority: optional
 Maintainer: Gustavo Noronha Silva <kov@debian.org>
-Uploaders: @GNOME_TEAM@
-Build-Depends-Indep: cdbs, debhelper (>> 4.1.0), gnome-pkg-tools
-Standards-Version: 3.6.2
+Build-Depends-Indep: cdbs, debhelper (>> 4.0.0)
+Standards-Version: 3.6.1
 
 Package: desktop-base
 Architecture: all
 Recommends: epiphany-browser | konqueror | www-browser
-Suggests: gnome | kde | xfce4 | wmaker
+Suggests: gnome | kde | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
  Debian Desktop installations.  Currently, it provides some
