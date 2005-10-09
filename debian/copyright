@@ -20,6 +20,21 @@ The   Debian   "bluedeb"   background   was  created   by   Roger   So
 <rogerso@debian.org>, and is under the  terms of the BSD license.  See
 ../backgrounds/bluedeb.COPYING for more information.
 
+The debian-background.svg file has been provided by Josselin Mouette
+<joss@debian.org>, and is a derivative work of the open use Debian
+logo, which has the following copyright notice:
+
+<debian-background.svg>
+    Copyright (c) 1999 Software in the Public Interest
+ 
+    This logo or a modified version may be used by anyone to refer to
+    the Debian project, but does not indicate endorsement by the
+    project.
+
+    Note: we would appreciate that you make the image a link to
+    http://www.debian.org/ if you use it on a web page.
+</debian-background.svg>
+
 The   Debian   splash   screen   was   created   by   Mirko   Hufnagel
 <mirko@abitur97.de>, and is placed into the public domain.
 
