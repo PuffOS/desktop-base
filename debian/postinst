@@ -20,6 +20,11 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
 	desktop-background \
+	/usr/share/images/desktop-base/debian-background.svg 30
+
+    update-alternatives --install \
+	/usr/share/images/desktop-base/desktop-background \
+	desktop-background \
 	/usr/share/images/desktop-base/bluedeb-1024x768.jpg 20
 
     update-alternatives --install \

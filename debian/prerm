@@ -8,6 +8,9 @@ if [ "$1" = "remove" -o "$1" = "deconfigure" ]; then
 	/usr/share/images/desktop-base/debblue-1600x1200.png
 
     update-alternatives --remove desktop-background \
+	/usr/share/images/desktop-base/debian-background.svg
+
+    update-alternatives --remove desktop-background \
 	/usr/share/images/desktop-base/bluedeb-1024x768.jpg
 
     update-alternatives --remove desktop-background \

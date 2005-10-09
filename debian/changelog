@@ -1,3 +1,13 @@
+desktop-base (0.3.16) UNRELEASED; urgency=low
+
+  * backgrounds/debian-background.svg, debian/copyright,
+    debian/{postinst,prerm}:
+  - added background provided by Josselin Mouette <joss@debian.org>
+    to fit good with GNOME2.12's splash and theme look
+    (Closes: #332873)
+
+ -- Gustavo Noronha Silva <kov@debian.org>  Sun,  9 Oct 2005 15:55:31 -0300
+
 desktop-base (0.3.15) unstable; urgency=low
 
   * postinst, prerm:
