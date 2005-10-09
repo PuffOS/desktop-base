@@ -1,5 +1,6 @@
 desktop-base (0.3.16) UNRELEASED; urgency=low
 
+  * GNOME Team Upload
   * backgrounds/debian-background.svg, debian/copyright,
     debian/{postinst,prerm}, Makefile:
   - added background provided by Josselin Mouette <joss@debian.org>
@@ -9,8 +10,14 @@ desktop-base (0.3.16) UNRELEASED; urgency=low
   - fixed bashism -o -> ] || [
   * debian/control.in:
   - added, updated Standards-Version to 3.6.2 with no changes
+  - added gnome-pkg-tools to Build-Deps
+  - added xfce4 to the Suggests after kde, before wmaker
+  - added the Uploaders field
+  * debian/rules:
+  - include the pkg-gnome makefile include to generate the Uploaders
+    field correctly
 
- -- Gustavo Noronha Silva <kov@debian.org>  Sun,  9 Oct 2005 16:05:34 -0300
+ -- Gustavo Noronha Silva <kov@debian.org>  Sun,  9 Oct 2005 16:07:47 -0300
 
 desktop-base (0.3.15) unstable; urgency=low
 
