@@ -1,4 +1,4 @@
-desktop-base (0.3.16) UNRELEASED; urgency=low
+desktop-base (0.3.16) unstable; urgency=low
 
   * GNOME Team Upload
   * backgrounds/debian-background.svg, debian/copyright,
