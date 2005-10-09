@@ -1,7 +1,7 @@
 desktop-base (0.3.16) UNRELEASED; urgency=low
 
   * backgrounds/debian-background.svg, debian/copyright,
-    debian/{postinst,prerm}:
+    debian/{postinst,prerm}, Makefile:
   - added background provided by Josselin Mouette <joss@debian.org>
     to fit good with GNOME2.12's splash and theme look
     (Closes: #332873)
