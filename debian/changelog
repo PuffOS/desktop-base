@@ -1,3 +1,14 @@
+desktop-base (0.3.17) UNRELEASED; urgency=low
+
+  * Debian Desktop sid artwork added (including originals in .xcf):
+    - wallpapers/gnome-debian-sid-wp.png
+    - splash/gnome-debian-sid-splash.png
+  * debian/README.Debian: added, containing notes about Debian 
+    Desktop artwork layout and more.
+  * debian/copyright: updated, including the new images copyright notes
+  
+ -- Gustavo Franco <stratus@debian.org>  Sat,  3 Jun 2006 21:26:48 -0300
+
 desktop-base (0.3.16) unstable; urgency=low
 
   * GNOME Team Upload

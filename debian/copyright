@@ -56,5 +56,10 @@ reformatting of the Debian Official Use Logo.
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
 
+The gnome-debian-sid "kit" including splash/gnome-debian-sid-splash.xcf.gz, 
+splash/gnome-debian-sid-splash.png, wallpapers/gnome-debian-sid-wp.xcf.gz
+and wallpapers/gnome-debian-sid-wp.png were made by Josselin Mouette 
+<joss@debian.org> and Gustavo Franco <stratus@debian.org>.
+
 The GPL license can be found in plain text format, on Debian systems,
 at /usr/share/common-licenses/GPL.
