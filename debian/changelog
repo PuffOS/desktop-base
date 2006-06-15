@@ -10,8 +10,9 @@ desktop-base (0.3.17) UNRELEASED; urgency=low
 
   [ Loic Minier ]
   * Rename Build-Depends-Indep to Build-Depends.
+  * Bump up Standards-Version to 3.7.2.
 
- -- Loic Minier <lool@dooz.org>  Thu, 15 Jun 2006 21:31:52 +0200
+ -- Loic Minier <lool@dooz.org>  Thu, 15 Jun 2006 21:33:34 +0200
 
 desktop-base (0.3.16) unstable; urgency=low
 
