@@ -6,3 +6,6 @@ include /usr/share/cdbs/1/class/makefile.mk
 include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 
 DEB_MAKE_INSTALL_TARGET = install DESTDIR=$(CURDIR)/debian/desktop-base/
+
+binary-fixup/desktop-base::
+	dh_gconf --priority=15

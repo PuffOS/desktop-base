@@ -1,12 +1,21 @@
 desktop-base (0.3.18) UNRELEASED; urgency=low
 
+  [ Loic Minier ]
   * Add artworks by André Luiz Rodrigues Ferreira.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
   * Register these artworks as alternatives with the highest priority (40),
     and lower the other priorities.
 
- -- Loic Minier <lool@dooz.org>  Tue, 10 Oct 2006 16:05:51 +0200
+  [ Josselin Mouette ]
+  * Add a gconf-defaults file.
+    + Set the default background, overriding the one in libgnome.
+    + Set the default splash, overriding the one in gnome-session.
+  * Register it with priority 15 (higher than standard Debian packages 
+    but lower than CDDs).
+  * Build-depend on debhelper 5.0.13.
+
+ -- Josselin Mouette <joss@debian.org>  Tue, 10 Oct 2006 16:36:36 +0200
 
 desktop-base (0.3.17) unstable; urgency=low
 
