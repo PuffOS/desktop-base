@@ -1,10 +1,12 @@
 desktop-base (0.3.18) UNRELEASED; urgency=low
 
-  * Add Artworks by André Luiz Rodrigues Ferreira.
+  * Add artworks by André Luiz Rodrigues Ferreira.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
+  * Register these artworks as alternatives with the highest priority (40),
+    and lower the other priorities.
 
- -- Loic Minier <lool@dooz.org>  Mon,  9 Oct 2006 23:00:57 +0200
+ -- Loic Minier <lool@dooz.org>  Tue, 10 Oct 2006 16:05:51 +0200
 
 desktop-base (0.3.17) unstable; urgency=low
 
