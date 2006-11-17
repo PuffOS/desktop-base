@@ -10,17 +10,27 @@ DESKTOPFILES=$(wildcard *.desktop)
 all:
 
 install:
+	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
 	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
+	# splash files
 	$(INSTALL) $(SPLASH) $(DESTDIR)/usr/share/images/desktop-base
-
+	# emblems
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems
 	$(INSTALL) $(EMBLEMS) $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems/
-
+	# desktop files
 	mkdir -p $(DESTDIR)/usr/share/desktop-base
 	$(INSTALL) $(DESKTOPFILES) $(DESTDIR)/usr/share/desktop-base/
-
+	# pixmaps files
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
+	# KDE setup
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde/share/config
+	$(INSTALL) $(wildcard profiles/kde/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde/share/config
+	# XFCE setup; uses the more general XDG
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
+	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
+	$(INSTALL) $(wildcard profiles/xdg-config/xfce4-session/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
 

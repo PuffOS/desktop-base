@@ -1,3 +1,11 @@
+desktop-base (0.3.19) unstable; urgency=low
+
+  * Install configuration dirs for KDE and Xfce settings which will provide
+    default values for the wallpaper, and splash screen; thanks Bart "cobaco"
+    Cornelis; closes: #348702.
+
+ -- Loic Minier <lool@dooz.org>  Fri, 17 Nov 2006 20:23:08 +0100
+
 desktop-base (0.3.18) unstable; urgency=low
 
   [ Loic Minier ]

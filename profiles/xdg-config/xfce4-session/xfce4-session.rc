@@ -1,0 +1,7 @@
+[Splash Screen]
+Engine=simple
+
+[General]
+SessionName=Default
+SaveOnExit=true
+
