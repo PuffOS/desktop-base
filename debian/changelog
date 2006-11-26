@@ -1,3 +1,10 @@
+desktop-base (0.3.20) unstable; urgency=low
+
+  * Correct xfce4-session.rc file to add failsafe session so xfce4-session
+    doesn't crash.
+
+ -- Yves-Alexis Perez <corsac@corsac.net>  Sun, 26 Nov 2006 14:26:41 +0100
+
 desktop-base (0.3.19) unstable; urgency=low
 
   * Install configuration dirs for KDE and Xfce settings which will provide
