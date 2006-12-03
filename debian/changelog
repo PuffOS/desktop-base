@@ -1,11 +1,15 @@
 desktop-base (0.3.21) UNRELEASED; urgency=low
 
+  [ Gustavo Franco ]
   * debian/control:
     - Set Maintainer field to me.
     - Set Uploaders to current debian-desktop members.
   * debian/control.in: removed
 
- -- Gustavo Franco <stratus@debian.org>  Fri,  1 Dec 2006 16:35:08 -0200
+  [ Loic Minier ]
+  * Drop uploaders rule and gnome-pkg-tools build-dep.
+
+ -- Loic Minier <lool@dooz.org>  Sun,  3 Dec 2006 10:49:46 +0100
 
 desktop-base (0.3.20) unstable; urgency=high
 
