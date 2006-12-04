@@ -8,8 +8,12 @@ desktop-base (0.3.21) UNRELEASED; urgency=low
 
   [ Loic Minier ]
   * Drop uploaders rule and gnome-pkg-tools build-dep.
+  * New desktop-background-bitmap alternative with only bitmap based
+    backgrounds (PNG, JPEG, ...) for KDE 3 which doen't support SVG
+    backgrounds; use the new background symlink as the default KDE wallpaper
+    in kdesktoprc.
 
- -- Loic Minier <lool@dooz.org>  Sun,  3 Dec 2006 10:49:46 +0100
+ -- Loic Minier <lool@dooz.org>  Mon,  4 Dec 2006 10:53:32 +0100
 
 desktop-base (0.3.20) unstable; urgency=high
 

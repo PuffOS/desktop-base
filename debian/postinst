@@ -11,7 +11,7 @@ if [ "${1}" = "configure" ] && [ "$2" != "" ] ; then
 fi
 
 if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
-    # Alternatives for the background
+    # Alternatives for the background (both in vector and bitmap formats)
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
 	desktop-background \
@@ -35,6 +35,20 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
 	/usr/share/images/desktop-base/desktop-background \
 	desktop-background \
+	/usr/share/images/desktop-base/Debian.jpg 10
+
+    # Alternatives for the background (bitmaps only)
+    update-alternatives --install \
+	/usr/share/images/desktop-base/desktop-background-bitmap \
+	desktop-background-bitmap \
+	/usr/share/images/desktop-base/debblue-1600x1200.png 30
+    update-alternatives --install \
+	/usr/share/images/desktop-base/desktop-background-bitmap \
+	desktop-background-bitmap \
+	/usr/share/images/desktop-base/bluedeb-1024x768.jpg 10
+    update-alternatives --install \
+	/usr/share/images/desktop-base/desktop-background-bitmap \
+	desktop-background-bitmap \
 	/usr/share/images/desktop-base/Debian.jpg 10
 
     # Alternatives for the splash
