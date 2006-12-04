@@ -13,6 +13,10 @@ desktop-base (0.3.21) UNRELEASED; urgency=low
     backgrounds; use the new background symlink as the default KDE wallpaper
     in kdesktoprc.
 
+  [ Fathi Boudra ]
+  * Rename kde directory to kde-profile. More consistent with KIOSK Framework.
+  * Add kderc support
+
  -- Loic Minier <lool@dooz.org>  Mon,  4 Dec 2006 10:53:32 +0100
 
 desktop-base (0.3.20) unstable; urgency=high

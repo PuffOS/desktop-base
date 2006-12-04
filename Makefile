@@ -26,8 +26,10 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 	# KDE setup
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde/share/config
-	$(INSTALL) $(wildcard profiles/kde/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde/share/config
+	mkdir -p "$(DESTDIR)/etc"
+	$(INSTALL) profiles/kde-profile/kderc "$(DESTDIR)/etc"
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
+	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	# XFCE setup; uses the more general XDG
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
