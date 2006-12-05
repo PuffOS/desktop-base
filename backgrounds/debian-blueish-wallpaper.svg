@@ -9,11 +9,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1024px"
-   height="768px"
+   width="1600px"
+   height="1200px"
    id="svg1306"
    sodipodi:version="0.32"
-   inkscape:version="0.44"
+   inkscape:version="0.44.1"
    sodipodi:docbase="/home/alrferreira/Desktop/debian/03"
    sodipodi:docname="debian-blueish-wallpaper.svg">
   <defs
@@ -2813,7 +2813,7 @@
        xlink:href="#linearGradient3109"
        id="linearGradient2390"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1.441023,0,0,1.081123,1.304039,-431.0636)"
+       gradientTransform="matrix(-1.441023,0,0,1.081123,1.304039,0.93653)"
        x1="-983.55884"
        y1="-9.5417423"
        x2="-932.79236"
@@ -2823,7 +2823,7 @@
        xlink:href="#linearGradient1810"
        id="linearGradient2393"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.980036,0,0,0.786817,1.304039,-431.0636)"
+       gradientTransform="matrix(1.980036,0,0,0.786817,1.304039,0.93653)"
        spreadMethod="pad"
        x1="318.57779"
        y1="-62.640854"
@@ -2834,7 +2834,7 @@
        xlink:href="#linearGradient4276"
        id="linearGradient2396"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.676053,0,0,2.304442,1.304039,-431.0636)"
+       gradientTransform="matrix(0.676053,0,0,2.304442,1.304039,0.93653)"
        x1="1384.5165"
        y1="128.08214"
        x2="2398.2710"
@@ -2844,7 +2844,7 @@
        xlink:href="#linearGradient1812"
        id="linearGradient2399"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.32937,0,0,1.171927,1.304039,-431.0636)"
+       gradientTransform="matrix(1.32937,0,0,1.171927,1.304039,0.93653)"
        x1="1339.2728"
        y1="626.07275"
        x2="618.57043"
@@ -2854,7 +2854,7 @@
        xlink:href="#linearGradient12401"
        id="linearGradient2403"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-0.951928,0,0,-1.636597,2287.773,769.6501)"
+       gradientTransform="matrix(-0.951928,0,0,-1.636597,2287.773,1201.65)"
        x1="929.92407"
        y1="365.15329"
        x2="1407.9355"
@@ -2864,7 +2864,7 @@
        xlink:href="#linearGradient12401"
        id="linearGradient2406"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.951928,0,0,1.636597,266.6196,-431.0636)"
+       gradientTransform="matrix(0.951928,0,0,1.636597,266.6196,0.93653)"
        x1="929.92407"
        y1="365.15329"
        x2="1407.9355"
@@ -2874,7 +2874,7 @@
        xlink:href="#linearGradient6228"
        id="linearGradient2409"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.441023,0,0,1.081123,1.304039,-431.0636)"
+       gradientTransform="matrix(1.441023,0,0,1.081123,1.304039,0.93653)"
        spreadMethod="pad"
        x1="227.38708"
        y1="414.63464"
@@ -2916,18 +2916,18 @@
     <g
        inkscape:label="Layer 1"
        id="g24651"
-       transform="translate(1097.491,-193.7001)" />
+       transform="translate(1097.491,238.3)" />
     <g
        inkscape:label="Layer 1"
        id="g3166"
-       transform="translate(401.4770,298.7062)" />
+       transform="translate(401.477,730.7063)" />
     <rect
        style="fill:#2073a0;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect15144"
        width="1600"
        height="1199.9993"
        x="1.9682981e-05"
-       y="-431.9996"
+       y="0.00052672852"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
@@ -2935,7 +2935,7 @@
        width="1597.392"
        height="1198.4392"
        x="1.3039966"
-       y="-431.06357"
+       y="0.93656188"
        style="fill:url(#linearGradient2409);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:32.04072952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
        id="rect5602"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/debian-wallpaper1600x1200.png"
@@ -2943,21 +2943,21 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:url(#linearGradient2406);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1454.7904,-431.99984 C 1578.9355,-43.612114 1159.5309,364.99884 1137.4179,767.68777 L 1466.6851,767.68777 C 1326.4319,489.83212 1311.5971,175.25837 1598.735,-184.62668 L 1598.735,-431.99984 L 1454.7904,-431.99984 z "
+       d="M 1454.7904,0.00029 C 1578.9355,388.38802 1159.5309,796.99897 1137.4179,1199.6879 L 1466.6851,1199.6879 C 1326.4319,921.83225 1311.5971,607.2585 1598.735,247.37345 L 1598.735,0.00029 L 1454.7904,0.00029 z "
        id="path4304"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        style="fill:url(#linearGradient2403);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1036.6839,-431.68774 C 1288.4547,264.33838 1056.3202,578.28519 725.90227,767.99987 L 1031.8091,767.99987 C 1129.8806,341.98486 1324.9884,-27.198953 1340.7187,-431.68774 L 1036.6839,-431.68774 z "
+       d="M 1036.6839,0.31239 C 1288.4547,696.33851 1056.3202,1010.2853 725.90227,1200 L 1031.8091,1200 C 1129.8806,773.98499 1324.9884,404.80118 1340.7187,0.31239 L 1036.6839,0.31239 z "
        id="path4930"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
        style="fill:url(#linearGradient2399);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1247.5732,-430.91195 C 1472.1382,1.4851538 1223.8655,335.25063 954.43464,767.64007 L 284.74964,767.36894 C 814.74833,267.29822 1371.1316,208.92752 1418.2895,-431.2515 L 1247.5732,-430.91195 z "
+       d="M 1247.5732,1.08818 C 1472.1382,433.48528 1223.8655,767.25076 954.43464,1199.6402 L 284.74964,1199.3691 C 814.74833,699.29835 1371.1316,640.92765 1418.2895,0.74863 L 1247.5732,1.08818 z "
        id="path1186"
        sodipodi:nodetypes="ccccc"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
@@ -2965,7 +2965,7 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:url(#linearGradient2396);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.25pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 1488.4163,-431.13145 L 1598.0793,-431.03006 C 1501.8196,-6.2512944 1400.2891,322.06084 1598.2913,766.95109 L 1326.9314,767.47707 C 1105.1688,471.89929 1397.6399,-108.12895 1488.4163,-431.13145 z "
+       d="M 1488.4163,0.86868 L 1598.0793,0.97007 C 1501.8196,425.74884 1400.2891,754.06097 1598.2913,1198.9512 L 1326.9314,1199.4772 C 1105.1688,903.89942 1397.6399,323.87118 1488.4163,0.86868 z "
        id="path2436"
        sodipodi:nodetypes="ccccc"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
@@ -2973,20 +2973,20 @@
        inkscape:export-ydpi="90" />
     <path
        style="fill:url(#linearGradient2393);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
-       d="M -8.279202e-05,-431.06356 L -8.279202e-05,204.7359 C 785.28319,190.23349 796.78628,-32.638137 1600.0002,-42.310459 L 1600.0002,-431.06356 L -8.279202e-05,-431.06356 z "
+       d="M -8.279202e-05,0.93657 L -8.279202e-05,636.73603 C 785.28319,622.23362 796.78628,399.36199 1600.0002,389.68967 L 1600.0002,0.93657 L -8.279202e-05,0.93657 z "
        id="path1356"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <path
-       d="M 1598.6961,-431.06356 L 1.304038,-431.06356 L 1.304038,173.77125 C 732.64014,-115.0093 803.20767,430.46504 1598.6961,173.77122 L 1598.6961,-431.06356 z "
+       d="M 1598.6961,0.93657 L 1.304038,0.93657 L 1.304038,605.77138 C 732.64014,316.99083 803.20767,862.46517 1598.6961,605.77135 L 1598.6961,0.93657 z "
        style="fill:url(#linearGradient2390);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:32.04072952;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
        id="rect2487"
        inkscape:export-filename="/home/alrferreira/Desktop/debian/03/wallpaper9.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
-       transform="matrix(8.532497,0,0,-7.943311,-1868.67,3238.983)"
+       transform="matrix(8.532497,0,0,-7.943311,-1868.67,3670.983)"
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;opacity:0.34351148;color:black;fill:white;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
        id="g2487"
