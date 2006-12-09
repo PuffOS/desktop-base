@@ -8,14 +8,12 @@ desktop-base (0.3.21) UNRELEASED; urgency=low
 
   [ Loic Minier ]
   * Drop uploaders rule and gnome-pkg-tools build-dep.
-  * New desktop-background-bitmap alternative with only bitmap based
-    backgrounds (PNG, JPEG, ...) for KDE 3 which doen't support SVG
-    backgrounds; use the new background symlink as the default KDE wallpaper
-    in kdesktoprc.
 
   [ Fathi Boudra ]
+  * Fix debian-background.svg and debian-blueish-wallpaper.svg for KDE.
   * Rename kde directory to kde-profile. More consistent with KIOSK Framework.
-  * Add kderc support
+  * Add kdeglobals support.
+  * Add Debian MoreBlue KDM Theme.
 
  -- Loic Minier <lool@dooz.org>  Mon,  4 Dec 2006 10:53:32 +0100
 

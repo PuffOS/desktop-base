@@ -3,7 +3,7 @@
 #DEBHELPER#
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
-    # remove background alternatives (both in vector and bitmap formats)
+    # remove background alternatives
     update-alternatives --remove desktop-background \
 	/usr/share/images/desktop-base/debian-blueish-wallpaper.svg
 
@@ -17,14 +17,6 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 	/usr/share/images/desktop-base/bluedeb-1024x768.jpg
 
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/Debian.jpg
-
-    # remove background alternatives (bitmaps only)
-    update-alternatives --remove desktop-background-bitmap \
-	/usr/share/images/desktop-base/debblue-1600x1200.png
-    update-alternatives --remove desktop-background-bitmap \
-	/usr/share/images/desktop-base/bluedeb-1024x768.jpg
-    update-alternatives --remove desktop-background-bitmap \
 	/usr/share/images/desktop-base/Debian.jpg
 
     # remove splash alternatives

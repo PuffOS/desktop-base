@@ -13,6 +13,6 @@ Pattern=
 Program=
 ReverseBlending=false
 UseSHM=false
-Wallpaper=/usr/share/images/desktop-base/desktop-background-bitmap
+Wallpaper=/usr/share/images/desktop-base/desktop-background
 WallpaperList=
 WallpaperMode=Scaled

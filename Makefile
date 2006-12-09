@@ -25,9 +25,14 @@ install:
 	# pixmaps files
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
+	# KDM theme
+	mkdir -p $(DESTDIR)/etc/default/kdm.d
+	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
+	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
+	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	# KDE setup
-	mkdir -p "$(DESTDIR)/etc"
-	$(INSTALL) profiles/kde-profile/kderc "$(DESTDIR)/etc"
+	mkdir -p $(DESTDIR)/etc/kde3
+	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	# XFCE setup; uses the more general XDG
