@@ -1,9 +1,12 @@
-desktop-base (0.3.23) UNRELEASED; urgency=low
+desktop-base (4.0.0) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Add icon-session and icon-reboot to MoreBlue KDM Theme like GDM Theme.
 
- -- Fathi Boudra <fboudra@free.fr>  Mon, 11 Dec 2006 20:52:19 +0100
+  [ Loic Minier ]
+  * Bump up version to 4.0; etch.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 11 Dec 2006 20:59:38 +0100
 
 desktop-base (0.3.22) unstable; urgency=low
 
