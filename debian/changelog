@@ -14,6 +14,7 @@ desktop-base (0.3.21) UNRELEASED; urgency=low
   * Rename kde directory to kde-profile. More consistent with KIOSK Framework.
   * Add kdeglobals support.
   * Add Debian MoreBlue KDM Theme.
+  * Add Debian MoreBlue KSplash Theme (Default and Moodin engine).
 
  -- Loic Minier <lool@dooz.org>  Mon,  4 Dec 2006 10:53:32 +0100
 

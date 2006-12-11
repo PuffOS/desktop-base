@@ -30,6 +30,11 @@ install:
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
 	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
+	# KSPLASH theme
+	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
+	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
+	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
+	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
 	# KDE setup
 	mkdir -p $(DESTDIR)/etc/kde3
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
