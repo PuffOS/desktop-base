@@ -1,4 +1,4 @@
-desktop-base (0.3.21) UNRELEASED; urgency=low
+desktop-base (0.3.21) unstable; urgency=high
 
   [ Gustavo Franco ]
   * debian/control:
@@ -16,7 +16,10 @@ desktop-base (0.3.21) UNRELEASED; urgency=low
   * Add Debian MoreBlue KDM Theme.
   * Add Debian MoreBlue KSplash Theme (Default and Moodin engine).
 
- -- Loic Minier <lool@dooz.org>  Mon,  4 Dec 2006 10:53:32 +0100
+  [ Loic Minier ]
+  * Urgency high for etch's KDE artwork.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 11 Dec 2006 16:43:23 +0100
 
 desktop-base (0.3.20) unstable; urgency=high
 
