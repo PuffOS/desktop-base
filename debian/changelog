@@ -1,3 +1,10 @@
+desktop-base (0.3.23) UNRELEASED; urgency=low
+
+  [ Fathi Boudra ]
+  * Add icon-session and icon-reboot to MoreBlue KDM Theme like GDM Theme.
+
+ -- Fathi Boudra <fboudra@free.fr>  Mon, 11 Dec 2006 20:52:19 +0100
+
 desktop-base (0.3.22) unstable; urgency=low
 
   * New GNOME wallpaper description; only holds the default GNOME wallpaper
