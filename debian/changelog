@@ -1,3 +1,10 @@
+desktop-base (0.3.22) unstable; urgency=low
+
+  * New GNOME wallpaper description; only holds the default GNOME wallpaper
+    for now; thanks Martin-Éric Racine; closes: #333457.
+
+ -- Loic Minier <lool@dooz.org>  Mon, 11 Dec 2006 18:02:02 +0100
+
 desktop-base (0.3.21) unstable; urgency=high
 
   [ Gustavo Franco ]
