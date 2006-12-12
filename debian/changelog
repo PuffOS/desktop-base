@@ -1,3 +1,10 @@
+desktop-base (4.0.1) unstable; urgency=low
+
+  [ Fathi Boudra ]
+  * Fix KDM theme moodin engine installation.
+
+ -- Fathi Boudra <fboudra@free.fr>  Tue, 12 Dec 2006 13:23:27 +0100
+
 desktop-base (4.0.0) unstable; urgency=low
 
   [ Fathi Boudra ]
