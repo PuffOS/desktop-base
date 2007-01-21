@@ -8,7 +8,7 @@ Standards-Version: 3.7.2
 
 Package: desktop-base
 Architecture: all
-Recommends: epiphany-browser | konqueror | www-browser
+Recommends: epiphany-browser | konqueror | www-browser, librsvg2-common
 Suggests: gnome | kde | xfce4 | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
