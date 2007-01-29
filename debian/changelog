@@ -2,6 +2,9 @@ desktop-base (4.0.1) UNRELEASED; urgency=low
 
   [ Fathi Boudra ]
   * Fix KSplash theme moodin engine installation.
+  * Fix MoreBlue KDM theme. Thanks to Modestas Vainius.
+    (Closes: #408513, #408947)
+  * KDM override is disabled by default. (Closes: #407799)
 
   [ Loic Minier ]
   * Depend on librsvg2-common for SVG support.
