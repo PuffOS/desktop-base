@@ -1,4 +1,4 @@
-desktop-base (4.0.2.1) unstable; urgency=low
+desktop-base (4.0.3) unstable; urgency=low
 
   * Fix kde default wallpaper appearance between kdm to ksplash switch.
 
