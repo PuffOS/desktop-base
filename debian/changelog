@@ -1,3 +1,11 @@
+desktop-base (4.0.4) UNRELEASED; urgency=low
+
+  * Make a copy of GdmGreeterTheme.desktop to KdmGreeterTheme.desktop:
+    * KDE3 search for GdmGreeterTheme.desktop
+    * KDE4 search for KdmGreeterTheme.desktop
+
+ -- Fathi Boudra <fboudra@free.fr>  Sat, 22 Sep 2007 12:08:39 +0200
+
 desktop-base (4.0.3) unstable; urgency=low
 
   * Fix kde default wallpaper appearance between kdm to ksplash switch.
