@@ -2,8 +2,11 @@ Source: desktop-base
 Section: x11
 Priority: optional
 Maintainer: Gustavo Franco <stratus@debian.org>
-Uploaders: Loïc Minier <lool@dooz.org>, Fathi Boudra <fboudra@free.fr>, Yves-Alexis Perez <corsac@corsac.net>
-Build-Depends: cdbs, debhelper (>= 5.0.13)
+Uploaders: Loïc Minier <lool@dooz.org>,
+           Fathi Boudra <fboudra@free.fr>,
+           Yves-Alexis Perez <corsac@corsac.net>
+Build-Depends: cdbs,
+               debhelper (>= 5.0.13)
 Standards-Version: 3.7.2
 DM-Upload-Allowed: yes
 

@@ -7,8 +7,9 @@ desktop-base (4.0.4) unstable; urgency=low
 
   [ Loic Minier ]
   * Set DM-Upload-Allowed: yes; rock on Fathi!
+  * Wrap build-deps and uploaders.
 
- -- Loic Minier <lool@dooz.org>  Fri, 23 Nov 2007 11:37:15 +0100
+ -- Loic Minier <lool@dooz.org>  Fri, 23 Nov 2007 11:38:38 +0100
 
 desktop-base (4.0.3) unstable; urgency=low
 
