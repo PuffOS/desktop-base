@@ -5,30 +5,31 @@
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove background alternatives
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/debian-blueish-wallpaper.svg
+        /usr/share/images/desktop-base/debian-blueish-wallpaper.svg
 
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/debblue-1600x1200.png
+        /usr/share/images/desktop-base/debblue-1600x1200.png
 
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/debian-background.svg
+        /usr/share/images/desktop-base/debian-background.svg
 
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/bluedeb-1024x768.jpg
+        /usr/share/images/desktop-base/bluedeb-1024x768.jpg
 
     update-alternatives --remove desktop-background \
-	/usr/share/images/desktop-base/Debian.jpg
+        /usr/share/images/desktop-base/Debian.jpg
 
     # remove splash alternatives
     update-alternatives --remove desktop-splash \
-	/usr/share/images/desktop-base/gnome-splash-curves.png
+        /usr/share/images/desktop-base/gnome-splash-curves.png
 
     update-alternatives --remove desktop-splash \
-	/usr/share/images/desktop-base/Splash-debblue.png
+        /usr/share/images/desktop-base/Splash-debblue.png
 
     update-alternatives --remove desktop-splash \
-	/usr/share/images/desktop-base/Splash-Debian.png
+        /usr/share/images/desktop-base/Splash-Debian.png
 
     update-alternatives --remove desktop-splash \
-	/usr/share/images/desktop-base/Splash-Debian_red.png
+        /usr/share/images/desktop-base/Splash-Debian_red.png
 fi
+

@@ -8,8 +8,9 @@ desktop-base (4.0.4) unstable; urgency=low
   [ Loic Minier ]
   * Set DM-Upload-Allowed: yes; rock on Fathi!
   * Wrap build-deps and uploaders.
+  * Cosmetic cleanups.
 
- -- Loic Minier <lool@dooz.org>  Fri, 23 Nov 2007 11:38:38 +0100
+ -- Loic Minier <lool@dooz.org>  Fri, 23 Nov 2007 11:40:38 +0100
 
 desktop-base (4.0.3) unstable; urgency=low
 
@@ -122,7 +123,7 @@ desktop-base (0.3.18) unstable; urgency=low
   * Add a gconf-defaults file.
     + Set the default background, overriding the one in libgnome.
     + Set the default splash, overriding the one in gnome-session.
-  * Register it with priority 15 (higher than standard Debian packages 
+  * Register it with priority 15 (higher than standard Debian packages
     but lower than CDDs).
   * Build-depend on debhelper 5.0.13.
 
@@ -180,7 +181,7 @@ desktop-base (0.3.15) unstable; urgency=low
     Dan Korostelev <dan@ats.energo.ru> (Closes: #257923)
   * Makefile:
   - install emblem in /usr/share/icons/hicolor/48x48/emblems/
-  - install debblue background, and splash and make them 
+  - install debblue background, and splash and make them
     the default
 
  -- Gustavo Noronha Silva <kov@debian.org>  Sat, 23 Oct 2004 23:34:52 -0300
