@@ -57,5 +57,9 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
         /usr/share/images/desktop-base/Splash-Debian_red.png 10
-fi
 
+    # GRUB background
+    if which update-grub2 2> /dev/null ; then
+        update-grub2
+    fi
+fi

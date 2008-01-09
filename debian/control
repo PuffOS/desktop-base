@@ -3,12 +3,11 @@ Section: x11
 Priority: optional
 Maintainer: Gustavo Franco <stratus@debian.org>
 Uploaders: Loïc Minier <lool@dooz.org>,
-           Fathi Boudra <fboudra@free.fr>,
+           Fathi Boudra <fabo@debian.org>,
            Yves-Alexis Perez <corsac@corsac.net>
-Build-Depends: cdbs,
-               debhelper (>= 5.0.13)
-Standards-Version: 3.7.2
-DM-Upload-Allowed: yes
+Build-Depends: cdbs, debhelper (>= 5.0.13)
+Standards-Version: 3.7.3
+Homepage: http://www.debian.org/devel/debian-desktop
 
 Package: desktop-base
 Architecture: all

@@ -1,7 +1,7 @@
 DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644 
-BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg)
+BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png)
 PIXMAPS=$(wildcard pixmaps/*.png)
