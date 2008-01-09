@@ -1,8 +1,13 @@
-desktop-base (4.0.5) UNRELEASED; urgency=low
+desktop-base (4.0.5) unstable; urgency=low
 
   * Bump Standards-Version to 3.7.3.
   * Add Homepage field.
   * Remove DM-Upload-Allowed: yes; All Uploaders are DD.
+  * Update kdm theme for KDE 4.
+  * Use zoom option instead of scaled option in gnome background.
+    (Closes: #439838)
+  * Update Makefile to fix wrong permissions on
+    /usr/share/gnome-background-properties. (Closes: #452425)
   * Provide 640x480 TGA version of debian-blueish-wallpaper.svg for GRUB 2.
     Thanks to Robert Millan (Closes: #459352)
 
