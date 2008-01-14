@@ -31,9 +31,5 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 
     update-alternatives --remove desktop-splash \
         /usr/share/images/desktop-base/Splash-Debian_red.png
-
-    if which update-grub2 > /dev/null ; then
-        update-grub2
-    fi
 fi
 

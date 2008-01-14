@@ -1,3 +1,9 @@
+desktop-base (4.0.6) UNRELEASED; urgency=low
+
+  * Move update-grub2 hook to postrm instead of prerm.
+
+ -- Fathi Boudra <fabo@debian.org>  Mon, 14 Jan 2008 14:44:26 +0100
+
 desktop-base (4.0.5) unstable; urgency=low
 
   [ Fathi Boudra ]
