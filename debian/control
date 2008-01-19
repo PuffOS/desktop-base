@@ -5,9 +5,11 @@ Maintainer: Gustavo Franco <stratus@debian.org>
 Uploaders: Loïc Minier <lool@dooz.org>,
            Fathi Boudra <fabo@debian.org>,
            Yves-Alexis Perez <corsac@corsac.net>
-Build-Depends: cdbs, debhelper (>= 5.0.13)
+Build-Depends: cdbs, debhelper (>= 6)
 Standards-Version: 3.7.3
 Homepage: http://www.debian.org/devel/debian-desktop
+Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
+Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
 
 Package: desktop-base
 Architecture: all

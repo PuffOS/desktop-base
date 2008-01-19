@@ -1,6 +1,8 @@
-desktop-base (4.0.6) UNRELEASED; urgency=low
+desktop-base (4.0.6) unstable; urgency=low
 
   * Move update-grub2 hook to postrm instead of prerm.
+  * Bump compat/debhelper to 6.
+  * Add Vcs-Browser and Vcs-Svn fields.
 
  -- Fathi Boudra <fabo@debian.org>  Mon, 14 Jan 2008 14:44:26 +0100
 
