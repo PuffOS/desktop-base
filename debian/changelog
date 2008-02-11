@@ -1,3 +1,10 @@
+desktop-base (4.0.7) unstable; urgency=low
+
+  * Replace 640x480 TGA version of debian-blueish-wallpaper.svg by a PNG for
+    GRUB 2. (Closes: #465087)
+
+ -- Fathi Boudra <fabo@debian.org>  Mon, 11 Feb 2008 14:06:52 +0100
+
 desktop-base (4.0.6) unstable; urgency=low
 
   * Move update-grub2 hook to postrm instead of prerm.
