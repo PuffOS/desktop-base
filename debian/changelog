@@ -1,3 +1,9 @@
+desktop-base (4.0.8) UNRELEASED; urgency=low
+
+  * Add debian-blueish widescreen version.
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 13 May 2008 16:13:01 +0200
+
 desktop-base (4.0.7) unstable; urgency=low
 
   * Replace 640x480 TGA version of debian-blueish-wallpaper.svg by a PNG for
