@@ -5,6 +5,9 @@
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove background alternatives
     update-alternatives --remove desktop-background \
+        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg
+
+    update-alternatives --remove desktop-background \
         /usr/share/images/desktop-base/debian-blueish-wallpaper.svg
 
     update-alternatives --remove desktop-background \
@@ -20,6 +23,9 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         /usr/share/images/desktop-base/Debian.jpg
 
     # remove splash alternatives
+    update-alternatives --remove desktop-splash \
+        /usr/share/images/desktop-base/moreblue-orbit-splash.png
+
     update-alternatives --remove desktop-splash \
         /usr/share/images/desktop-base/gnome-splash-curves.png
 

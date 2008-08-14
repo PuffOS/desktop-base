@@ -1,6 +1,6 @@
 DEFAULT_BACKGROUND=desktop-background
 
-INSTALL=install -m 0644 
+INSTALL=install -m 0644
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png)
@@ -30,11 +30,15 @@ install:
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
 	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
+	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
+	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
 	# KSPLASH theme
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
+	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit
+	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit
 	# KDE setup
 	mkdir -p $(DESTDIR)/etc/kde3
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3

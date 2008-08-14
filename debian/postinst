@@ -15,6 +15,11 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
+        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 50
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
         /usr/share/images/desktop-base/debian-blueish-wallpaper.svg 40
 
     update-alternatives --install \
@@ -38,6 +43,11 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         /usr/share/images/desktop-base/Debian.jpg 10
 
     # Alternatives for the splash
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-splash \
+        desktop-splash \
+        /usr/share/images/desktop-base/moreblue-orbit-splash.png 50
+
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
