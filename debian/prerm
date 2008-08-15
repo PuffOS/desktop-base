@@ -37,5 +37,9 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 
     update-alternatives --remove desktop-splash \
         /usr/share/images/desktop-base/Splash-Debian_red.png
+
+    # remove grub alternatives
+    update-alternatives --remove desktop-grub \
+        /usr/share/images/desktop-base/moreblue-orbit-grub.png
 fi
 
