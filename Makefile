@@ -37,8 +37,8 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit
+	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
+	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
 	# KDE setup
 	mkdir -p $(DESTDIR)/etc/kde3
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
