@@ -8,6 +8,9 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg
 
     update-alternatives --remove desktop-background \
+        /usr/share/images/desktop-base/nightly-wallpaper.png
+
+    update-alternatives --remove desktop-background \
         /usr/share/images/desktop-base/debian-blueish-wallpaper.svg
 
     update-alternatives --remove desktop-background \

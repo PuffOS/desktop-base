@@ -15,7 +15,12 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 50
+        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 60
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/nightly-wallpaper.png 50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \

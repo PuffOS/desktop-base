@@ -32,6 +32,8 @@ install:
 	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
 	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
+	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/nightly
+	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/apps/kdm/themes/nightly
 	# KSPLASH theme
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
@@ -41,6 +43,8 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
 	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
+	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nighly-moodin
+	$(INSTALL) $(wildcard ksplash-theme/nightly-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
 	# KDE setup
 	mkdir -p $(DESTDIR)/etc/kde3
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
