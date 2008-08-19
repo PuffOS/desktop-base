@@ -1,7 +1,11 @@
 desktop-base (5.0.1) unstable; urgency=low
 
+  [ Yves-Alexis Perez ]
   * Update my email address in Uploaders:
   * Relabel background as “Lenny” in GNOME properties. (Closes: #495613)
+
+  [ Fathi Boudra ]
+  * Merge wallpapers and backgrounds directories.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Aug 2008 07:06:17 +0200
 
