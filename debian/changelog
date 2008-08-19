@@ -1,3 +1,9 @@
+desktop-base (5.0.1) unstable; urgency=low
+
+  * Update my email address in Uploaders:
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Aug 2008 07:00:50 +0200
+
 desktop-base (5.0.0) unstable; urgency=low
 
   * Bump Standards-Version to 3.8.0 (no changes needed).

@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Gustavo Franco <stratus@debian.org>
 Uploaders: Loïc Minier <lool@dooz.org>,
            Fathi Boudra <fabo@debian.org>,
-           Yves-Alexis Perez <corsac@corsac.net>
+           Yves-Alexis Perez <corsac@debian.org>
 Build-Depends: cdbs, debhelper (>= 6)
 Standards-Version: 3.8.0
 Homepage: http://www.debian.org/devel/debian-desktop
