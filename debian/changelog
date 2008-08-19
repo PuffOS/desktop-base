@@ -6,6 +6,14 @@ desktop-base (5.0.1) unstable; urgency=low
 
   [ Fathi Boudra ]
   * Merge wallpapers and backgrounds directories.
+  * Remove deprecated splash and wallpapers:
+    - debblue-1600x1200.png
+    - bluedeb-1024x768.jpg
+    - Debian.jpg
+    - debian-background.svg
+    - Splash-debblue.png
+    - Splash-Debian.png
+    - Splash-Debian_red.png
 
  -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Aug 2008 07:06:17 +0200
 

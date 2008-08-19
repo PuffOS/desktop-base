@@ -5,7 +5,6 @@ README for desktop-base
    1.1. Emblems
    1.2. Pixmaps
    1.3. Splash and Wallpapers
-        1.3.1. Deprecated Splash and Wallpapers
    1.4. GDM Theme
 2. Desktop files
 3. Changing desktop-base images
@@ -38,19 +37,6 @@ point to this pair:
 /usr/share/images/desktop-base/splash/gnome-debian-etch-splash.png
 /usr/share/images/desktop-base/wallpapers/gnome-debian-etch-wp.png
 
-1.3.1. Deprecated Splash and Wallpapers
-
-WARNING: The splash and wallpaper images above are deprecated and
-will be moved or removed before Etch.
-
-/usr/share/images/desktop-base/debblue-1600x1200.png
-/usr/share/images/desktop-base/bluedeb-1024x768.jpg
-/usr/share/images/desktop-base/Debian.jpg
-/usr/share/images/desktop-base/debian-background.svg
-/usr/share/images/desktop-base/Splash-debblue.png
-/usr/share/images/desktop-base/Splash-Debian.png
-/usr/share/images/desktop-base/Splash-Debian_red.png
-
 1.4. GDM Theme
 
 desktop-base GDM theme will be built as soon as possible.
@@ -77,11 +63,10 @@ images, that would be good consider the following notes:
 If you've suggestions for a better artwork, create or edit
 the images and open a 'wishlist' bug against desktop-base in our
 Bug Tracking System (http://bugs.debian.org/). Please attach the
-'xcf' and don't violate copyright.
+'svg' or 'xcf' and don't violate copyright.
 
 4. Window Managers
-desktop-base is being used by GNOME/metacity only, but it's
-ready to be the default artwork package for Debian.
+desktop-base is used by GNOME/KDE/XFCE.
 
 If you're responsible for a WM in Debian and wants to use
 desktop-base artwork or add your own image (wallpaper, splash,
