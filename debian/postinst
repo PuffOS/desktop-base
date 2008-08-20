@@ -79,12 +79,6 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
 
-    # Alternatives for usplash
-#    update-alternatives --install \
-#        /usr/lib/usplash/usplash-artwork.so \
-#        usplash-artwork.so \
-#        /usr/lib/usplash/debian-theme.so 50
-
     # GRUB background
     if which update-grub2 > /dev/null ; then
         update-grub2
