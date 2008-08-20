@@ -79,8 +79,22 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
 
+    # Alternatives for usplash
+#    update-alternatives --install \
+#        /usr/lib/usplash/usplash-artwork.so \
+#        usplash-artwork.so \
+#        /usr/lib/usplash/debian-theme.so 50
+
     # GRUB background
     if which update-grub2 > /dev/null ; then
         update-grub2
+    fi
+
+    if [ -x /sbin/splashy_config ]; then
+        splashy_config --set-theme moreblue-orbit
+    fi
+
+    if [ -x /usr/sbin/update-initramfs ]; then
+        update-initramfs -u
     fi
 fi

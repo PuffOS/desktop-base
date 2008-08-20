@@ -44,5 +44,9 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove grub alternatives
     update-alternatives --remove desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png
+
+    # remove usplash alternatives
+#    update-alternatives --remove usplash-artwork.so \
+#        /usr/lib/usplash/debian-theme.so
 fi
 

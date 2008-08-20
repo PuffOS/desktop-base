@@ -9,7 +9,18 @@ DESKTOPFILES=$(wildcard *.desktop)
 
 all:
 
+#build:
+#	make -C usplash
+
+#clean:
+#	make -C usplash clean
+
 install:
+	# splashy theme
+	mkdir -p $(DESTDIR)/etc/splashy/themes/moreblue-orbit
+	$(INSTALL) $(wildcard splashy/moreblue-orbit/*) $(DESTDIR)/etc/splashy/themes/moreblue-orbit
+	# usplash theme
+#	make -C usplash install
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
