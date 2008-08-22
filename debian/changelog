@@ -16,8 +16,8 @@ desktop-base (5.0.1) unstable; urgency=low
     - Splash-Debian_red.png
   * Add MoreBlue Orbit grub and splash sources.
   * Add MoreBlue Orbit widescreen.
-  * Add Nightly source.
-  * Add MoreBlue Orbit Splashy theme.
+  * Add Nightly sources.
+  * Add MoreBlue Orbit Splashy theme. (Closes: #495618)
   * Add MoreBlue Orbit USplash theme.
   * Add Nightly GNOME and KDM splash. Thanks to Robert Jahene.
 
