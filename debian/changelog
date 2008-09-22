@@ -3,6 +3,7 @@ desktop-base (5.0.1) unstable; urgency=low
   [ Yves-Alexis Perez ]
   * Update my email address in Uploaders:
   * Relabel background as “Lenny” in GNOME properties. (Closes: #495613)
+  * Provide a widescreen variant of MoreBlue Orbit.
 
   [ Fathi Boudra ]
   * Merge wallpapers and backgrounds directories.
