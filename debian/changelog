@@ -3,7 +3,7 @@ desktop-base (5.0.1) unstable; urgency=low
   [ Yves-Alexis Perez ]
   * Update my email address in Uploaders:
   * Relabel background as “Lenny” in GNOME properties. (Closes: #495613)
-  * Provide a widescreen variant of MoreBlue Orbit.
+  * Add MoreBlue Orbit widescreen as svg and add it to alternatives.
 
   [ Fathi Boudra ]
   * Merge wallpapers and backgrounds directories.
@@ -22,7 +22,7 @@ desktop-base (5.0.1) unstable; urgency=low
   * Add MoreBlue Orbit USplash theme.
   * Add Nightly GNOME and KDM splash. Thanks to Robert Jahene.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 19 Aug 2008 07:06:17 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 23 Sep 2008 07:17:39 +0200
 
 desktop-base (5.0.0) unstable; urgency=low
 
