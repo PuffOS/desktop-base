@@ -8,17 +8,17 @@ PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
 all:
-	make -C usplash/moreblue-orbit
+#	make -C usplash/moreblue-orbit
 
 clean:
-	make -C usplash/moreblue-orbit clean
+#	make -C usplash/moreblue-orbit clean
 
 install:
 	# splashy theme
 	mkdir -p $(DESTDIR)/etc/splashy/themes/moreblue-orbit
 	$(INSTALL) $(wildcard splashy/moreblue-orbit/*) $(DESTDIR)/etc/splashy/themes/moreblue-orbit
 	# usplash theme
-	make -C usplash/moreblue-orbit install DESTDIR=$(CURDIR)/debian/usplash-theme-debian-desktop/usr/lib/usplash
+#	make -C usplash/moreblue-orbit install DESTDIR=$(CURDIR)/debian/usplash-theme-debian-desktop/usr/lib/usplash
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
