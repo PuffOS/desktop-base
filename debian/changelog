@@ -19,10 +19,9 @@ desktop-base (5.0.1) unstable; urgency=low
   * Add MoreBlue Orbit widescreen.
   * Add Nightly sources.
   * Add MoreBlue Orbit Splashy theme. (Closes: #495618)
-  * Add MoreBlue Orbit USplash theme.
   * Add Nightly GNOME and KDM splash. Thanks to Robert Jahene.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 23 Sep 2008 07:17:39 +0200
+ -- Fathi Boudra <fabo@debian.org>  Fri, 26 Sep 2008 00:49:22 +0200
 
 desktop-base (5.0.0) unstable; urgency=low
 
