@@ -1,3 +1,10 @@
+desktop-base (5.0.2) UNRELEASED; urgency=low
+
+  * moreblue-orbit-wallpaper-widescreen.svg updated, fix a “transparent”
+  * horizontal line on top.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Sep 2008 07:32:36 +0200
+
 desktop-base (5.0.1) unstable; urgency=low
 
   [ Yves-Alexis Perez ]
