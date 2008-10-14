@@ -15,8 +15,8 @@ clean:
 
 install:
 	# splashy theme
-	mkdir -p $(DESTDIR)/etc/splashy/themes/moreblue-orbit
-	$(INSTALL) $(wildcard splashy/moreblue-orbit/*) $(DESTDIR)/etc/splashy/themes/moreblue-orbit
+	mkdir -p $(DESTDIR)/usr/share/splashy/themes/moreblue-orbit
+	$(INSTALL) $(wildcard splashy/moreblue-orbit/*) $(DESTDIR)/usr/share/splashy/themes/moreblue-orbit
 	# usplash theme
 #	make -C usplash/moreblue-orbit install DESTDIR=$(CURDIR)/debian/usplash-theme-debian-desktop/usr/lib/usplash
 	# background files
