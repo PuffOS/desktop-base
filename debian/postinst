@@ -2,7 +2,35 @@
 
 #DEBHELPER#
 
+# Move a conffile without triggering a dpkg question
+mv_conffile() {
+    OLDCONFFILE="$1"
+    NEWCONFFILE="$2"
+    if [ -e "$OLDCONFFILE" ]; then
+        echo "Preserving user changes to $NEWCONFFILE ..."
+        mv -f "$NEWCONFFILE" "$NEWCONFFILE".dpkg-new
+        mv -f "$OLDCONFFILE" "$NEWCONFFILE"
+    fi
+}
+
+
+case "${1}" in
+install|upgrade)
+    # splashy theme is moved to /usr/share/splashy starting 5.0.2
+    if dpkg --compare-versions ${2} le 5.0.2; then
+        mv_conffile /etc/splashy/themes/moreblue-orbit/background-bw.png \
+        /usr/share/splashy/themes/moreblue-orbit/background-bw.png
+        mv_conffile /etc/splashy/themes/moreblue-orbit/background-color.png \
+        /usr/share/splashy/themes/moreblue-orbit/background-color.png
+        mv_conffile /etc/splashy/themes/moreblue-orbit/theme.xml \
+        /usr/share/splashy/themes/moreblue-orbit/theme.xml
+        mv_conffile /etc/splashy/themes/moreblue-orbit/VeraSans.ttf \
+        /usr/share/splashy/themes/moreblue-orbit/VeraSans.ttf
+    fi
+esac
+
 if [ "${1}" = "configure" ] && [ "$2" != "" ] ; then
+
     if dpkg --compare-versions ${2} lt 0.3.11 && dpkg --compare-versions ${2} gt 0.3.5; then
         if test -x /var/lib/dpkg/info/libgnome2-common.postinst; then
             /var/lib/dpkg/info/libgnome2-common.postinst configure

@@ -17,3 +17,25 @@ if [ "${1}" = "upgrade" ]; then
     fi
 fi
 
+# prepare to move splashy themes, moved to /usr/share in 5.0.2
+prep_mv_conffile() {
+    PKGNAME="$1"
+    CONFFILE="$2"
+    if [ -e "$CONFFILE" ]; then
+        md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
+        old_md5sum="`dpkg-query -W -f='${Conffiles}' $PKGNAME | sed -n -e \"\\\\' $CONFFILE '{s/ obsolete$//;s/.* //p}\"`"
+        if [ "$md5sum" = "$old_md5sum" ]; then
+            rm -f "$CONFFILE"
+        fi
+    fi
+}
+case "$1" in
+install|upgrade)
+    if dpkg --compare-versions "$2" le "5.0.2"; then
+        prep_mv_conffile desktop-base "/etc/splashy/themes/moreblue-orbit/background-bw.png"
+        prep_mv_conffile desktop-base "/etc/splashy/themes/moreblue-orbit/background-color.png"
+        prep_mv_conffile desktop-base "/etc/splashy/themes/moreblue-orbit/VeraSans.ttf"
+        prep_mv_conffile desktop-base "/etc/splashy/themes/moreblue-orbit/theme.xml"
+    fi
+esac
+

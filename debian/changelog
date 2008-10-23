@@ -1,11 +1,13 @@
-desktop-base (5.0.2) UNRELEASED; urgency=low
+desktop-base (5.0.2) unstable; urgency=low
 
   * moreblue-orbit-wallpaper-widescreen.svg updated, fix a “transparent”
   * horizontal line on top.
   * debian/rules:
     - install splashy themes in /usr/share instead of /etc.     closes: #501315
+  * debian/postinst, debian/prerm
+    - move properly /etc/splashy/ conffiles to /usr/share/splashy.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 14 Oct 2008 22:43:53 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 24 Oct 2008 00:23:16 +0200
 
 desktop-base (5.0.1) unstable; urgency=low
 
