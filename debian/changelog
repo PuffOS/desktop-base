@@ -1,3 +1,15 @@
+desktop-base (5.0.3) UNRELEASED; urgency=low
+
+  * debian/preinst:
+    - handle upgrade in various cases: (/etc/splashy/themes symlink or not,
+      and changed or unchanged themes files)
+  * debian/README.Debian: announce the change.
+  * debian/control:
+    - add ${misc:Depends} in Depends: line in case debhelper has something
+      to put there.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 01 Dec 2008 14:44:30 +0100
+
 desktop-base (5.0.2) unstable; urgency=low
 
   * moreblue-orbit-wallpaper-widescreen.svg updated, fix a “transparent”
