@@ -44,6 +44,7 @@ case "$1" in
       if [ -h /etc/splashy/themes ]; then
       # symlink
         for FILE in ${FILES}; do
+          [ -f $FILE ] || break
           if ! same_conffile "${THEME_FOLDER}/${FILE}"; then
           # symlink and changed file, copy it in a safe place
             [ -d $THEME_FOLDER_BAK ] || mkdir -p $THEME_FOLDER_BAK
@@ -53,6 +54,7 @@ case "$1" in
       else
       # real folder
         for FILE in ${FILES}; do
+          [ -f $FILE ] || break
           if ! same_conffile "${THEME_FOLDER}/${FILE}"; then
           # real folder and changed file, move it in a safe place
             [ -d $THEME_FOLDER_BAK ] || mkdir -p $THEME_FOLDER_BAK
