@@ -45,6 +45,12 @@ desktop-base provides a theme for splashy, in
 replaced the folder by a symlink, we had to follow. If you modified the
 theme before, you should be able to find it in /etc/splashy.dpkg-old.
 
+If you installed splashy before desktop-base, the MoreBlue-Orbit theme will
+be automatically configured. But if you install splashy after desktop-base,
+you'll need to run the following command to enable it:
+
+# dpkg-reconfigure desktop-base
+
 2. Desktop files
 /usr/share/desktop-base/debian-homepage.desktop
 /usr/share/desktop-base/debian-reference.desktop
