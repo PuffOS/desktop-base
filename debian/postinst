@@ -91,7 +91,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         update-grub2
     fi
 
-    if [ -x /sbin/splashy_config ]; then
+    if [ -x /sbin/splashy_config ] && [ -w /etc/splashy/config.xml ]; then
         splashy_config --set-theme moreblue-orbit
     fi
 
