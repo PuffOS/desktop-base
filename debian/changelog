@@ -4,13 +4,10 @@ desktop-base (5.0.3) UNRELEASED; urgency=low
     - handle upgrade in various cases: (/etc/splashy/themes symlink or not,
       and changed or unchanged themes files)
   * debian/README.Debian: announce the change.
-  * debian/control:
-    - add ${misc:Depends} in Depends: line in case debhelper has something
-      to put there.
   * debian/postinst:
     - make sure we can use /etc/splashy/config.xml.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 06 Dec 2008 14:41:07 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 06 Dec 2008 16:54:09 +0100
 
 desktop-base (5.0.2) unstable; urgency=low
 
