@@ -1,4 +1,4 @@
-desktop-base (5.0.3) UNRELEASED; urgency=low
+desktop-base (5.0.3) unstable; urgency=medium
 
   * debian/preinst:
     - handle upgrade in various cases: (/etc/splashy/themes symlink or not,
@@ -12,7 +12,7 @@ desktop-base (5.0.3) UNRELEASED; urgency=low
   * debian/source.lintian-overrides:
     - add override for not adding ${misc:depends} to Depends: line.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 06 Dec 2008 17:21:38 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Dec 2008 21:56:30 +0100
 
 desktop-base (5.0.2) unstable; urgency=low
 
