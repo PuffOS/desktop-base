@@ -1,8 +1,8 @@
-desktop-base (5.0.4) UNRELEASED; urgency=low
+desktop-base (5.0.4) unstable; urgency=low
 
   * Add session and desktop config files for Xfce 4.6.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Fri, 27 Feb 2009 00:58:25 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 27 Feb 2009 01:15:20 +0100
 
 desktop-base (5.0.3) unstable; urgency=medium
 
