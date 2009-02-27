@@ -34,26 +34,6 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         desktop-background \
         /usr/share/images/desktop-base/debian-blueish-wallpaper.svg 40
 
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/debblue-1600x1200.png 30
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/debian-background.svg 20
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/bluedeb-1024x768.jpg 10
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/images/desktop-base/Debian.jpg 10
-
     # Alternatives for the splash
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
@@ -64,21 +44,6 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
         /usr/share/images/desktop-base/gnome-splash-curves.png 40
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/Splash-debblue.png 30
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/Splash-Debian.png 10
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-splash \
-        desktop-splash \
-        /usr/share/images/desktop-base/Splash-Debian_red.png 10
 
     # Alternatives for grub
     update-alternatives --install \

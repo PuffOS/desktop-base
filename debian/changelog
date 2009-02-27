@@ -1,3 +1,9 @@
+desktop-base (5.0.5) unstable; urgency=low
+
+  * debian/{preinst,postinst}: remove deprecated, unshipped alternatives.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Fri, 27 Feb 2009 08:44:53 +0100
+
 desktop-base (5.0.4) unstable; urgency=low
 
   * Add session and desktop config files for Xfce 4.6.
