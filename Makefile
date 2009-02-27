@@ -61,11 +61,15 @@ install:
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
-	# XFCE setup; uses the more general XDG
+	# Xfce 4.4
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
+	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4-session/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
+	# Xfce 4.6
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
+	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
