@@ -1,3 +1,10 @@
+desktop-base (5.0.6) UNRELEASED; urgency=low
+
+  * debian/control:
+    - update kde suggest to kde-standards.                      closes: #548244
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 24 Sep 2009 23:24:03 +0200
+
 desktop-base (5.0.5) unstable; urgency=low
 
   * debian/{preinst,postinst}: remove deprecated, unshipped alternatives.
