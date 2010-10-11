@@ -53,7 +53,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
 
     # GRUB background
     if which update-grub2 > /dev/null ; then
-        update-grub2
+        update-grub2 || true
     fi
 
     if [ -x /sbin/splashy_config ] && [ -w /etc/splashy/config.xml ]; then
