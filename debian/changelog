@@ -2,6 +2,7 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
 
   * debian/control:
     - update kde suggest to kde-standards.                      closes: #548244
+    - update standards version to 3.9.1.
   * backgrounds:
     - add SpaceFun wallpaper
   * slashy:
@@ -10,7 +11,7 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add SpaceFun alternative at maximum level (default Squeeze theme)
   * Makefile: drop unused rules for KDE3 and Xfce 4.4.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Nov 2010 22:08:32 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Nov 2010 22:20:35 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
