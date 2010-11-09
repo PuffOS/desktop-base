@@ -2,8 +2,11 @@ desktop-base (5.0.7) UNRELEASED; urgency=low
 
   * debian/control:
     - update kde suggest to kde-standards.                      closes: #548244
+  * backgrounds:
+    - drop debian-blueish (Etch), gnome-debian-sid-wp and nightly (old
+      version) wallpapers
 
- -- Yves-Alexis Perez <corsac@debian.org>  Thu, 24 Sep 2009 23:24:03 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Nov 2010 20:52:13 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
