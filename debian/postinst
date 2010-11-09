@@ -17,22 +17,27 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 60
+        /usr/share/images/desktop-base/spacefun-wallpaper.svg 60
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper-widescreen.svg  55
+        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg 55
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/nightly-wallpaper.png 50
+        /usr/share/images/desktop-base/moreblue-orbit-wallpaper-widescreen.svg  50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/debian-blueish-wallpaper.svg 40
+        /usr/share/images/desktop-base/nightly-wallpaper.png 45
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/debian-blueish-wallpaper.svg 35
 
     # Alternatives for the splash
     update-alternatives --install \
@@ -49,6 +54,11 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub \
         desktop-grub \
+        /usr/share/images/desktop-base/spacefun-grub.png 15
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-grub \
+        desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
 
     # GRUB background
@@ -57,7 +67,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     fi
 
     if [ -x /sbin/splashy_config ] && [ -w /etc/splashy/config.xml ]; then
-        splashy_config --set-theme moreblue-orbit
+        splashy_config --set-theme spacefun
     fi
 
     if [ -x /usr/sbin/update-initramfs ]; then

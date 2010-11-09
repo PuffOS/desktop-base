@@ -2,8 +2,14 @@ desktop-base (5.0.7) UNRELEASED; urgency=low
 
   * debian/control:
     - update kde suggest to kde-standards.                      closes: #548244
+  * backgrounds:
+    - add SpaceFun wallpaper
+  * slashy:
+    - add SpaceFun theme
+  * debian/postinst:
+    - add SpaceFun alternative at maximum level (default Squeeze theme)
 
- -- Yves-Alexis Perez <corsac@debian.org>  Thu, 24 Sep 2009 23:24:03 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Nov 2010 22:05:54 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
