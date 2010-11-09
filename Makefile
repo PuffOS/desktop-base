@@ -59,17 +59,8 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
 	$(INSTALL) $(wildcard ksplash-theme/nightly-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
-	# KDE setup
-	mkdir -p $(DESTDIR)/etc/kde3
-	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/etc/kde3
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
-	# Xfce 4.4
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/mcs_settings/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/mcs_settings
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
-	$(INSTALL) $(wildcard profiles/xdg-config/xfce4-session/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4-session
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
