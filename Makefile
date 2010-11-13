@@ -40,6 +40,9 @@ install:
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
+
+	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/spacefun
+	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/apps/kdm/themes/spacefun
 	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
 	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit

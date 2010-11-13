@@ -7,14 +7,18 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add SpaceFun wallpaper
     - add SpaceFun grub theme.
   * slashy:
-    - add SpaceFun theme
+    - add SpaceFun theme.
+  * kdm-theme:
+    - add SpaceFun theme.
+    - configure SpaceFun as the default theme.
   * debian/postinst:
     - add SpaceFun alternative at maximum level (default Squeeze theme)
   * Makefile: 
     - drop unused rules for KDE3 and Xfce 4.4.
-    - add gdm3 theme.
+    - add SpaceFun gdm3 theme.
+    - add SpaceFun kdm theme. 
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 13 Nov 2010 21:27:59 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 00:06:09 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
