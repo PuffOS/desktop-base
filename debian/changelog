@@ -10,9 +10,11 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add SpaceFun theme
   * debian/postinst:
     - add SpaceFun alternative at maximum level (default Squeeze theme)
-  * Makefile: drop unused rules for KDE3 and Xfce 4.4.
+  * Makefile: 
+    - drop unused rules for KDE3 and Xfce 4.4.
+    - add gdm3 theme.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 09 Nov 2010 22:26:21 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 13 Nov 2010 21:27:59 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
