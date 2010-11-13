@@ -10,12 +10,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1440"
-   height="1152"
+   width="1334.6639"
+   height="1000.998"
    id="svg2915"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="wallpaper.svg"
+   inkscape:version="0.48+devel r9734"
+   sodipodi:docname="wallpaper_43.svg"
    inkscape:export-filename="/home/valessio/svn/debianart/themes/spacefun/wallpaper/wallpaper_1440x1152.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -166,10 +166,11 @@
     <filter
        inkscape:collect="always"
        id="filter4022"
-       x="-0.13577535"
+       x="-0.13577534"
        width="1.2715507"
        y="-0.10750885"
-       height="1.2150177">
+       height="1.2150177"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="48.044401"
@@ -188,7 +189,8 @@
        gradientUnits="userSpaceOnUse" />
     <filter
        inkscape:collect="always"
-       id="filter4570">
+       id="filter4570"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="1.5608669"
@@ -279,7 +281,7 @@
        cy="137.47697"
        fx="2144.5601"
        fy="137.47697"
-       r="51.024297"
+       r="51.024296"
        gradientTransform="matrix(2.5434154,-0.21851957,0.53551487,6.2330244,-3330.1349,-117.02702)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -323,7 +325,7 @@
        cy="869.53259"
        fx="2188.4871"
        fy="869.53259"
-       r="58.4531"
+       r="58.453098"
        gradientTransform="matrix(-5.6314116,-0.08367614,0.03284399,-2.2102547,14500.772,2995.8785)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -406,7 +408,7 @@
        cy="795.8761"
        fx="-617.54419"
        fy="783.96796"
-       r="46.286595"
+       r="46.286594"
        gradientTransform="matrix(0.59008182,2.4832558,-3.1472524,0.74786179,2285.7001,1770.4443)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -417,7 +419,7 @@
        cy="954.04987"
        fx="-667.23993"
        fy="954.04987"
-       r="128.03425"
+       r="128.03426"
        gradientTransform="matrix(2.7198861,-0.65775017,0.08306028,0.34347205,1068.333,121.73236)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
@@ -434,10 +436,11 @@
     <filter
        inkscape:collect="always"
        id="filter4124"
-       x="-0.075839748"
+       x="-0.07583975"
        width="1.1516795"
        y="-0.13075937"
-       height="1.2615187">
+       height="1.2615187"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="8.7241018"
@@ -452,65 +455,37 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.43142361"
-     inkscape:cx="720"
-     inkscape:cy="576"
+     inkscape:cx="791.85514"
+     inkscape:cy="640.90142"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="725"
+     inkscape:window-width="1440"
+     inkscape:window-height="852"
      inkscape:window-x="0"
      inkscape:window-y="25"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <sodipodi:guide
-       position="400,900"
-       orientation="600,0"
-       id="guide2927" />
+       position="0,0"
+       orientation="0,1334.6639"
+       id="guide3451" />
     <sodipodi:guide
-       position="400,300"
-       orientation="0,800"
-       id="guide2929" />
+       position="1334.6639,0"
+       orientation="-1000.998,0"
+       id="guide3453" />
     <sodipodi:guide
-       position="1200,300"
-       orientation="-600,0"
-       id="guide2931" />
+       position="1334.6639,1000.998"
+       orientation="0,-1334.6639"
+       id="guide3455" />
     <sodipodi:guide
-       position="1200,900"
-       orientation="0,-800"
-       id="guide2933" />
-    <sodipodi:guide
-       position="0,1026"
-       orientation="900,0"
-       id="guide2939" />
-    <sodipodi:guide
-       position="0,126"
-       orientation="0,1440"
-       id="guide2941" />
-    <sodipodi:guide
-       position="1440,126"
-       orientation="-900,0"
-       id="guide2943" />
-    <sodipodi:guide
-       position="1403.5284,1022.8821"
-       orientation="0,-1440"
-       id="guide2945" />
-    <sodipodi:guide
-       position="208,960"
-       orientation="768,0"
-       id="guide2947" />
-    <sodipodi:guide
-       position="208,192"
-       orientation="0,1024"
-       id="guide2949" />
-    <sodipodi:guide
-       position="1232,192"
-       orientation="-768,0"
-       id="guide2951" />
-    <sodipodi:guide
-       position="1177.1775,962.46033"
-       orientation="0,-1024"
-       id="guide2953" />
+       position="0,1000.998"
+       orientation="1000.998,0"
+       id="guide3457" />
   </sodipodi:namedview>
   <metadata
      id="metadata2920">
@@ -528,7 +503,7 @@
      id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(0,-48)">
+     transform="translate(-69.537209,-134.10062)">
     <rect
        y="44.180553"
        x="-8.6909199"
@@ -1498,19 +1473,19 @@
     </g>
     <path
        sodipodi:type="star"
-       style="opacity:0.643;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.50000000000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;filter:url(#filter4570)"
+       style="opacity:0.64299999;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4570);enable-background:accumulate"
        id="path4470"
        sodipodi:sides="5"
-       sodipodi:cx="40.63786"
+       sodipodi:cx="40.637859"
        sodipodi:cy="26.507965"
-       sodipodi:r1="24.031941"
+       sodipodi:r1="24.03194"
        sodipodi:r2="2.2188783"
        sodipodi:arg1="0.62879629"
        sodipodi:arg2="1.2571148"
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 60.073357,40.642872 41.322522,28.618571 33.200663,49.360148 38.842126,27.811331 16.605922,26.496484 l 22.23745,-1.2936 -5.62087,-21.5541979 8.102037,20.7493279 18.762315,-12.006379 -17.230117,14.11739 17.21662,14.133847 z"
+       d="M 60.073357,40.642872 41.322522,28.618571 33.200663,49.360148 38.842126,27.811331 16.605922,26.496484 38.843372,25.202884 33.222502,3.6486861 41.324539,24.398014 60.086854,12.391635 42.856737,26.509025 z"
        transform="translate(0,48)"
        inkscape:transform-center-x="2.2914716"
        inkscape:transform-center-y="-0.0035479466" />
@@ -1756,7 +1731,7 @@
        height="1152" />
     <path
        sodipodi:type="star"
-       style="opacity:0.66787004;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.50000000000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.66787002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path4574"
        sodipodi:sides="5"
        sodipodi:cx="43.320133"
@@ -1768,7 +1743,7 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 62.154973,1065.3597 -17.939024,-7.6918 -4.032029,19.0975 1.771867,-19.4379 -19.40878,2.0667 19.034098,-4.3215 -7.963257,-17.8201 9.991853,16.7671 14.487216,-13.0803 -12.858793,14.6841 16.916849,9.7362 z"
+       d="m 62.154973,1065.3597 -17.939024,-7.6918 -4.032029,19.0975 1.771867,-19.4379 -19.40878,2.0667 19.034098,-4.3215 -7.963257,-17.8201 9.991853,16.7671 14.487216,-13.0803 -12.858793,14.6841 z"
        transform="matrix(0.49999999,0,0,0.49999999,21.660067,575.97114)"
        inkscape:transform-center-x="0.48457159"
        inkscape:transform-center-y="0.53336064" />
@@ -2054,7 +2029,7 @@
        height="1152" />
     <path
        sodipodi:type="star"
-       style="opacity:0.71119134;color:#000000;fill:#ef2929;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.50000000000000000;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.71119133;color:#000000;fill:#ef2929;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path4696"
        sodipodi:sides="5"
        sodipodi:cx="1361.7589"
@@ -2066,7 +2041,7 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 1373.0598,65.229729 -10.8656,-6.35787 -4.1083,11.899847 2.689,-12.29852 -12.5869,-0.22997 12.5275,-1.243034 -3.6709,-12.041976 5.0534,11.530283 10.3183,-7.21238 -9.4044,8.36914 10.0479,7.58448 z"
+       d="m 1373.0598,65.229729 -10.8656,-6.35787 -4.1083,11.899847 2.689,-12.29852 -12.5869,-0.22997 12.5275,-1.243034 -3.6709,-12.041976 5.0534,11.530283 10.3183,-7.21238 -9.4044,8.36914 z"
        transform="translate(0,48)"
        inkscape:transform-center-x="1.1350279"
        inkscape:transform-center-y="0.16916284" />
