@@ -66,5 +66,9 @@ licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
 
+The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
+KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
+S. Brito, and are released under GPLv2.
+
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
