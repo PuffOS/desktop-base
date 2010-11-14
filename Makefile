@@ -75,5 +75,6 @@ install:
 
 	# grub
 	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 

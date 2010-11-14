@@ -34,6 +34,9 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         /usr/share/images/desktop-base/spacefun-grub.png
 
     update-alternatives --remove desktop-grub \
+        /usr/share/images/desktop-base/spacefun-grub-widescreen.png
+
+    update-alternatives --remove desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png
 fi
 

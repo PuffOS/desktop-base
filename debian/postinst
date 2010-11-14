@@ -64,6 +64,11 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
+        /usr/share/images/desktop-base/spacefun-grub-widescreen.png 14
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-grub.png \
+        desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
 
     # GRUB background
