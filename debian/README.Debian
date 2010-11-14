@@ -19,39 +19,28 @@ README for desktop-base
 1.2. Pixmaps
 /usr/share/pixmaps/debian-security.png
 
-1.3. Splash and Wallpapers
+1.3.  Splash, wallpapers and grub images
 
-We have just two splash and two wallpapers for each window manager (not
-considering the originals in .xcf).
-One pair (splash / wallpaper) will be used during development
-cycle (testing/sid) and other to release.
+Wallpapers are provided in two svg variant, one standard aspect (4/3) and one
+widescreen (16/9). You can switch from one another using the alternatives.
+Using the same system you can select one of the older theme variant. Beware
+that changing alternative means at the next package upgrade it won't be
+automatically reverted to the default choice.
 
-/usr/share/images/desktop-base/gnome-default-splash.png (symlink)
-/usr/share/images/desktop-base/gnome-default-wallpaper.png (symlink)
+For wallpaper you can run:
 
-/usr/share/images/desktop-base/splash/gnome-debian-sid-splash.png
-/usr/share/images/desktop-base/wallpapers/gnome-debian-sid-wp.png
+  sudo update-alternatives --config desktop-background
 
-Before Etch we will add the images below and the symlinks above will
-point to this pair:
-/usr/share/images/desktop-base/splash/gnome-debian-etch-splash.png
-/usr/share/images/desktop-base/wallpapers/gnome-debian-etch-wp.png
+For splash screens you can run:
 
-1.4. Boot splash
+  sudo update-alternatives --config desktop-splash
 
-desktop-base provides a theme for splashy, in
-/usr/share/splashy/themes/moreblue-orbit. Previously the theme was in
-/etc/splashy but since splashy people move the themes to /usr/share and
-replaced the folder by a symlink, we had to follow. If you modified the
-theme before, you should be able to find it in /etc/splashy.dpkg-old.
+For grub, you can select standard or widescreen version too, using:
 
-If you installed splashy before desktop-base, the MoreBlue-Orbit theme will
-be automatically configured. But if you install splashy after desktop-base,
-you'll need to run the following command to enable it:
-
-# dpkg-reconfigure desktop-base
+  sudo update-alternatives --config desktop-grub
 
 2. Desktop files
+
 /usr/share/desktop-base/debian-homepage.desktop
 /usr/share/desktop-base/debian-reference.desktop
 /usr/share/desktop-base/debian-security.desktop
@@ -76,7 +65,7 @@ Bug Tracking System (http://bugs.debian.org/). Please attach the
 'svg' or 'xcf' and don't violate copyright.
 
 4. Window Managers
-desktop-base is used by GNOME/KDE/XFCE.
+desktop-base is used by GNOME/KDE/Xfce.
 
 If you're responsible for a WM in Debian and wants to use
 desktop-base artwork or add your own image (wallpaper, splash,
