@@ -7,6 +7,7 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add SpaceFun wallpaper
   * slashy:
     - add SpaceFun theme.
+    - drop completely Moreblue Orbit theme.
   * kdm-theme:
     - add SpaceFun theme.
     - configure SpaceFun as the default theme.
@@ -30,7 +31,7 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add a grub_background.sh which will override settings in grub and
       correctly set the default theme.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 13:57:56 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 15:16:13 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
