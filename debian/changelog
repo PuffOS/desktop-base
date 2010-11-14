@@ -5,23 +5,32 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - update standards version to 3.9.1.
   * backgrounds:
     - add SpaceFun wallpaper
-    - add SpaceFun grub theme.
   * slashy:
     - add SpaceFun theme.
   * kdm-theme:
     - add SpaceFun theme.
     - configure SpaceFun as the default theme.
   * debian/postinst:
-    - add SpaceFun alternative at maximum level (default Squeeze theme)
+    - add SpaceFun alternative at maximum level (default Squeeze theme).
+    - rename grub alternative to add png extension so grub can find it.
+    - run sync before updating grub to be sure the grub background has been
+      written to disk.
+  * debian/prerm:
+    - rename grub alternative to add png extension.
   * Makefile: 
     - drop unused rules for KDE3 and Xfce 4.4.
     - add SpaceFun gdm3 theme.
     - add SpaceFun kdm theme. 
+    - install grub theme and script.
   * {ksplash,kdm}-theme/moreblue-orbit{-default}:
     - drop “Debian” word from image to only use DFSG-free logo. closes: #587668
   * debian/copyright updated for the new theme.
+  * grub:
+    - add SpaceFun grub theme.
+    - add a grub_background.sh which will override settings in grub and
+      correctly set the default theme.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 11:01:36 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 13:57:56 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 

@@ -57,17 +57,18 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
 
     # Alternatives for grub
     update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub \
+        /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
         /usr/share/images/desktop-base/spacefun-grub.png 15
 
     update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub \
+        /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
 
     # GRUB background
     if which update-grub2 > /dev/null ; then
+        sync
         update-grub2 || true
     fi
 

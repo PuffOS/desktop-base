@@ -75,3 +75,7 @@ install:
 	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
 	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
 
+	# grub
+	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
+

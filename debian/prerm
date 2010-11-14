@@ -30,10 +30,10 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         /usr/share/images/desktop-base/gnome-splash-curves.png
 
     # remove grub alternatives
-    update-alternatives --remove desktop-grub \
+    update-alternatives --remove desktop-grub.png \
         /usr/share/images/desktop-base/spacefun-grub.png
 
-    update-alternatives --remove desktop-grub \
+    update-alternatives --remove desktop-grub.png \
         /usr/share/images/desktop-base/moreblue-orbit-grub.png
 fi
 
