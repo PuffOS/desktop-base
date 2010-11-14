@@ -17,8 +17,10 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - drop unused rules for KDE3 and Xfce 4.4.
     - add SpaceFun gdm3 theme.
     - add SpaceFun kdm theme. 
+  * {ksplash,kdm}-theme/moreblue-orbit{-default}:
+    - drop “Debian” word from image to only use DFSG-free logo. closes: #587668
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 00:06:09 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 10:57:35 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
