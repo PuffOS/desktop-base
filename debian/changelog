@@ -1,5 +1,6 @@
-desktop-base (6.0.0~) UNRELEASED; urgency=low
+desktop-base (6.0.0) unstable; urgency=low
 
+  * The “Welcome Noémie” upload, adding Squeeze artwork.
   * debian/control:
     - update kde suggest to kde-standards.                      closes: #548244
     - update standards version to 3.9.1.
@@ -36,7 +37,7 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
   * profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml:
     - update colors to match new splash screen.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 16:04:51 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 19:58:48 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
