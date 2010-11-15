@@ -33,8 +33,10 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
   * debian/README.Debian updated.
   * splash:
     - add SpaceFun splash.
+  * profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml:
+    - update colors to match new splash screen.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 16:03:13 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 16:04:51 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 
