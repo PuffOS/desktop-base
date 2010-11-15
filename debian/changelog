@@ -31,8 +31,10 @@ desktop-base (6.0.0~) UNRELEASED; urgency=low
     - add a grub_background.sh which will override settings in grub and
       correctly set the default theme.
   * debian/README.Debian updated.
+  * splash:
+    - add SpaceFun splash.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sun, 14 Nov 2010 16:56:05 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 15 Nov 2010 16:03:13 +0100
 
 desktop-base (5.0.6) unstable; urgency=low
 

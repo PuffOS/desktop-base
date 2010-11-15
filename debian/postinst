@@ -48,12 +48,17 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
-        /usr/share/images/desktop-base/moreblue-orbit-splash.png 50
+        /usr/share/images/desktop-base/spacefun-splash.svg 50
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-splash \
         desktop-splash \
-        /usr/share/images/desktop-base/gnome-splash-curves.png 40
+        /usr/share/images/desktop-base/moreblue-orbit-splash.png 40
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-splash \
+        desktop-splash \
+        /usr/share/images/desktop-base/gnome-splash-curves.png 30
 
     # Alternatives for grub
     update-alternatives --install \
