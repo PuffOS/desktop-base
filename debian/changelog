@@ -1,3 +1,10 @@
+desktop-base (6.0.1) UNRELEASED; urgency=low
+
+  * grub/grub_background.sh: invert highlight and normal text color for better
+    readability.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 17 Nov 2010 22:26:39 +0100
+
 desktop-base (6.0.0) unstable; urgency=low
 
   * The “Welcome Noémie” upload, adding Squeeze artwork.
