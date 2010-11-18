@@ -59,6 +59,7 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
 	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/spacefun
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	# Xfce 4.6

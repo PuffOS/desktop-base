@@ -10,9 +10,13 @@ desktop-base (6.0.1) UNRELEASED; urgency=low
   * Makefile:
     - re-introduce kdeglobals, this time for KDE4.
     - don't install -moodin ksplash themes.
+    - install spacefun ksplash theme.
   * ksplash/*-moodin dropped, moodin is a KDE3 theme engine.
+  * ksplashrc:
+    - use spacefun theme
+  * ksplash/spacefun added
 
- -- Yves-Alexis Perez <corsac@debian.org>  Thu, 18 Nov 2010 15:11:51 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 18 Nov 2010 15:19:49 +0100
 
 desktop-base (6.0.0) unstable; urgency=low
 
