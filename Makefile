@@ -55,16 +55,10 @@ install:
 	# KSPLASH theme
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
 	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
-	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-moodin
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
 	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-moodin
 	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
 	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
-	$(INSTALL) $(wildcard ksplash-theme/nightly-moodin/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-moodin
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	# Xfce 4.6
