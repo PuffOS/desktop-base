@@ -3,8 +3,10 @@ desktop-base (6.0.1) UNRELEASED; urgency=low
   * grub/grub_background.sh: invert highlight and normal text color for better
     readability.
   * run optipng on png files.
+  * debian/preinst, debian/postinst, debian/postrm:
+    - remove /etc/kde3/kdeglobals using dpkg-maintscript-helper closes: #603810
 
- -- Yves-Alexis Perez <corsac@debian.org>  Wed, 17 Nov 2010 23:13:15 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 18 Nov 2010 13:02:41 +0100
 
 desktop-base (6.0.0) unstable; urgency=low
 

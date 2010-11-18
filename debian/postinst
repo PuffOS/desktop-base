@@ -2,6 +2,9 @@
 
 #DEBHELPER#
 
+if dpkg-maintscript-helper supports rm_conffile 2>/dev/null; then
+  dpkg-maintscript-helper rm_conffile /etc/kde3/kdeglobals 6.0.1 -- "$@"
+fi
 
 if [ "${1}" = "configure" ] && [ "$2" != "" ] ; then
 
