@@ -35,6 +35,11 @@ install:
 	# pixmaps files
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
+
+	# KDE Config
+	mkdir -p $(DESTDIR)/usr/share/kde4
+	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4
+
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
