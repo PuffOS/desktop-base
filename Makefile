@@ -53,12 +53,6 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 	# KSPLASH theme
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/debian-moreblue-default
-	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/debian-moreblue-default
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/moreblue-orbit-default
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/moreblue-orbit-default
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/nightly-default
-	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/nightly-default
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
 	$(INSTALL) $(wildcard ksplash-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
