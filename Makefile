@@ -38,29 +38,29 @@ install:
 
 	# KDE Config
 	mkdir -p $(DESTDIR)/usr/share/kde4
-	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4
+	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4/config
 
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
 
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/spacefun
-	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/apps/kdm/themes/spacefun
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
-	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/apps/kdm/themes/debian-moreblue
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
-	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/apps/kdm/themes/moreblue-orbit
-	mkdir -p $(DESTDIR)/usr/share/apps/kdm/themes/nightly
-	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/apps/kdm/themes/nightly
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
+	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
+	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
+	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
+	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 	# KSPLASH theme
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
-	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/debian-moreblue-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
-	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/moreblue-orbit-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
-	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/nightly-default
-	mkdir -p $(DESTDIR)/usr/share/apps/ksplash/Themes/spacefun
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/*) $(DESTDIR)/usr/share/apps/ksplash/Themes/spacefun
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/debian-moreblue-default
+	$(INSTALL) $(wildcard ksplash-theme/debian-moreblue-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/debian-moreblue-default
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/moreblue-orbit-default
+	$(INSTALL) $(wildcard ksplash-theme/moreblue-orbit-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/moreblue-orbit-default
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/nightly-default
+	$(INSTALL) $(wildcard ksplash-theme/nightly-default/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/nightly-default
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	# Xfce 4.6
