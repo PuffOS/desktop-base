@@ -16,11 +16,12 @@ desktop-base (6.0.1) UNRELEASED; urgency=low
   * ksplash:
     - *-moodin dropped, moodin is a KDE3 theme engine.
     - remove all other themes not ported to KDE4.
-    - spacefun themes added
+    - spacefun theme added
   * ksplashrc:
     - use spacefun theme
+  * kdesktoprc replaced by plasma-desktop-appletsrc for KDE4.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 20 Nov 2010 20:53:54 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 20 Nov 2010 23:27:01 +0100
 
 desktop-base (6.0.0) unstable; urgency=low
 

@@ -52,11 +52,26 @@ install:
 	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
+
 	# KSPLASH theme
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	$(INSTALL) ksplash-theme/spacefun/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	$(INSTALL) ksplash-theme/spacefun/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1366x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
+	$(INSTALL) $(wildcard ksplash-theme/spacefun/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
+
+	# KDE Config
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
+
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
