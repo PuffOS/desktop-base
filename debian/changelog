@@ -1,4 +1,4 @@
-desktop-base (6.0.2) UNRELEASED; urgency=low
+desktop-base (6.0.2) unstable; urgency=low
 
   * ksplash/spacefun/Theme.rc:
     - revert name change, it should follow directory name.
@@ -7,7 +7,7 @@ desktop-base (6.0.2) UNRELEASED; urgency=low
   * ./kdm-theme/kdm.d/10_desktop-base:
     - update path, KDE files are now in /usr/share/kde4/apps.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 23 Nov 2010 17:18:33 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 23 Nov 2010 20:30:06 +0100
 
 desktop-base (6.0.1) unstable; urgency=low
 
