@@ -88,3 +88,7 @@ install:
 	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
+	# plymouth
+	install -d $(DESTDIR)/usr/share/plymouth/spacefun
+	$(INSTALL) $(wildcard plymouth/spacefun/*) $(DESTDIR)/usr/share/plymouth/spacefun
+	
