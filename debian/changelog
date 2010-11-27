@@ -1,4 +1,4 @@
-desktop-base (6.0.2) UNRELEASED; urgency=low
+desktop-base (6.0.2) unstable; urgency=low
 
   * ksplash/spacefun/Theme.rc:
     - revert name change, it should follow directory name.
@@ -13,7 +13,7 @@ desktop-base (6.0.2) UNRELEASED; urgency=low
   * debian/post{inst,rm}: configure plymouth theme if plymouth is installed.
   * debian/copyright updated for plymouth theme.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 27 Nov 2010 14:32:49 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 27 Nov 2010 15:58:09 +0100
 
 desktop-base (6.0.1) unstable; urgency=low
 
