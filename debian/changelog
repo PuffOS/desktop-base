@@ -2,8 +2,10 @@ desktop-base (6.0.3) UNRELEASED; urgency=low
 
   * profiles/kde-profiles:
     - drop dir_wallpaper to not clutter KDE wallpaper chooser.  closes: #605116
+  * debian/prerm:
+    - remove desktop-splash spacefun alternative.               closes: #605239
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Nov 2010 00:35:47 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Nov 2010 00:38:11 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
