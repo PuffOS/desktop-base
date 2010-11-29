@@ -19,7 +19,6 @@
         </property>
         <property name="color-style" type="int" value="1"/>
         <property name="image-path" type="string" value="/usr/share/images/desktop-base/default"/>
-        <property name="image-style" type="int" value="4"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="last-image" type="string" value="/usr/share/images/desktop-base/default"/>
         <property name="last-single-image" type="string" value="/usr/share/images/desktop-base/default"/>
