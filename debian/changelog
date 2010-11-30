@@ -6,8 +6,9 @@ desktop-base (6.0.3) UNRELEASED; urgency=low
     - remove desktop-splash spacefun alternative.               closes: #605239
   * profiles/[...]/xfce4-desktop.xml:
     - don't set image-style property, default to auto.          closes: #523150
+  * cleanup debian/copyright for removed stuff.                 closes: #594533
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Nov 2010 00:53:49 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Nov 2010 11:00:43 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
