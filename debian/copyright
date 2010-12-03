@@ -20,9 +20,10 @@ logo, which has the following copyright notice:
     http://www.debian.org/ if you use it on a web page.
 </debian-background.svg>
 
-The  debian-security.xcf  file  (and  the resulting  .png  file)  were
-created by Colin Walters <walters@debian.org> from the Debian Open Use
-Logo and a GNOME icon; both are free software.
+The  debian-security.xcf  file  (and  the resulting  .png  file)  were created
+by Colin Walters <walters@debian.org>  and updated by Ulrich Hansen
+<uhansen@mainz-online.de>. They based on the Debian Open Use Logo and a GNOME
+icon; both are free software.
 
 The  debian-official-logo-small.png image  is  more or  less a  simple
 reformatting of the Debian Official Use Logo.
