@@ -8,9 +8,11 @@ desktop-base (6.0.3) UNRELEASED; urgency=low
     - don't set image-style property, default to auto.          closes: #523150
   * cleanup debian/copyright for removed stuff.                 closes: #594533
   * debian/pixmaps:
-    - debian-security updated, thanks to  Ulrich Hansen.        closes: #389155 
+    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155 
+  * DFSG-ify artwork:                                           closes: #587668
+    - various themes, thanks to Ulrich Hansen.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 30 Nov 2010 11:00:43 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 08 Dec 2010 11:31:09 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
