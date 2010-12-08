@@ -11,8 +11,11 @@ desktop-base (6.0.3) UNRELEASED; urgency=low
     - debian-security updated, thanks to Ulrich Hansen.         closes: #389155 
   * DFSG-ify artwork:                                           closes: #587668
     - various themes, thanks to Ulrich Hansen.
+    - SpaceFun theme, thanks to Valessio Brito.
+  * debian/control:
+    - depends on ttf-sil-andika since SpaceFun theme uses it in svg files.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Wed, 08 Dec 2010 11:31:09 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 08 Dec 2010 12:13:40 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
