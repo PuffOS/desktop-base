@@ -1,3 +1,10 @@
+desktop-base (6.0.4) UNRELEASED; urgency=low
+
+  * plymouth/spacefun:
+    - update logo from Aurélien Couderc.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 12 Dec 2010 23:34:00 +0100
+
 desktop-base (6.0.3) unstable; urgency=low
 
   * profiles/kde-profiles:

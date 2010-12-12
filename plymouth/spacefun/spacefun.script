@@ -75,7 +75,7 @@ planet_sprite.SetPosition(planet_x, planet_y, -10);
 
 #------------------------------- Logo ----------------------------------------------
 logo_image = Image("logo.png");
-logo_height = Math.Min(Window.GetWidth(), Window.GetHeight()) * 0.095;
+logo_height = Math.Min(Window.GetWidth(), Window.GetHeight()) * 0.1;
 logo_scale_factor = logo_height / logo_image.GetHeight();
 logo_image = logo_image.Scale(logo_image.GetWidth() * logo_scale_factor,
                               logo_image.GetHeight() * logo_scale_factor);
