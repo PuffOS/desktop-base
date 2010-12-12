@@ -1,4 +1,4 @@
-desktop-base (6.0.3) UNRELEASED; urgency=low
+desktop-base (6.0.3) unstable; urgency=low
 
   * profiles/kde-profiles:
     - drop dir_wallpaper to not clutter KDE wallpaper chooser.  closes: #605116
@@ -15,7 +15,7 @@ desktop-base (6.0.3) UNRELEASED; urgency=low
   * debian/control:
     - depends on ttf-sil-andika since SpaceFun theme uses it in svg files.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Wed, 08 Dec 2010 12:13:40 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 12 Dec 2010 11:51:48 +0100
 
 desktop-base (6.0.2) unstable; urgency=low
 
