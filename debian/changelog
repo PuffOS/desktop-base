@@ -1,4 +1,4 @@
-desktop-base (6.0.4) UNRELEASED; urgency=low
+desktop-base (6.0.4) unstable; urgency=low
 
   * plymouth/spacefun:
     - update logo from Aurélien Couderc.
@@ -7,7 +7,7 @@ desktop-base (6.0.4) UNRELEASED; urgency=low
   * debian/control:
     - drop depends on ttf-sil-andika.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 14 Dec 2010 08:45:04 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 14 Dec 2010 08:47:00 +0100
 
 desktop-base (6.0.3) unstable; urgency=low
 
