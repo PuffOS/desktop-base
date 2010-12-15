@@ -1,3 +1,10 @@
+desktop-base (6.0.5) UNRELEASED; urgency=low
+
+  * gnome-backgrounds.xml: rename wallpaper to not display the release name at
+    all.                                                        closes: #607101
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 15 Dec 2010 08:25:36 +0100
+
 desktop-base (6.0.4) unstable; urgency=low
 
   * plymouth/spacefun:
