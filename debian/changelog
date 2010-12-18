@@ -2,8 +2,9 @@ desktop-base (6.0.5) UNRELEASED; urgency=low
 
   * gnome-backgrounds.xml: rename wallpaper to not display the release name at
     all.                                                        closes: #607101
+  * debian/copyright updated.                                   closes: #607458
 
- -- Yves-Alexis Perez <corsac@debian.org>  Wed, 15 Dec 2010 08:25:36 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 18 Dec 2010 19:54:58 +0100
 
 desktop-base (6.0.4) unstable; urgency=low
 

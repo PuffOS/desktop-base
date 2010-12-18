@@ -3,13 +3,8 @@ Tue, 22 Oct 2002 15:05:34 -0400.
 
 This package is comprised of bits and pieces from various sources.
 
-Copyright:
+The Debian “open use” logo is used in various bits of artwork:
 
-The debian-background.svg file has been provided by Josselin Mouette
-<joss@debian.org>, and is a derivative work of the open use Debian
-logo, which has the following copyright notice:
-
-<debian-background.svg>
     Copyright (c) 1999 Software in the Public Interest
  
     This logo or a modified version may be used by anyone to refer to
@@ -18,15 +13,11 @@ logo, which has the following copyright notice:
 
     Note: we would appreciate that you make the image a link to
     http://www.debian.org/ if you use it on a web page.
-</debian-background.svg>
 
-The  debian-security.xcf  file  (and  the resulting  .png  file)  were created
+The  debian-security.xcf  file  (and  the resulting  .png  file)  was created
 by Colin Walters <walters@debian.org>  and updated by Ulrich Hansen
-<uhansen@mainz-online.de>. They based on the Debian Open Use Logo and a GNOME
-icon; both are free software.
-
-The  debian-official-logo-small.png image  is  more or  less a  simple
-reformatting of the Debian Official Use Logo.
+<uhansen@mainz-online.de>. They are based on the Debian Open Use Logo and a
+GNOME icon
 
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
@@ -43,9 +34,19 @@ licensed under the GPL.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
 KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
-S. Brito, and are released under GPLv2.
+S. Brito, and are released under GPLv2. 
 
-Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3 license, using artwork from Valessio S. Brito.
+Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3
+license, using artwork from Valessio S. Brito.
+
+They both includes the Debian “open use” logo.
+
+Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
+2008 Robert Jähne and released under the GPLv2.
+
+Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
+moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
+GPLv2.
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
