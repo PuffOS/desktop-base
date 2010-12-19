@@ -3,8 +3,10 @@ desktop-base (6.0.5) UNRELEASED; urgency=low
   * gnome-backgrounds.xml: rename wallpaper to not display the release name at
     all.                                                        closes: #607101
   * debian/copyright updated.                                   closes: #607458
+  * debian-desktop-logo.png dropped, its' not installed anywhere anyway.
+  * source/spacefun/splash updated to the DFSG-free version.    closes: #587668
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 18 Dec 2010 19:54:58 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 19 Dec 2010 20:26:31 +0100
 
 desktop-base (6.0.4) unstable; urgency=low
 
