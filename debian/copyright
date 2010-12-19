@@ -3,21 +3,33 @@ Tue, 22 Oct 2002 15:05:34 -0400.
 
 This package is comprised of bits and pieces from various sources.
 
-The Debian “open use” logo is used in various bits of artwork:
+The Debian “Open Use” (without “Debian” word) logo is used in various bits of
+artwork.
 
     Copyright (c) 1999 Software in the Public Interest
  
-    This logo or a modified version may be used by anyone to refer to
-    the Debian project, but does not indicate endorsement by the
-    project.
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"), to
+    deal in the Software without restriction, including without limitation the
+    rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+    sell copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-    Note: we would appreciate that you make the image a link to
-    http://www.debian.org/ if you use it on a web page.
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
 The  debian-security.xcf  file  (and  the resulting  .png  file)  was created
 by Colin Walters <walters@debian.org>  and updated by Ulrich Hansen
-<uhansen@mainz-online.de>. They are based on the Debian Open Use Logo and a
-GNOME icon
+<uhansen@mainz-online.de>. They are based on the Debian “Open Use” (without
+“Debian” word) logo and a GNOME icon
 
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
@@ -26,14 +38,14 @@ The gnome-debian-sid "kit" including splash/gnome-debian-sid-splash.xcf.gz,
 splash/gnome-debian-sid-splash.png, wallpapers/gnome-debian-sid-wp.xcf.gz
 and wallpapers/gnome-debian-sid-wp.png were made by Josselin Mouette 
 <joss@debian.org> and Gustavo Franco <stratus@debian.org>. It includes the
-Debian “open use” logo.
+Debian “Open Use” (without “Debian” word) logo.
 
 The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
 licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
 
-They both includes the Debian “open use” logo.
+They both includes the Debian “Open Use” (without “Debian” word) logo.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
 KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
@@ -45,7 +57,7 @@ license, using artwork from Valessio S. Brito.
 Spacefun KDM theme is © Valessio Brito, with others authors beeing Amir
 Dizdarević, Nuno Pinheiro, Riccardo Iaconelli and Marco Martin.
 
-They both includes the Debian “open use” logo.
+They both includes the Debian “Open Use” (without “Debian” word) logo.
 
 Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
 2008 Robert Jähne and released under the GPLv2. It includes the Debian “open
@@ -53,8 +65,8 @@ use” logo.
 
 Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
 moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
-GPLv2. It includes the Debian “open use” logo. The GDM theme authors are Andre
-Ferreira, Fathi Boudra and Valessio S. Brito.
+GPLv2. It includes the Debian “Open Use” (without “Debian” word) logo. The GDM
+theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
