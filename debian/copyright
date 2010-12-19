@@ -25,12 +25,15 @@ Walters <walters@debian.org>.
 The gnome-debian-sid "kit" including splash/gnome-debian-sid-splash.xcf.gz, 
 splash/gnome-debian-sid-splash.png, wallpapers/gnome-debian-sid-wp.xcf.gz
 and wallpapers/gnome-debian-sid-wp.png were made by Josselin Mouette 
-<joss@debian.org> and Gustavo Franco <stratus@debian.org>.
+<joss@debian.org> and Gustavo Franco <stratus@debian.org>. It includes the
+Debian “open use” logo.
 
 The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
 licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
+
+They both includes the Debian “open use” logo.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
 KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
@@ -39,14 +42,19 @@ S. Brito, and are released under GPLv2.
 Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3
 license, using artwork from Valessio S. Brito.
 
+Spacefun KDM theme is © Valessio Brito, with others authors beeing Amir
+Dizdarević, Nuno Pinheiro, Riccardo Iaconelli and Marco Martin.
+
 They both includes the Debian “open use” logo.
 
 Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
-2008 Robert Jähne and released under the GPLv2.
+2008 Robert Jähne and released under the GPLv2. It includes the Debian “open
+use” logo.
 
 Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
 moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
-GPLv2.
+GPLv2. It includes the Debian “open use” logo. The GDM theme authors are Andre
+Ferreira, Fathi Boudra and Valessio S. Brito.
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
