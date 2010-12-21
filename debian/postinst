@@ -91,10 +91,10 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     fi
 
     # Plymouth
-    if [ -x /usr/sbin/plymouth-set-default-theme ];
-    then
-      plymouth-set-default-theme spacefun ||true
-    fi
+    #if [ -x /usr/sbin/plymouth-set-default-theme ];
+    #then
+    #  plymouth-set-default-theme spacefun ||true
+    #fi
 
     if [ -x /usr/sbin/update-initramfs ]; then
         update-initramfs -u

@@ -13,10 +13,10 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 fi
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
-    if [ -x /usr/sbin/plymouth-set-default-theme ];
-    then
-      plymouth-set-default-theme -r -R ||true
-    fi
+    #if [ -x /usr/sbin/plymouth-set-default-theme ];
+    #then
+    #  plymouth-set-default-theme -r -R ||true
+    #fi
 fi
 
 
