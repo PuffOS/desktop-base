@@ -9,6 +9,7 @@ README for desktop-base
 2. Desktop files
 3. Changing desktop-base images
 4. Window Managers
+5. Boot splash
 
 1. Images
 
@@ -72,3 +73,11 @@ desktop-base artwork or add your own image (wallpaper, splash,
 whatever) use the layout described above and send your patch
 through the Bug Tracking System to us.
 
+5. Boot splash
+
+desktop-base ships a plymouth theme. If you want to activate it, install
+plymouth and run:
+
+  plymouth-set-default-theme spacefun
+
+Then remember to add “splash” to your kernel command line.

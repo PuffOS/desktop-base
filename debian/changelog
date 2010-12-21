@@ -8,9 +8,10 @@ desktop-base (6.0.5) UNRELEASED; urgency=low
   * usplash theme dropped, wasn't installed anyway.
   * debian/post{inst,rm}: don't configure plymouth theme, it'll override user
     settings. A better solution needs to be found for Wheezy    closes: #607142
+  * debian/README.Debian: indicate how to enable plymouth theme.
   * drop all gnome-debian-sid artwork.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Tue, 21 Dec 2010 13:29:59 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 21 Dec 2010 14:32:23 +0100
 
 desktop-base (6.0.4) unstable; urgency=low
 
