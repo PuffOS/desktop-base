@@ -34,12 +34,6 @@ by Colin Walters <walters@debian.org>  and updated by Ulrich Hansen
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
 
-The gnome-debian-sid "kit" including splash/gnome-debian-sid-splash.xcf.gz, 
-splash/gnome-debian-sid-splash.png, wallpapers/gnome-debian-sid-wp.xcf.gz
-and wallpapers/gnome-debian-sid-wp.png were made by Josselin Mouette 
-<joss@debian.org> and Gustavo Franco <stratus@debian.org>. It includes the
-Debian “Open Use” (without “Debian” word) logo.
-
 The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
 licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
