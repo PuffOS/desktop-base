@@ -3,8 +3,9 @@ Tue, 22 Oct 2002 15:05:34 -0400.
 
 This package is comprised of bits and pieces from various sources.
 
+
 The Debian “Open Use” (without “Debian” word) logo is used in various bits of
-artwork.
+artwork:
 
     Copyright (c) 1999 Software in the Public Interest
  
@@ -26,10 +27,11 @@ artwork.
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-The  debian-security.xcf  file  (and  the resulting  .png  file)  was created
-by Colin Walters <walters@debian.org>  and updated by Ulrich Hansen
-<uhansen@mainz-online.de>. They are based on the Debian “Open Use” (without
-“Debian” word) logo and a GNOME icon
+
+The debian-security.xcf file (and the resulting .png file) are
+Copyright Ulrich Hansen <uhansen@mainz-online.de>, Mainz, Germany, 2010,
+published under GPL2 or higher (at your option)
+They are based on the Debian “Open Use” (without “Debian” word) logo.
 
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
@@ -38,8 +40,7 @@ The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
 licensed under the GPL.
     - SVG background, backgrounds/debian-blueish-wallpaper.svg.
     - PNG splash, splash/gnome-splash-curves.png.
-
-They both includes the Debian “Open Use” (without “Debian” word) logo.
+They are both based on the Debian “Open Use” (without “Debian” word) logo.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
 KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
@@ -51,19 +52,34 @@ license, using artwork from Valessio S. Brito.
 Spacefun KDM theme is © Valessio Brito, with others authors beeing Amir
 Dizdarević, Nuno Pinheiro, Riccardo Iaconelli and Marco Martin.
 
-They both includes the Debian “Open Use” (without “Debian” word) logo.
+The SpaceFun theme is based on the Debian “Open Use” (without “Debian” word)
+logo.
+ksplash-theme/spacefun/1600x1200/icon5.png and the corresponding anim version
+are based on the KDE Official Oxygen Logo, which is released under the
+LGPLv2.1 or later, as stated in
+http://www.kde.org/stuff/clipart.php
+http://commons.wikimedia.org/w/index.php?title=File:KDE_logo.svg&oldid=43994097
 
 Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
-2008 Robert Jähne and released under the GPLv2. It includes the Debian “open
-use” logo.
+2008 Robert Jähne and released under the GPLv2. It is based on the Debian “Open
+Use” (without “Debian” word) logo, and also on the GNOME foot Logo, which
+is released under the LGPL v2.1 or later, as stated in
+http://commons.wikimedia.org/w/index.php?title=File:Gnomelogo.svg&oldid=39892275
 
 Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
 moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
-GPLv2. It includes the Debian “Open Use” (without “Debian” word) logo. The GDM
-theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
+GPLv2. It is based on the Debian “Open Use” (without “Debian” word) logo.
+The GDM theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
+
+emblems/emblem-debian.png is a miniaturized version of the Debian “Open Use”
+(without “Debian” word) logo.
+
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
 
 The GPL license (version 3) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-3
+
+The LGPL license (version 2.1) can be found in plain text format, on Debian
+systems, at /usr/share/common-licenses/LGPL-2.1
