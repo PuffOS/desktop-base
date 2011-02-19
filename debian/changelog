@@ -1,9 +1,9 @@
-desktop-base (6.0.6) UNRELEASED; urgency=low
+desktop-base (6.0.6) unstable; urgency=low
 
   * plymouth/spacefun:
     - fix script for dual screen.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Feb 2011 19:25:07 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Feb 2011 19:29:07 +0100
 
 desktop-base (6.0.5) unstable; urgency=low
 
