@@ -1,3 +1,10 @@
+desktop-base (6.0.6) UNRELEASED; urgency=low
+
+  * plymouth/spacefun:
+    - fix script for dual screen.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 19 Feb 2011 19:25:07 +0100
+
 desktop-base (6.0.5) unstable; urgency=low
 
   * gnome-backgrounds.xml: rename wallpaper to not display the release name at

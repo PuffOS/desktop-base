@@ -28,19 +28,21 @@ MAX_MSG_DISPLAYED = 5;
 bg_image = Image("background.png");
 
 # Compute screen/image ratio and scale the background accordingly
-screen_ratio = Window.GetWidth() / Window.GetHeight();
+window_max_width = Window.GetX() * 2 + Window.GetWidth();
+window_max_height = Window.GetY() * 2 + Window.GetHeight();
+screen_ratio = window_max_width / window_max_height;
 bg_image_ratio = bg_image.GetWidth() / bg_image.GetHeight();
 if (screen_ratio > bg_image_ratio)
-    bg_scale_factor = Window.GetWidth() / bg_image.GetWidth();
+    bg_scale_factor = window_max_width / bg_image.GetWidth();
 else
-    bg_scale_factor = Window.GetHeight() / bg_image.GetHeight();
+    bg_scale_factor = window_max_height / bg_image.GetHeight();
 scaled_bg_image = bg_image.Scale(bg_image.GetWidth() * bg_scale_factor,
                                  bg_image.GetHeight() * bg_scale_factor);
 
 # Display background
 bg_sprite = Sprite(scaled_bg_image);
-bg_sprite.SetPosition(Window.GetWidth() / 2 - scaled_bg_image.GetWidth() / 2,
-                      Window.GetHeight() / 2 - scaled_bg_image.GetHeight() / 2,
+bg_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - scaled_bg_image.GetWidth() / 2,
+                      Window.GetY() + Window.GetHeight() / 2 - scaled_bg_image.GetHeight() / 2,
                       -10000);
 
 #------------------------------- Earth ---------------------------------------------
@@ -56,8 +58,8 @@ for (i = 0; i < 5; i++)
 earth_glow_index = 0;
 earth_sprite = Sprite(earth_images[earth_glow_index]);
 earth_to_edge = Math.Min(Window.GetWidth(), Window.GetHeight()) * 0.07;
-earth_x = earth_to_edge;
-earth_y = Window.GetHeight() - earth_to_edge - earth_images[0].GetHeight();
+earth_x = Window.GetX() + earth_to_edge;
+earth_y = Window.GetY() + Window.GetHeight() - earth_to_edge - earth_images[0].GetHeight();
 earth_sprite.SetPosition(earth_x, earth_y, -10);
 
 #------------------------------- Planet --------------------------------------------
@@ -69,8 +71,8 @@ planet_image = planet_image.Scale(planet_image.GetWidth() * planet_scale_factor,
 planet_sprite = Sprite(planet_image);
 planet_to_edge_y = Window.GetHeight() * 0.14;
 planet_to_edge_x = Window.GetWidth() * 0.08;
-planet_x = Window.GetWidth() - planet_to_edge_x - planet_image.GetWidth();
-planet_y = planet_to_edge_y;
+planet_x = Window.GetX() + Window.GetWidth() - planet_to_edge_x - planet_image.GetWidth();
+planet_y = Window.GetY() + planet_to_edge_y;
 planet_sprite.SetPosition(planet_x, planet_y, -10);
 
 #------------------------------- Logo ----------------------------------------------
@@ -81,8 +83,8 @@ logo_image = logo_image.Scale(logo_image.GetWidth() * logo_scale_factor,
                               logo_image.GetHeight() * logo_scale_factor);
 logo_sprite = Sprite(logo_image);
 logo_to_edge = Window.GetHeight() * 0.1;
-logo_sprite.SetPosition(Window.GetWidth() - logo_to_edge - logo_image.GetWidth(),
-                        Window.GetHeight() - logo_to_edge - logo_image.GetHeight(),
+logo_sprite.SetPosition(Window.GetX() + Window.GetWidth() - logo_to_edge - logo_image.GetWidth(),
+                        Window.GetY() + Window.GetHeight() - logo_to_edge - logo_image.GetHeight(),
                         -10);
 
 #------------------------------- Swirl galaxies ------------------------------------
@@ -125,13 +127,13 @@ for (i = 0; i < 3; i++)
     swirl_image = swirl_image.Rotate(swirls[i].angle);
     swirl_sprites[i] = Sprite();
     if (swirls[i].x >= 0)
-      swirl_sprites[i].SetX(Window.GetWidth() * swirls[i].x);
+      swirl_sprites[i].SetX(Window.GetX() + Window.GetWidth() * swirls[i].x);
     else
-      swirl_sprites[i].SetX(Window.GetWidth() * (1 + swirls[i].x) - swirl_image.GetWidth());
+      swirl_sprites[i].SetX(Window.GetX() + Window.GetWidth() * (1 + swirls[i].x) - swirl_image.GetWidth());
     if (swirls[i].y >= 0)
-      swirl_sprites[i].SetY(Window.GetHeight() * swirls[i].y);
+      swirl_sprites[i].SetY(Window.GetY() + Window.GetHeight() * swirls[i].y);
     else
-      swirl_sprites[i].SetY(Window.GetHeight() * (1 + swirls[i].y) - swirl_image.GetHeight());
+      swirl_sprites[i].SetY(Window.GetY() + Window.GetHeight() * (1 + swirls[i].y) - swirl_image.GetHeight());
     swirl_sprites[i].SetImage(swirl_image);
   }
 
@@ -192,9 +194,9 @@ for (i = 0; i < NUM_STARS; i++)
 
     # Randomize position, we accept that stars may be half out of the viewport
     # in each direction
-    star_x = Math.Random() * (Window.GetWidth() + transformed_image.GetWidth()) 
+    star_x = Window.GetX() + Math.Random() * (Window.GetWidth() + transformed_image.GetWidth()) 
              - transformed_image.GetWidth() / 2;
-    star_y = Math.Random() * (Window.GetHeight() + transformed_image.GetHeight()) 
+    star_y = Window.GetY() + Math.Random() * (Window.GetHeight() + transformed_image.GetHeight()) 
              - transformed_image.GetHeight() / 2;
     stars[i].SetPosition(star_x, star_y, -20); # Stars go behind other elements.
   }
@@ -214,8 +216,8 @@ rocket_sprite = Sprite();
 
 # Rocket trajectory
 # Take a point somwhere in the middle to compute the parabola
-middle_x = Window.GetWidth() * 0.42;
-middle_y = Window.GetHeight() * 0.42;
+middle_x = Window.GetX() + Window.GetWidth() * 0.42;
+middle_y = Window.GetY() + Window.GetHeight() * 0.42;
 # Parabole coeffs so that y = a.x^2 + b.x + c for the earth, planet and middle points
 # Use the earth and planet centers instead of top left corner
 earth_cx = earth_x + earth_images[0].GetWidth()/2;
@@ -314,8 +316,8 @@ fun dialog_setup()
     entry.image = Image("entry.png");
     
     box.sprite = Sprite(box.image);
-    box.x = Window.GetWidth()  / 2 - box.image.GetWidth ()/2;
-    box.y = Window.GetHeight() / 2 - box.image.GetHeight()/2;
+    box.x = Window.GetX() + Window.GetWidth()  / 2 - box.image.GetWidth ()/2;
+    box.y = Window.GetY() + Window.GetHeight() / 2 - box.image.GetHeight()/2;
     box.z = 10000;
     box.sprite.SetPosition(box.x, box.y, box.z);
     
@@ -456,7 +458,7 @@ fun message_callback (text)
       }
     next_msg_image = Image.Text(text, 1, 1, 1, 1);
     msg_sprites[next_msg_idx] = Sprite();
-    msg_sprites[next_msg_idx].SetPosition(10, next_msg_y, 10000);
+    msg_sprites[next_msg_idx].SetPosition(Window.GetX() + 10, Window.GetY() + next_msg_y, 10000);
     msg_sprites[next_msg_idx].SetImage(next_msg_image);
 
     next_msg_idx = (next_msg_idx + 1) % MAX_MSG_DISPLAYED;
