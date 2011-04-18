@@ -1,10 +1,15 @@
 desktop-base (6.0.7) UNRELEASED; urgency=low
 
+  [ Josselin Mouette ]
   * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
   * debian/gsettings-override: set the default background using 
     GSettings.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 17 Apr 2011 11:24:02 +0200
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - update standards version to 3.9.2.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 18 Apr 2011 08:11:41 +0200
 
 desktop-base (6.0.6) unstable; urgency=low
 

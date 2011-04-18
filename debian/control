@@ -7,7 +7,7 @@ Uploaders: Loïc Minier <lool@dooz.org>,
            Yves-Alexis Perez <corsac@debian.org>
 Build-Depends: cdbs (>= 0.4.93), debhelper (>= 8.1.3)
 # libusplash-dev, imagemagick, librsvg2-bin
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: http://www.debian.org/devel/debian-desktop
 Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
 Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
