@@ -4,6 +4,9 @@ desktop-base (6.0.7) UNRELEASED; urgency=low
   * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
   * debian/gsettings-override: set the default background using 
     GSettings.
+  * xy_desktop-base.gschema.override: configure the default background 
+    for gdm3 using GSettings as well.
+  * All of this closes: #623094.
 
   [ Yves-Alexis Perez ]
   * debian/control:
