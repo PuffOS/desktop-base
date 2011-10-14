@@ -4,7 +4,8 @@ Priority: optional
 Maintainer: Gustavo Franco <stratus@debian.org>
 Uploaders: Loïc Minier <lool@dooz.org>,
            Fathi Boudra <fabo@debian.org>,
-           Yves-Alexis Perez <corsac@debian.org>
+           Yves-Alexis Perez <corsac@debian.org>,
+           Josselin Mouette <joss@debian.org>
 Build-Depends: cdbs (>= 0.4.93), debhelper (>= 8.1.3)
 # libusplash-dev, imagemagick, librsvg2-bin
 Standards-Version: 3.9.2

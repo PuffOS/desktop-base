@@ -1,4 +1,4 @@
-desktop-base (6.0.7) UNRELEASED; urgency=low
+desktop-base (6.0.7) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
@@ -7,12 +7,13 @@ desktop-base (6.0.7) UNRELEASED; urgency=low
   * xy_desktop-base.gschema.override: configure the default background 
     for gdm3 using GSettings as well.
   * All of this closes: #623094.
+  * Add myself to uploaders.
 
   [ Yves-Alexis Perez ]
   * debian/control:
     - update standards version to 3.9.2.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Mon, 18 Apr 2011 08:11:41 +0200
+ -- Josselin Mouette <joss@debian.org>  Fri, 14 Oct 2011 21:43:14 +0200
 
 desktop-base (6.0.6) unstable; urgency=low
 
