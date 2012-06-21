@@ -5,10 +5,11 @@ Maintainer: Gustavo Franco <stratus@debian.org>
 Uploaders: Loïc Minier <lool@dooz.org>,
            Fathi Boudra <fabo@debian.org>,
            Yves-Alexis Perez <corsac@debian.org>,
-           Josselin Mouette <joss@debian.org>
-Build-Depends: cdbs (>= 0.4.93), debhelper (>= 8.1.3)
+           Josselin Mouette <joss@debian.org>,
+           Paul Tagliamonte <paultag@ubuntu.com>
+Build-Depends: cdbs (>= 0.4.93), debhelper (>= 9)
 # libusplash-dev, imagemagick, librsvg2-bin
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.debian.org/devel/debian-desktop
 Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
 Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
@@ -16,6 +17,7 @@ Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
 Package: desktop-base
 Architecture: all
 Depends: librsvg2-common
+Pre-Depends: dpkg (>= 1.15.7.2~)
 Suggests: gnome | kde-standard | xfce4 | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by

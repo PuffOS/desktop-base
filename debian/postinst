@@ -1,4 +1,5 @@
 #!/bin/bash -e
+set -e
 
 #DEBHELPER#
 
@@ -17,6 +18,16 @@ fi
 
 if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     # Alternatives for the background
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/joy-ink-splash.png 70
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/joy-wallpaper.svg 70
+
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
@@ -67,17 +78,7 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub.png 15
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub-widescreen.png 14
-
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/images/desktop-base/moreblue-orbit-grub.png 10
+        /usr/share/images/desktop-base/joy-grub.png 15
 
     # GRUB background
     if which update-grub2 > /dev/null ; then

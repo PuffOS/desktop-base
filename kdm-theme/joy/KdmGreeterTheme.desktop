@@ -1,0 +1,8 @@
+[KdmGreeterTheme]
+Encoding=UTF-8
+Greeter=joy.xml
+Name=Joy
+Description=Joy KDM Theme
+Author=Adrien Aubourg, Yves-Alexis Perez, Paul Tagliamonte, based on GDM theme
+Copyright=(c) 2012 Paul Tagliamonte <paultag@ubuntu.com>
+Screenshot=screenshot.png

@@ -40,6 +40,8 @@ install:
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
 
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
+	$(INSTALL) $(wildcard kdm-theme/joy/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
 	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
@@ -50,19 +52,19 @@ install:
 	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 
 	# KSPLASH theme
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
-	$(INSTALL) ksplash-theme/spacefun/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
-	$(INSTALL) ksplash-theme/spacefun/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1024x768
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1280x1024
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/1366x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1366x768
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1600x1200
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
-	$(INSTALL) $(wildcard ksplash-theme/spacefun/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/spacefun/1920x1080
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
+	$(INSTALL) ksplash-theme/joy/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
+	$(INSTALL) ksplash-theme/joy/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
+	$(INSTALL) $(wildcard ksplash-theme/joy/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
+	$(INSTALL) $(wildcard ksplash-theme/joy/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1366x768
+	$(INSTALL) $(wildcard ksplash-theme/joy/1366x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1366x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1600x1200
+	$(INSTALL) $(wildcard ksplash-theme/joy/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1600x1200
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
+	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
 
 	# KDE Config
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
@@ -80,8 +82,7 @@ install:
 	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
 
 	# grub
-	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
-	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
 	# plymouth

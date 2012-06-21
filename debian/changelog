@@ -1,3 +1,18 @@
+desktop-base (7.0.0~exp1) UNRELEASED; urgency=low
+
+  * Adding myself as a maintainer
+  * We've got a new theme -- `joy' by Adrien Aubourg. Thanks, Adrien!
+     - Theme added to backgrounds.
+     - Theme added for Grub
+     - Background changed for GDM3
+     - Theme added for KDM & changed that to default.
+     - Theme added for ksplash & changed to default.
+  * Standards bump to 3.9.3
+  * Pre-Dependency added for dpkg (>= 1.15.7.2~), since we use dpkg helpers
+    in our preinst.
+
+ -- Paul Tagliamonte <paultag@ubuntu.com>  Wed, 20 Jun 2012 20:41:04 -0400
+
 desktop-base (6.0.7) unstable; urgency=low
 
   [ Josselin Mouette ]
