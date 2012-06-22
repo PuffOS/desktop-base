@@ -34,42 +34,6 @@ same_conffile() {
 
 case "$1" in
   install|upgrade)
-    if dpkg --compare-versions "$2" lt "5.0.2"; then
-      # if the folder is a symlink (installed by splashy), modified files
-      # need to be copied (from /usr/share/splashy/themes) before beeing 
-      # replaced. If it's not, they need to be moved (from
-      # /etc/splashy/themes)
-      # not modified files need to be removed if no symlink, and not
-      # touched in case of a symlink
-      THEME_FOLDER="/etc/splashy/themes/moreblue-orbit"
-      THEME_FOLDER_BAK="/etc/splashy.dpkg-old/themes/moreblue-orbit"
-      FILES="background-bw.png background-color.png VeraSans.ttf theme.xml"
-
-      if [ -h /etc/splashy/themes ]; then
-      # symlink
-        for FILE in ${FILES}; do
-          [ -f ${THEME_FOLDER}/${FILE} ] || break
-          if ! same_conffile "${THEME_FOLDER}/${FILE}"; then
-          # symlink and changed file, copy it in a safe place
-            [ -d $THEME_FOLDER_BAK ] || mkdir -p $THEME_FOLDER_BAK
-            cp ${THEME_FOLDER}/${FILE} ${THEME_FOLDER_BAK}/
-          fi
-        done
-      else
-      # real folder
-        for FILE in ${FILES}; do
-          [ -f ${THEME_FOLDER}/${FILE} ] || break
-          if ! same_conffile "${THEME_FOLDER}/${FILE}"; then
-          # real folder and changed file, move it in a safe place
-            [ -d $THEME_FOLDER_BAK ] || mkdir -p $THEME_FOLDER_BAK
-            mv ${THEME_FOLDER}/${FILE} ${THEME_FOLDER_BAK}/
-          else
-          # real folder but unchanged file, just remove it
-            rm ${THEME_FOLDER}/${FILE}
-          fi
-        done
-      fi
-    fi
   ;;
 esac
 

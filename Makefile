@@ -12,10 +12,6 @@ all:
 clean:
 
 install:
-	# splashy themes
-	mkdir -p $(DESTDIR)/usr/share/splashy/themes/spacefun
-	$(INSTALL) $(wildcard splashy/spacefun/*) $(DESTDIR)/usr/share/splashy/themes/spacefun
-
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
