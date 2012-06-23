@@ -78,6 +78,6 @@ through the Bug Tracking System to us.
 desktop-base ships a plymouth theme. If you want to activate it, install
 plymouth and run:
 
-  plymouth-set-default-theme spacefun
+  plymouth-set-default-theme joy
 
 Then remember to add “splash” to your kernel command line.

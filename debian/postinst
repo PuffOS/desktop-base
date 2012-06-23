@@ -21,12 +21,27 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/joy-ink-splash.png 70
+        /usr/share/images/desktop-base/joy-wallpaper_1600x1200.svg 70
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \
         desktop-background \
-        /usr/share/images/desktop-base/joy-wallpaper.svg 70
+        /usr/share/images/desktop-base/joy-wallpaper_1280x1024.svg 70
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/joy-wallpaper_1920x1080.svg 70
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/joy-wallpaper_1920x1200.svg 70
+
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/images/desktop-base/joy-inksplat-wallpaper_1920x1080.svg 70
 
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-background \

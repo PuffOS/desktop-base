@@ -84,4 +84,7 @@ install:
 	# plymouth
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
 	$(INSTALL) $(wildcard plymouth/spacefun/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
+
+	install -d $(DESTDIR)/usr/share/plymouth/themes/joy
+	$(INSTALL) $(wildcard plymouth/joy/*) $(DESTDIR)/usr/share/plymouth/themes/joy
 	
