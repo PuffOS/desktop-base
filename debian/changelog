@@ -1,6 +1,6 @@
 desktop-base (7.0.0~exp1) UNRELEASED; urgency=low
 
-   [ Paul Tagliamonte ]
+  [ Paul Tagliamonte ]
   * Adding myself as a maintainer
   * We've got a new theme -- `joy' by Adrien Aubourg. Thanks, Adrien!
      - Theme added to backgrounds.
@@ -13,7 +13,7 @@ desktop-base (7.0.0~exp1) UNRELEASED; urgency=low
     in our preinst.
   * Add in Jonathan Carter's Plymouth theme.
 
-   [ Jonathan Carter ]
+  [ Jonathan Carter ]
   * Remove splashy theme since it's no longer available in archives
 
   [ Yves-Alexis Perez ]
