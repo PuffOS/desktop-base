@@ -5,42 +5,39 @@ set -e
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove background alternatives
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/spacefun-wallpaper.svg
-
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/spacefun-wallpaper-widescreen.svg
-
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper.svg
-
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/moreblue-orbit-wallpaper-widescreen.svg
-
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/nightly-wallpaper.png
-
-    update-alternatives --remove desktop-background \
-        /usr/share/images/desktop-base/debian-blueish-wallpaper.svg
+    for background in \
+          joy-wallpaper_1600x1200.svg \
+          joy-wallpaper_1600x1200.svg \
+          joy-wallpaper_1280x1024.svg \
+          joy-wallpaper_1920x1080.svg \
+          joy-wallpaper_1920x1200.svg \
+          joy-inksplat-wallpaper_1920x1080.svg \
+          spacefun-wallpaper.svg \
+          spacefun-wallpaper-widescreen.svg \
+          moreblue-orbit-wallpaper.svg \
+          moreblue-orbit-wallpaper-widescreen.svg \
+          nightly-wallpaper.png \
+          debian-blueish-wallpaper.svg \
+          ; do
+        update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
+    done
+    update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/joy.xml
 
     # remove splash alternatives
-    update-alternatives --remove desktop-splash \
-        /usr/share/images/desktop-base/spacefun-splash.svg
-
-    update-alternatives --remove desktop-splash \
-        /usr/share/images/desktop-base/moreblue-orbit-splash.png
-
-    update-alternatives --remove desktop-splash \
-        /usr/share/images/desktop-base/gnome-splash-curves.png
+    for splash in \
+          spacefun-splash.svg \
+          moreblue-orbit-splash.png \
+          gnome-splash-curves.png \
+          ; do
+        update-alternatives --remove desktop-splash /usr/share/images/desktop-base/$splash
+    done
 
     # remove grub alternatives
-    update-alternatives --remove desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub.png
-
-    update-alternatives --remove desktop-grub \
-        /usr/share/images/desktop-base/spacefun-grub-widescreen.png
-
-    update-alternatives --remove desktop-grub \
-        /usr/share/images/desktop-base/moreblue-orbit-grub.png
+    for background in \
+          joy-grub.png \
+          spacefun-grub.png \
+          spacefun-grub-widescreen.png \
+          ; do
+        update-alternatives --remove desktop-grub /usr/share/images/desktop-base/$background
+    done
 fi
-

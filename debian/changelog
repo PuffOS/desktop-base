@@ -1,3 +1,21 @@
+desktop-base (7.0.0~exp2) experimental; urgency=low
+
+  * Remove GConf defaults, they are not used anymore.
+  * Remove the GDM3 settings, since the configuration format for GDM 
+    change again, yay.
+  * Add a dconf file for the new-style GDM3 configuration.
+  * Add a XML file describing the available resolutions for the 
+    background (for use with GNOME).
+  * postinst: use a higher priority for the 1920x1080 background.
+  * Cleanup postinst/prerm/postrm.
+  * Add a new alternative: desktop-background.xml.
+  * Use it from the gsettings override.
+  * Reload gdm3 after installation/removal.
+  * Drop old libgnome2-common hack.
+  * Clean up an alternative that is no longer available.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 23 Jun 2012 23:28:15 +0200
+
 desktop-base (7.0.0~exp1) experimental; urgency=low
 
   [ Paul Tagliamonte ]

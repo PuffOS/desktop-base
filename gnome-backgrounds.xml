@@ -4,7 +4,7 @@
   <wallpaper>
     <!-- don't include words such as "wallpaper" (avoids translations) -->
     <name>Debian</name>
-    <filename>/usr/share/images/desktop-base/desktop-background</filename>
+    <filename>/usr/share/images/desktop-base/desktop-background.xml</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#0099cc</pcolor>

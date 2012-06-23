@@ -1,7 +1,7 @@
 DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
-BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga)
+BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
 EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png splash/*.svg)
 PIXMAPS=$(wildcard pixmaps/*.png)
@@ -73,12 +73,14 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 	# GDM 3 theme
-	mkdir -p $(DESTDIR)/usr/share/gdm/greeter-config
+	mkdir -p $(DESTDIR)/usr/share/gdm/dconf
 	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
-	$(INSTALL) gdm3/10_desktop-base $(DESTDIR)/usr/share/gdm/greeter-config
+	$(INSTALL) gdm3/10-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf/
 
 	# grub
 	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
 	# plymouth
