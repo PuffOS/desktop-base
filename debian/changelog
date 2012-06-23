@@ -1,4 +1,4 @@
-desktop-base (7.0.0~exp1) UNRELEASED; urgency=low
+desktop-base (7.0.0~exp1) experimental; urgency=low
 
   [ Paul Tagliamonte ]
   * Adding myself as a maintainer
@@ -19,7 +19,7 @@ desktop-base (7.0.0~exp1) UNRELEASED; urgency=low
   [ Yves-Alexis Perez ]
   * Install emblem in the correct folder.
 
- -- Paul Tagliamonte <paultag@ubuntu.com>  Fri, 22 Jun 2012 19:20:49 -0400
+ -- Paul Tagliamonte <paultag@ubuntu.com>  Sat, 23 Jun 2012 13:00:47 +0200
 
 desktop-base (6.0.7) unstable; urgency=low
 
