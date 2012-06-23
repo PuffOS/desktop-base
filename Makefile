@@ -19,8 +19,8 @@ install:
 	# splash files
 	$(INSTALL) $(SPLASH) $(DESTDIR)/usr/share/images/desktop-base
 	# emblems
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems
-	$(INSTALL) $(EMBLEMS) $(DESTDIR)/usr/share/icons/hicolor/48x48/emblems/
+	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
+	$(INSTALL) $(EMBLEMS) $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems/
 	# desktop files
 	mkdir -p $(DESTDIR)/usr/share/desktop-base
 	$(INSTALL) $(DESKTOPFILES) $(DESTDIR)/usr/share/desktop-base/
