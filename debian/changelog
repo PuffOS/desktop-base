@@ -2,7 +2,7 @@ desktop-base (7.0.0~exp3) UNRELEASED; urgency=low
 
   [ Eshat Cakar ]
   * Updated the KDM theme.
-  * Update the ksplash theme.
+  * Updated the ksplash theme.
 
  -- Eshat Cakar <info@eshat.de>  Sat, 24 Jun 2012 11:02:56 +0200
 
