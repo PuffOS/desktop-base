@@ -45,9 +45,15 @@ They are both based on the Debian “Open Use” (without “Debian” word) log
 The Joy theme is © 2012 Adrien Aubourg and released under the CC-BY-SA 3.0
 license.
 
+The Joy theme is based on the Debian “Open Use” (without “Debian” word)
+logo.
+
 The Joy plymouth theme is Copyright © 2009 Canonical Ltd.,
 Copyright © 2010 Aurélien COUDERC and Copyright © 2012 Jonathan Carter under
-the GPLv2+, with work from Adrien Aubourg under the CC-BY-SA 3.0 License.
+the GPLv2+.
+
+The images used with the plymouth theme is Copyright © 2012 Adrien Aubourg under
+the CC-BY-SA 3.0 License.
 
 The Joy KDM, GDM and KSplash grub theme are © 2012 Paul Tagliamonte and released
 under the CC-BY-SA 3.0 license, with work from all the previous authors, and
