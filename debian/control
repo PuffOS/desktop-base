@@ -6,7 +6,7 @@ Uploaders: Loïc Minier <lool@dooz.org>,
            Fathi Boudra <fabo@debian.org>,
            Yves-Alexis Perez <corsac@debian.org>,
            Josselin Mouette <joss@debian.org>,
-           Paul Tagliamonte <paultag@ubuntu.com>,
+           Paul Tagliamonte <paultag@debian.org>,
            Eshat Cakar <info@eshat.de>
 Build-Depends: cdbs (>= 0.4.93), debhelper (>= 9)
 # libusplash-dev, imagemagick, librsvg2-bin
