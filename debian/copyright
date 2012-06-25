@@ -55,30 +55,28 @@ the GPLv2+.
 The images used with the plymouth theme is Copyright © 2012 Adrien Aubourg under
 the CC-BY-SA 3.0 License.
 
-The Joy KDM, GDM and KSplash theme are © 2012 Paul Tagliamonte GPLv2, with work
+The Joy GDM is © 2012 Paul Tagliamonte GPLv2, with work
 from all the previous authors of that file, and artwork from Adrien Aubourg under
 the CC-BY-SA 3.0 license.
+
+The Joy KDM  theme is © 2012 Eshat Cakar and © 2010 Roman Shtylman GPLv2 
+with artwork from Adrien Aubourg under the CC-BY-SA 3.0 license.
+
+The Joy KSplash theme is © 2012 Eshat Cakar, Nuno Pinheiro, Riccardo Iaconelli GPLv2 
+with artwork from Adrien Aubourg under the CC-BY-SA 3.0 license.
 
 The Joy grub theme is © 2012 Paul Tagliamonte GPLv2, using artwork from Adrien
 Aubourg licensed under CC-BY-SA 3.0.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
-KDM and Splashy themes are © 2010 Yves-Alexis Perez using artwork from Valessio
+The Splashy theme is © 2010 Yves-Alexis Perez using artwork from Valessio
 S. Brito, and are released under GPLv2.
 
 Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3
 license, using artwork from Valessio S. Brito.
 
-Spacefun KDM theme is © Valessio Brito, with others authors beeing Amir
-Dizdarević, Nuno Pinheiro, Riccardo Iaconelli and Marco Martin.
-
 The SpaceFun theme is based on the Debian “Open Use” (without “Debian” word)
 logo.
-ksplash-theme/spacefun/1600x1200/icon5.png and the corresponding anim version
-are based on the KDE Official Oxygen Logo, which is released under the
-LGPLv2.1 or later, as stated in
-http://www.kde.org/stuff/clipart.php
-http://commons.wikimedia.org/w/index.php?title=File:KDE_logo.svg&oldid=43994097
 
 Nightly theme (nightly-splash.png, nightly-wallpaper.png and nightly.xml) is ©
 2008 Robert Jähne and released under the GPLv2. It is based on the Debian “Open
