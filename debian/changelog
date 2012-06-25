@@ -3,10 +3,14 @@ desktop-base (7.0.0~exp3) UNRELEASED; urgency=low
   [ Eshat Cakar ]
   * Updated the KDM theme.
   * Updated the ksplash theme.
-  [ Paul Tagliamonte ]
-  * Added joy-inksplat.xml (Closes: #678937), thanks, Fabian!
 
- -- Eshat Cakar <info@eshat.de>  Mon, 25 Jun 2012 09:59:15 -0400
+  [ Paul Tagliamonte ]
+  * Added joy-inksplat into gnome-backgrounds.xml (Closes: #678937),
+    thanks, Fabian!
+  * Small rewrite of problematic debian/copyright lines (Closes: #678746),
+    thanks, Francesco!
+
+ -- Eshat Cakar <info@eshat.de>  Mon, 25 Jun 2012 10:44:07 -0400
 
 desktop-base (7.0.0~exp2) experimental; urgency=low
 
