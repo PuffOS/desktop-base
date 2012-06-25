@@ -29,8 +29,20 @@ install:
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
 	# KDE Config
+	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
+	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	mkdir -p $(DESTDIR)/usr/share/kde4/config
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4/config
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/plasma-desktop/init/
+	$(INSTALL) kde-wallpaper/10-desktop-base.js $(DESTDIR)/usr/share/kde4/apps/plasma-desktop/init/
+
+	# KDE Wallpaper
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy
+	$(INSTALL) kde-wallpaper/joy/metadata.desktop $(DESTDIR)/usr/share/wallpapers/joy/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents
+	$(INSTALL) kde-wallpaper/joy/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy/contents/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents/images
+	$(INSTALL) $(wildcard kde-wallpaper/joy/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy/contents/images/
 
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
@@ -53,6 +65,8 @@ install:
 	$(INSTALL) ksplash-theme/joy/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
 	$(INSTALL) $(wildcard ksplash-theme/joy/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x800
+	$(INSTALL) $(wildcard ksplash-theme/joy/1280x800/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x800
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
 	$(INSTALL) $(wildcard ksplash-theme/joy/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1366x768
@@ -61,10 +75,9 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/joy/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1600x1200
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
 	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
+	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
 
-	# KDE Config
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
-	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
