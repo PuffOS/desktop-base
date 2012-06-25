@@ -4,7 +4,15 @@
   <wallpaper>
     <!-- don't include words such as "wallpaper" (avoids translations) -->
     <name>Debian</name>
-    <filename>/usr/share/images/desktop-base/desktop-background.xml</filename>
+    <filename>/usr/share/images/desktop-base/joy.xml</filename>
+    <options>zoom</options>
+    <shade_type>horizontal-gradient</shade_type>
+    <pcolor>#0099cc</pcolor>
+    <scolor>#006699</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Debian Inksplat</name>
+    <filename>/usr/share/images/desktop-base/joy-inksplat-wallpaper_1920x1080.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
     <pcolor>#0099cc</pcolor>
