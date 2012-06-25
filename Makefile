@@ -47,17 +47,8 @@ install:
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
-
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
 	$(INSTALL) $(wildcard kdm-theme/joy/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
-	$(INSTALL) $(wildcard kdm-theme/spacefun/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/spacefun
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
-	$(INSTALL) $(wildcard kdm-theme/debian-moreblue/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/debian-moreblue
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
-	$(INSTALL) $(wildcard kdm-theme/moreblue-orbit/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/moreblue-orbit
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
-	$(INSTALL) $(wildcard kdm-theme/nightly/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/nightly
 
 	# KSPLASH theme
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
