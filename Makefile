@@ -43,6 +43,15 @@ install:
 	$(INSTALL) kde-wallpaper/joy/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy/contents/
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents/images
 	$(INSTALL) $(wildcard kde-wallpaper/joy/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy/contents/images/
+	# Inksplat Version
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat
+	$(INSTALL) kde-wallpaper/joy_inksplat/metadata.desktop $(DESTDIR)/usr/share/wallpapers/joy_inksplat/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents
+	$(INSTALL) kde-wallpaper/joy_inksplat/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images
+	$(INSTALL) $(wildcard kde-wallpaper/joy_inksplat/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images/
+
+
 
 	# KDM theme
 	mkdir -p $(DESTDIR)/etc/default/kdm.d
