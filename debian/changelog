@@ -4,7 +4,7 @@ desktop-base (7.0.0~exp3) UNRELEASED; urgency=low
   * Updated the KDM theme.
   * Updated the ksplash theme.
   * Install Joy wallpapers into /usr/share/wallpapers/
-    This makes it visibile in KDE's wallpaper chooser
+    This makes them visibile in KDE's wallpaper chooser
   * Set default wallpaper for new users via plasma scripting
 
   [ Paul Tagliamonte ]
