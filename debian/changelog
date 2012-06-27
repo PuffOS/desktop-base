@@ -1,4 +1,4 @@
-desktop-base (7.0.0~exp3) UNRELEASED; urgency=low
+desktop-base (7.0.0) unstable; urgency=low
 
   [ Eshat Cakar ]
   * Updated the KDM theme.
