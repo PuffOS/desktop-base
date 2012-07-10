@@ -5,7 +5,14 @@ desktop-base (7.0.1) UNRELEASED; urgency=low
   * Fix typo in plymouth theme. (Closes: #679357)
   * Updated ink-splated kde wallpaper, to fix alignment issues.
 
- -- Eshat Cakar <info@eshat.de>  Wed, 27 Jun 2012 22:08:35 +0200
+  [ Luca Capello ]
+  * demote librsvg2-common to Recommends (Closes: #680583).
+
+  [ Paul Tagliamonte ]
+  * Add ${misc:Depends} to the Depends for the binary package. We're using
+    debhelper, so we should behave nicely.
+
+ -- Paul Tagliamonte <paultag@debian.org>  Mon, 09 Jul 2012 20:24:40 -0400
 
 desktop-base (7.0.0) unstable; urgency=low
 
