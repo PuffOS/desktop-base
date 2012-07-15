@@ -17,9 +17,8 @@ Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base
 
 Package: desktop-base
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, librsvg2-common
 Pre-Depends: dpkg (>= 1.15.7.2~)
-Recommends: librsvg2-common
 Suggests: gnome | kde-standard | xfce4 | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
