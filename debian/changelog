@@ -8,6 +8,7 @@ desktop-base (7.0.1) UNRELEASED; urgency=low
   [ Paul Tagliamonte ]
   * Add ${misc:Depends} to the Depends for the binary package. We're using
     debhelper, so we should behave nicely.
+  * Updated GDM & KDM's login background to have branding in the lower-right.
 
  -- Paul Tagliamonte <paultag@debian.org>  Mon, 09 Jul 2012 20:24:40 -0400
 
