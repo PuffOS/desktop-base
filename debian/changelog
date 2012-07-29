@@ -4,7 +4,6 @@ desktop-base (7.0.1) UNRELEASED; urgency=low
   * Make 1366x768 ksplash background really that resolution. (Closes: #679306)
   * Fix typo in plymouth theme. (Closes: #679357)
   * Updated ink-splated kde wallpaper, to fix alignment issues.
-  * Rename kdm-theme and ksplash-theme source folders to kdm and ksplash.
 
   [ Paul Tagliamonte ]
   * Add ${misc:Depends} to the Depends for the binary package. We're using
