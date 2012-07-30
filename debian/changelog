@@ -1,9 +1,9 @@
-desktop-base (7.0.2) UNRELEASED; urgency=low
+desktop-base (7.0.2) unstable; urgency=low
 
   * Droped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
     without a reason.
 
- -- Paul Tagliamonte <paultag@debian.org>  Mon, 30 Jul 2012 09:01:34 -0400
+ -- Paul Tagliamonte <paultag@debian.org>  Mon, 30 Jul 2012 19:43:20 -0400
 
 desktop-base (7.0.1) unstable; urgency=low
 
