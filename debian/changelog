@@ -4,6 +4,7 @@ desktop-base (7.0.3) UNRELEASED; urgency=low
     - Make pam error messages actually visible.
     - Don't cut off the last hostname letter.
     - Adjust font sizes and colors.
+  * Ksplash: Do nut cut off blurred icons.
 
  -- Eshat Cakar <info@eshat.de>  Thu, 02 Aug 2012 15:23:56 +0200
 
