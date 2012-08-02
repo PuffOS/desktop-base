@@ -33,7 +33,7 @@
 	  <fixed>
             <item type="label" id="welcome">
 	      <pos anchor="nw" x="20" y="20"/>
-	      <normal alpha="0.75" font="Sans Bold 14" color="#444444"/>
+	      <normal alpha="1.0" font="Sans Bold 14" color="#444444"/>
 	      <text>%h </text>
             </item>
 	  </fixed>
@@ -93,19 +93,19 @@
         <fixed>
             <item type="label">
                 <pos anchor="se" x="-15" y="-20"/>
-                <normal font="Sans Bold 8" color="#444444"/>
+                <normal font="Sans Bold 10" color="#444444"/>
                 <text>%c</text>
             </item>
             
             <item type="pixmap" id="session_button" button="true">
-                <normal alpha="0.8" file="session_normal.png"/>
+                <normal alpha="1.0" file="session_normal.png"/>
                 <prelight file="session_normal.png"/>
                 <active file="session_normal.png"/>
                 <pos anchor="sw" x="22" y="-20"/>
             </item>
             
             <item type="pixmap" id="system_button" button="true">
-                <normal alpha="0.8" file="system_normal.png"/>
+                <normal alpha="1.0" file="system_normal.png"/>
                 <prelight file="system_normal.png"/>
                 <active file="system_normal.png"/>
                 <pos anchor="sw" x="50" y="-20"/>
