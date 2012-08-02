@@ -34,7 +34,7 @@
             <item type="label" id="welcome">
 	      <pos anchor="nw" x="20" y="20"/>
 	      <normal alpha="0.75" font="Sans Bold 14" color="#444444"/>
-	      <text>%h</text>
+	      <text>%h </text>
             </item>
 	  </fixed>
 	</item>
