@@ -125,19 +125,14 @@
 	</item>
 
 	<item type="rect" id="pam-error-paceholder">
-	<pos anchor="c" x="50%" y="98%" widht="615" height="200"/>
-
-		<item type="label" id="dummy1">
-			<normal alpha="0" color="#0b678c" font="Sans Bold 10"/>
-			<!-- </text> -->
-		</item>
-		
+	<pos anchor="c" x="50%" y="42%" widht="615" height="200"/>
+	<fixed>
 		<item type="label" id="pam-error">
 			<pos anchor="c" x="50%" y="50%" expand="true"/>
-			<normal alpha="0" color="#0b678c" font="Sans Bold 10"/>
-			<!-- </text> -->
+			<normal alpha="1.0" color="#aa4444" font="Sans Bold 10"/>
+			<text/>
 		</item>
-
+	</fixed>
 	</item>
 
 </greeter>

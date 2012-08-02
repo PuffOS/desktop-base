@@ -1,3 +1,10 @@
+desktop-base (7.0.3) UNRELEASED; urgency=low
+
+  * Fixed various glitches in the KDM Theme:
+    - Make pam error messages actually visible.
+
+ -- Eshat Cakar <info@eshat.de>  Thu, 02 Aug 2012 15:23:56 +0200
+
 desktop-base (7.0.2) unstable; urgency=low
 
   * Droped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
