@@ -1,12 +1,17 @@
 desktop-base (7.0.3) UNRELEASED; urgency=low
 
+  [ Eshat Cakar ]
   * Fixed various glitches in the KDM Theme:
     - Make pam error messages actually visible.
     - Don't cut off the last hostname letter.
     - Adjust font sizes and colors.
   * Ksplash: Do nut cut off blurred icons.
 
- -- Eshat Cakar <info@eshat.de>  Thu, 02 Aug 2012 15:23:56 +0200
+  [ Paul Tagliamonte ]
+  * debian/rules: Use xz compression for binary packages. (Closes: #683903)
+    - Thanks to Ansgar Burchardt <ansgar@debian.org> for the patch & bug.
+
+ -- Paul Tagliamonte <paultag@debian.org>  Sun, 05 Aug 2012 08:55:10 -0400
 
 desktop-base (7.0.2) unstable; urgency=low
 
