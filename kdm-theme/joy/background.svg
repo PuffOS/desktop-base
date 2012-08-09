@@ -19,7 +19,7 @@
    inkscape:export-filename="/home/adrien/Dropbox/wheezy_artwork/Final/Background/png/wallpaper_1920x1080.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
-   sodipodi:docname="wallpaper_1920x1080.svg">
+   sodipodi:docname="background.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -461,16 +461,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="1473.8471"
-     inkscape:cy="181.67017"
+     inkscape:zoom="0.70989583"
+     inkscape:cx="960"
+     inkscape:cy="540"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="g3946-7"
      showgrid="false"
-     inkscape:window-width="1362"
-     inkscape:window-height="745"
-     inkscape:window-x="0"
-     inkscape:window-y="19"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-3"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
@@ -513,7 +513,8 @@
          i:rgbTrio="#4F008000FFFF"
          i:dimmedPercent="50"
          i:layer="yes"
-         id="Layer_1-8">
+         id="Layer_1-8"
+         style="fill:#c8c8c9;fill-opacity:1;opacity:0.25">
         <g
            id="g3916-1"
            transform="matrix(0.98323459,0,0,0.98323459,-0.0013766,1.8181967)"
