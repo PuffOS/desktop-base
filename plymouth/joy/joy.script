@@ -51,7 +51,7 @@ bg_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - scaled_bg_image.Ge
 
 # Set the text colour in (rgb / 256)
 text_colour.red = 0.0;
-text_colour.green = 0.0;
+text_colour.green =  0.0;
 text_colour.blue = 0.0;
 
 # Tinted text #988592
@@ -60,9 +60,9 @@ tinted_text_colour.green = 0.0;
 tinted_text_colour.blue = 0.0;
 
 # Action Text - #ffffff - RGB 255 255 255
-action_text_colour.red = 0.0;
-action_text_colour.green = 0.0;
-action_text_colour.blue = 0.0;
+action_text_colour.red = 1.0;
+action_text_colour.green = 1.0;
+action_text_colour.blue = 1.0;
 
 # Orange - #ff4012 - RGB 255 64 18
 debugsprite = Sprite();
@@ -197,11 +197,13 @@ if (bits_per_pixel == 4) {
     logo_filename = "debian_logo16.png";
     progress_dot_off_filename = "progress_dot_off16.png";
     progress_dot_on_filename = "progress_dot_on16.png";
+    password_dot_filename = "password_dot.png";
     password_field_filename = "password_field16.png";
 } else {
     logo_filename = "debian_logo.png";
     progress_dot_off_filename = "progress_dot_off.png";
     progress_dot_on_filename = "progress_dot_on.png";
+    password_dot_filename = "password_dot.png";
     password_field_filename = "password_field.png";
 }
 
@@ -531,7 +533,7 @@ fun password_dialogue_setup (message_label) {
     local.entry;
     local.bullet_image;
     
-    bullet_image = Image (progress_dot_off_filename);
+    bullet_image = Image (password_dot_filename);
     entry.image = Image (password_field_filename);
     
     # Hide the normal labels
@@ -721,7 +723,7 @@ fun update_progress_label (progress) {
             # See if we any other fsck check is complete
             # and, if so, hide the progress bars and the labels
             on_fsck_completed ();
-        
+       
             return 0;
         }
     }    
