@@ -5,7 +5,7 @@ desktop-base (7.0.3) UNRELEASED; urgency=low
     - Make pam error messages actually visible.
     - Don't cut off the last hostname letter.
     - Adjust font sizes and colors.
-  * Ksplash: Do nut cut off blurred icons.
+  * Ksplash: don't cut off blurred icons.
   * Reduce opacity of debian swirl in gdm/kdm background to be
     less distracting.
 
@@ -14,7 +14,7 @@ desktop-base (7.0.3) UNRELEASED; urgency=low
     - Thanks to Ansgar Burchardt <ansgar@debian.org> for the patch & bug.
 
   [ Jonathan Carter ]
-  * Update joy theme to be more password-friendly.
+  * Update joy theme to feature a themed password prompt.
 
  -- Paul Tagliamonte <paultag@debian.org>  Sun, 05 Aug 2012 08:55:10 -0400
 
