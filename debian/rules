@@ -13,4 +13,3 @@ DEB_MAKE_INSTALL_TARGET := install DESTDIR=$(CURDIR)/debian/desktop-base/
 
 binary-fixup/desktop-base::
 	dh_gconf --priority=15
-
