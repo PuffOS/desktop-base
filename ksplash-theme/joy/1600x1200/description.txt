@@ -24,7 +24,7 @@ ANIM_REL 4 CC 6 150  LT 30 icon4_anim.png 85 1
 WAIT_STATE wm
 
 # 263,15
-ANIM_REL 5 CC 85 122 LT 30 icon5_anim.png 85 1
+ANIM_REL 5 CC 85 120 LT 30 icon5_anim.png 85 1
 WAIT_STATE desktop
 
 WAIT_STATE ready
@@ -39,4 +39,4 @@ IMAGE_REL CC -64 150 LT icon3.png
 STOP_ANIM 4
 IMAGE_REL CC 6 150 LT icon4.png
 STOP_ANIM 5
-IMAGE_REL CC 85 122 LT icon5.png
+IMAGE_REL CC 85 120 LT icon5.png
