@@ -8,6 +8,7 @@ for (i in a) {
     a[i].wallpaperPlugin = 'image'
     a[i].wallpaperMode = 'SingleImage'
     a[i].currentConfigGroup = Array('Wallpaper', 'image')
-    a[i].writeConfig('wallpaper', 'joy')                //change this in wheezy+1
+    a[i].writeConfig('wallpaper',
+            '/usr/share/images/desktop-base/desktop-background')
     a[i].writeConfig('wallpaperposition', '2')          //enables croping
 }
