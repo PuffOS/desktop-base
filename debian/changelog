@@ -1,4 +1,4 @@
-desktop-base (8.0.0~) UNRELEASED; urgency=low
+desktop-base (8.0.0~exp1) experimental; urgency=low
 
   [ Eshat Cakar ]
   * Ksplash: Avoid crash on resolutions with 600 pixels of
@@ -20,7 +20,7 @@ desktop-base (8.0.0~) UNRELEASED; urgency=low
   * debian/control:
     - updated standards version to 3.9.6.
 
- -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Oct 2014 14:41:13 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Oct 2014 15:35:39 +0200
 
 desktop-base (7.0.3) unstable; urgency=low
 
