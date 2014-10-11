@@ -16,6 +16,7 @@ desktop-base (8.0.0~) UNRELEASED; urgency=low
     - gdm3/background.svg updated to use Lines login screen
     - grub/lines-grub.png added.
     - Makefile: install lines-grub grub background.
+    - debian/copyright updated.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Oct 2014 14:41:13 +0200
 
