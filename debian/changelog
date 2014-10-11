@@ -17,6 +17,8 @@ desktop-base (8.0.0~) UNRELEASED; urgency=low
     - grub/lines-grub.png added.
     - Makefile: install lines-grub grub background.
     - debian/copyright updated.
+  * debian/control:
+    - updated standards version to 3.9.6.
 
  -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Oct 2014 14:41:13 +0200
 
