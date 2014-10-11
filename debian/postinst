@@ -19,15 +19,20 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-joy-wallpaper_1600x1200.svg 65
-joy-wallpaper_1280x1024.svg 65
-joy-wallpaper_1920x1080.svg 70
-joy-wallpaper_1920x1200.svg 65
-joy-inksplat-wallpaper_1920x1080.svg 65
-spacefun-wallpaper.svg 60
-spacefun-wallpaper-widescreen.svg  55
-moreblue-orbit-wallpaper.svg 50
-moreblue-orbit-wallpaper-widescreen.svg 50
+lines-wallpaper_1280_1024.svg 65
+lines-wallpaper_1600_1200.svg 65
+lines-wallpaper_1920x1080.svg 70
+lines-wallpaper_1920x1200.svg 65
+lines-wallpaper_2560x1080.svg 65
+joy-wallpaper_1600x1200.svg 60
+joy-wallpaper_1280x1024.svg 60
+joy-wallpaper_1920x1080.svg 60
+joy-wallpaper_1920x1200.svg 60
+joy-inksplat-wallpaper_1920x1080.svg 60
+spacefun-wallpaper.svg 50
+spacefun-wallpaper-widescreen.svg  50
+moreblue-orbit-wallpaper.svg 40
+moreblue-orbit-wallpaper-widescreen.svg 40
 nightly-wallpaper.png 40
 debian-blueish-wallpaper.svg 30
 EOF
@@ -58,7 +63,8 @@ EOF
             desktop-grub \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-joy-grub.png 20
+lines-grub.png 20
+joy-grub.png 15
 spacefun-grub.png 15
 spacefun-grub-widescreen.png 14
 EOF

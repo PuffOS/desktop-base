@@ -1,4 +1,4 @@
-desktop-base (7.0.4) UNRELEASED; urgency=low
+desktop-base (8.0.0~) UNRELEASED; urgency=low
 
   [ Eshat Cakar ]
   * Ksplash: Avoid crash on resolutions with 600 pixels of
@@ -8,7 +8,16 @@ desktop-base (7.0.4) UNRELEASED; urgency=low
   * Accept patch from Ulrich Hansen, fix 10-desktop-base.js to point to
     the symlink rather then hardcoding `joy'. (Closes: #690731)
 
- -- Paul Tagliamonte <paultag@debian.org>  Sat, 20 Oct 2012 17:05:42 -0400
+  [ Yves-Alexis Perez ]
+  * Initial support for Lines theme by Juliette Belin.
+    - add the various ratio SVG wallpapers to backgrounds/ 
+    - debian/{postinst,prerm}: update alternatives priority to make Lines the
+      automatic/default one
+    - gdm3/background.svg updated to use Lines login screen
+    - grub/lines-grub.png added.
+    - Makefile: install lines-grub grub background.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sat, 11 Oct 2014 14:41:13 +0200
 
 desktop-base (7.0.3) unstable; urgency=low
 

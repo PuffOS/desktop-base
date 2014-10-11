@@ -6,6 +6,11 @@ set -e
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove background alternatives
     for background in \
+          lines-wallpaper_1280_1024.svg \
+          lines-wallpaper_1600_1200.svg \
+          lines-wallpaper_1920x1080.svg \
+          lines-wallpaper_1920x1200.svg \
+          lines-wallpaper_2560x1080.svg \
           joy-wallpaper_1600x1200.svg \
           joy-wallpaper_1600x1200.svg \
           joy-wallpaper_1280x1024.svg \
@@ -34,6 +39,7 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
 
     # remove grub alternatives
     for background in \
+          lines-grub.png \
           joy-grub.png \
           spacefun-grub.png \
           spacefun-grub-widescreen.png \

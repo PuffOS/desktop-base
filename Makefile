@@ -91,6 +91,7 @@ install:
 	$(INSTALL) gdm3/10-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf/
 
 	# grub
+	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
