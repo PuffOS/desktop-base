@@ -75,9 +75,14 @@ through the Bug Tracking System to us.
 
 5. Boot splash
 
-desktop-base ships a plymouth theme. If you want to activate it, install
-plymouth and run:
+desktop-base ships several plymouth themes. To activate the default theme,
+install the plymouth and plymouth-themes packages and run:
 
-  plymouth-set-default-theme joy
+  plymouth-set-default-theme lines
 
 Then remember to add “splash” to your kernel command line.
+To do that permamently, edit /etc/default/grub and add splash to the
+GRUB_CMDLINE_LINUX_DEFAULT variable. For example:
+
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+
