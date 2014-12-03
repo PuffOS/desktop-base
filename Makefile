@@ -58,6 +58,8 @@ install:
 	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
 	$(INSTALL) $(wildcard kdm-theme/joy/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
+	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
+	$(INSTALL) $(wildcard kdm-theme/lines/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
 
 	# KSPLASH theme
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
