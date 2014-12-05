@@ -40,6 +40,7 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # remove grub alternatives
     for background in \
           lines-grub.png \
+          lines-grub-1920x1080.png \
           joy-grub.png \
           spacefun-grub.png \
           spacefun-grub-widescreen.png \

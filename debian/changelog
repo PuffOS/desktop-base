@@ -1,6 +1,7 @@
 desktop-base (8.0.0~exp2) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
+  * Add widescreen alternative for grub background
   * Add plymouth Lines theme.
   * Add KDM Lines theme and make it default.
   * Add QML Lines theme for ksplash and make it default for new users.

@@ -87,6 +87,6 @@ GRUB_CMDLINE_LINUX_DEFAULT variable. For example:
 
   GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
-or to keep the grub background during kernel load:
+You may also keep the grub background and hide the kernel boot messages with:
 
-  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash fbcon=vc:2-6"
+  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash fbcon=vc:2"
