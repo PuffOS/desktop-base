@@ -9,6 +9,8 @@ desktop-base (8.0.0~exp2) UNRELEASED; urgency=medium
     - Add KDE wallpaper.
   * Fix incorrect icon references in desktop files.
     (Closes: #607838, #628116, #628146)
+  * Link desktop-background.xml alternative to Lines by default.
+    (Closes: #766232)
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Wed, 03 Dec 2014 10:37:16 +0100
 

@@ -19,8 +19,8 @@ if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-lines-wallpaper_1280_1024.svg 65
-lines-wallpaper_1600_1200.svg 65
+lines-wallpaper_1280x1024.svg 65
+lines-wallpaper_1600x1200.svg 65
 lines-wallpaper_1920x1080.svg 70
 lines-wallpaper_1920x1200.svg 65
 lines-wallpaper_2560x1080.svg 65
@@ -39,10 +39,15 @@ EOF
 
     # Set up an alternative for the XML version of the background
     # (for GNOME)
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background.xml \
-        desktop-background.xml \
-        /usr/share/images/desktop-base/joy.xml 10
+    while read desktopbackground priority; do
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-background.xml \
+            desktop-background.xml \
+            /usr/share/images/desktop-base/$desktopbackground $priority
+    done << EOF
+lines.xml 20
+joy.xml 10
+EOF
 
     # Alternatives for the splash
     while read splash priority; do
