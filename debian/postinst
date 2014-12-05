@@ -64,6 +64,7 @@ EOF
             /usr/share/images/desktop-base/$background $priority
     done << EOF
 lines-grub.png 20
+lines-grub-1920x1080.png 15
 joy-grub.png 15
 spacefun-grub.png 15
 spacefun-grub-widescreen.png 14

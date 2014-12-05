@@ -101,6 +101,7 @@ install:
 
 	# grub
 	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/
+	$(INSTALL) grub/lines-grub-1920x1080.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
