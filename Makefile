@@ -61,7 +61,8 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
 	$(INSTALL) $(wildcard kdm-theme/lines/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
 
-	# KSPLASH theme
+	# KSPLASH themes
+	## Joy
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
 	$(INSTALL) ksplash-theme/joy/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
 	$(INSTALL) ksplash-theme/joy/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
@@ -79,6 +80,12 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
 	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
+	## Lines
+	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines/images
+	$(INSTALL) $(wildcard ksplash-theme/lines/*.qml) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
+	$(INSTALL) $(wildcard ksplash-theme/lines/*.png) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
+	$(INSTALL) $(wildcard ksplash-theme/lines/*.rc) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
+	$(INSTALL) $(wildcard ksplash-theme/lines/images/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines/images
 
 
 	# Xfce 4.6

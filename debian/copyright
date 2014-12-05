@@ -43,8 +43,7 @@ licensed under the GPL.
     - PNG splash, splash/gnome-splash-curves.png.
 They are both based on the Debian “Open Use” (without “Debian” word) logo.
 
-The Lines theme is © 2014 Juliette Taka Belin and released under the Creative
-Commons Attribution 3.0 license.
+The Lines theme is © 2014 Juliette Taka Belin and released under the GPLv2.
 
 The Lines theme is based on the Debian “Open Use” (without “Debian” word)
 logo.
@@ -54,11 +53,14 @@ Copyright © 2010-2014 Aurélien Couderc, Copyright © 2012 Jonathan Carter,
 Copyright © 2014 Juliette Taka Belin under the GPLv2+.
 
 The images used with the Lines plymouth theme are Copyright © 2014 Juliette
-Taka Belin under the Creative Commons Attribution 3.0 license.
+Taka Belin under the GPLv2.
 
 The Lines KDM theme is © 2014 Aurélien Couderc GPLv3 with artwork from
-Juliette Taka Belin under the Creative Commons Attribution 3.0 license and
-Adrien Aubourg under the GPLv2 license.
+Juliette Taka Belin and Adrien Aubourg under the GPLv2 license.
+
+The Lines KSplash theme is © 2013 Martin Klapetek, © 2014 Aurélien Couderc
+under the GPLv2 with artwork from Juliette Taka Belin, Nuno Pinheiro under the
+GPLv2 license.
 
 The Joy theme is © 2012 Adrien Aubourg and released under the GPLv2
 license.

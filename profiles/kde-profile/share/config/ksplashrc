@@ -1,2 +1,3 @@
 [KSplash]
-Theme=joy
+Theme=lines
+Engine=KSplashQML
