@@ -70,7 +70,7 @@ logo_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - logo_image.GetWi
 #------------------------------- Debian8 ----------------------------------------------
 debian8_image = Image("debian8.png");
 debian8_width = logo_image.GetWidth();
-debian8_scale_factor = debian8_width / debian8_image.GetWidth() * 0.3;
+debian8_scale_factor = debian8_width / debian8_image.GetWidth() * 0.24;
 if (debian8_scale_factor < 1) {
 	debian8_image = debian8_image.Scale(debian8_image.GetWidth() * debian8_scale_factor,
                               debian8_image.GetHeight() * debian8_scale_factor);
