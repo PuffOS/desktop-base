@@ -37,6 +37,7 @@ install:
 	$(INSTALL) kde-wallpaper/10-desktop-base.js $(DESTDIR)/usr/share/kde4/apps/plasma-desktop/init/
 
 	# KDE Wallpaper
+	## Joy
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy
 	$(INSTALL) kde-wallpaper/joy/metadata.desktop $(DESTDIR)/usr/share/wallpapers/joy/
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents
@@ -50,7 +51,13 @@ install:
 	$(INSTALL) kde-wallpaper/joy_inksplat/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images
 	$(INSTALL) $(wildcard kde-wallpaper/joy_inksplat/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images/
-
+	## Lines
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines
+	$(INSTALL) kde-wallpaper/Lines/metadata.desktop $(DESTDIR)/usr/share/wallpapers/Lines/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines/contents
+	$(INSTALL) kde-wallpaper/Lines/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/Lines/contents/
+	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines/contents/images
+	$(INSTALL) $(wildcard kde-wallpaper/Lines/contents/images/*) $(DESTDIR)/usr/share/wallpapers/Lines/contents/images/
 
 
 	# KDM theme
