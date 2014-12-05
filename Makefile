@@ -2,7 +2,6 @@ DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
-EMBLEMS=$(wildcard emblems/*png emblems/*icon)
 SPLASH=$(wildcard splash/*.png splash/*.svg)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
@@ -20,7 +19,13 @@ install:
 	$(INSTALL) $(SPLASH) $(DESTDIR)/usr/share/images/desktop-base
 	# emblems
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
-	$(INSTALL) $(EMBLEMS) $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems/
+	$(INSTALL) $(wildcard icons/36x36/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
+	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/64x64/emblems
+	$(INSTALL) $(wildcard icons/64x64/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/64x64/emblems
+	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/128x128/emblems
+	$(INSTALL) $(wildcard icons/128x128/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/128x128/emblems
+	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems
+	$(INSTALL) $(wildcard icons/scalable/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems
 	# desktop files
 	mkdir -p $(DESTDIR)/usr/share/desktop-base
 	$(INSTALL) $(DESKTOPFILES) $(DESTDIR)/usr/share/desktop-base/
