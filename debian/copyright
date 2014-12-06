@@ -37,12 +37,6 @@ They are based on the Debian “Open Use” (without “Debian” word) logo.
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
 
-The following files are Copyright 2006 André Luiz Rodrigues Ferreira and
-licensed under the GPL.
-    - SVG background, backgrounds/debian-blueish-wallpaper.svg.
-    - PNG splash, splash/gnome-splash-curves.png.
-They are both based on the Debian “Open Use” (without “Debian” word) logo.
-
 The Lines theme is © 2014 Juliette Taka Belin and released under the GPLv2.
 
 The Lines theme is based on the Debian “Open Use” (without “Debian” word)

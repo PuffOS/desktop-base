@@ -33,7 +33,6 @@ spacefun-wallpaper.svg 50
 spacefun-wallpaper-widescreen.svg  50
 moreblue-orbit-wallpaper.svg 40
 moreblue-orbit-wallpaper-widescreen.svg 40
-debian-blueish-wallpaper.svg 30
 EOF
 
     # Set up an alternative for the XML version of the background
@@ -57,7 +56,6 @@ EOF
     done << EOF
 spacefun-splash.svg 50
 moreblue-orbit-splash.png 40
-gnome-splash-curves.png 30
 EOF
 
     # Alternatives for grub
