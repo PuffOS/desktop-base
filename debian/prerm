@@ -21,7 +21,6 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
           spacefun-wallpaper-widescreen.svg \
           moreblue-orbit-wallpaper.svg \
           moreblue-orbit-wallpaper-widescreen.svg \
-          nightly-wallpaper.png \
           debian-blueish-wallpaper.svg \
           ; do
         update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
