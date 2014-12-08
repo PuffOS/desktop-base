@@ -60,8 +60,10 @@ The images used with the Lines plymouth theme are Copyright © 2014 Juliette
 Taka Belin under the GPLv2 or any later version.
 
 The Lines KDM theme is © 2014 Aurélien Couderc GPLv3 with artwork from
-Juliette Taka Belin under the GPLv2 or any later version and from Adrien
-Aubourg under the GPLv3 license.
+Juliette Taka Belin under the GPLv2 or any later version.
+
+The icons for the Lines KDM theme (user, password, system, shutdown) are from
+Adrien Aubourg under the GPLv3 license.
 
 The Lines KSplash theme is © 2013 Martin Klapetek, © 2014 Aurélien Couderc
 under the GPLv2 with artwork from Juliette Taka Belin, Nuno Pinheiro under the
@@ -108,8 +110,8 @@ moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
 GPLv2. It is based on the Debian “Open Use” Logo (without the “Debian” label).
 The GDM theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
 
-emblems/emblem-debian.png is a miniaturized version of the Debian “Open Use”
-Logo (without the “Debian” label).
+icons/*/emblems/emblem-debian.{png,svg} are different versions of the Debian
+“Open Use” Logo (without the “Debian” label).
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
