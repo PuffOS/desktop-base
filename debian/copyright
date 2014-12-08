@@ -5,8 +5,12 @@ Tue, 22 Oct 2002 15:05:34 -0400.
 This package is comprised of bits and pieces from various sources.
 
 
-The Debian “Open Use” (without “Debian” word) logo is used in various bits of
-artwork:
+The two Debian “Open Use” Logos (with and without the “Debian” label) are used
+in various bits of artwork.
+
+The Debian “Open Use” Logo (without the “Debian” label) used to be released
+under the following terms, as stated in:
+https://web.archive.org/web/20120119205807/http://www.debian.org/logos/
 
     Copyright (c) 1999 Software in the Public Interest
 
@@ -28,59 +32,66 @@ artwork:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
+Currently, both Debian “Open Use” Logos (with and without the “Debian” label)
+are released under the terms of the GNU Lesser General Public License,
+version 3 or any later version, as stated in:
+https://www.debian.org/logos/
+
 
 The debian-security.xcf file (and the resulting .png file) are
 Copyright Ulrich Hansen <uhansen@mainz-online.de>, Mainz, Germany, 2010,
 published under GPL2 or higher (at your option)
-They are based on the Debian “Open Use” (without “Debian” word) logo.
+They are based on the Debian “Open Use” Logo (without the “Debian” label).
 
 The .desktop  files included  in this package  were compiled  by Colin
 Walters <walters@debian.org>.
 
-The Lines theme is © 2014 Juliette Taka Belin and released under the GPLv2.
+The Lines theme is © 2014 Juliette Taka Belin and released under the GPLv2 or
+any later version.
 
-The Lines theme is based on the Debian “Open Use” (without “Debian” word)
-logo.
+The Lines theme is based on the Debian “Open Use” Logo (with the “Debian”
+label).
 
 The Lines plymouth script is Copyright © 2009 Canonical Ltd.,
 Copyright © 2010-2014 Aurélien Couderc, Copyright © 2012 Jonathan Carter,
-Copyright © 2014 Juliette Taka Belin under the GPLv2+.
+Copyright © 2014 Juliette Taka Belin under the GPLv2 or any later version.
 
 The images used with the Lines plymouth theme are Copyright © 2014 Juliette
-Taka Belin under the GPLv2.
+Taka Belin under the GPLv2 or any later version.
 
 The Lines KDM theme is © 2014 Aurélien Couderc GPLv3 with artwork from
-Juliette Taka Belin and Adrien Aubourg under the GPLv2 license.
+Juliette Taka Belin under the GPLv2 or any later version and from Adrien
+Aubourg under the GPLv3 license.
 
 The Lines KSplash theme is © 2013 Martin Klapetek, © 2014 Aurélien Couderc
 under the GPLv2 with artwork from Juliette Taka Belin, Nuno Pinheiro under the
 GPLv2 license.
 
-The Joy theme is © 2012 Adrien Aubourg and released under the GPLv2
+The Joy theme is © 2012 Adrien Aubourg and released under the GPLv3
 license.
 
-The Joy theme is based on the Debian “Open Use” (without “Debian” word)
-logo.
+The Joy theme is based on the Debian “Open Use” Logo (without the “Debian”
+label).
 
 The Joy plymouth script is Copyright © 2009 Canonical Ltd.,
 Copyright © 2010 Aurélien Couderc and Copyright © 2012 Jonathan Carter under
 the GPLv2+.
 
 The images used with the Joy plymouth theme are Copyright © 2012 Adrien Aubourg
-under the GPLv2 License.
+under the GPLv3 License.
 
 The Joy GDM is © 2012 Paul Tagliamonte GPLv2, with work
 from all the previous authors of that file, and artwork from Adrien Aubourg under
-the GPLv2 license.
+the GPLv3 license.
 
 The Joy KDM  theme is © 2012 Eshat Cakar and © 2010 Roman Shtylman GPLv2
-with artwork from Adrien Aubourg under the GPLv2 license.
+with artwork from Adrien Aubourg under the GPLv3 license.
 
 The Joy KSplash theme is © 2012 Eshat Cakar, Nuno Pinheiro, Riccardo Iaconelli GPLv2
-with artwork from Adrien Aubourg under the GPLv2 license.
+with artwork from Adrien Aubourg under the GPLv3 license.
 
 The Joy grub theme is © 2012 Paul Tagliamonte GPLv2, using artwork from Adrien
-Aubourg licensed under GPLv2 license.
+Aubourg licensed under GPLv3 license.
 
 The SpaceFun theme is © 2010 Valessio S. Brito and released under the GPLv2.
 The Splashy theme is © 2010 Yves-Alexis Perez using artwork from Valessio
@@ -89,16 +100,16 @@ S. Brito, and are released under GPLv2.
 Spacefun plymouth theme is © 2010 Aurelien Couderc and released under the GPLv3
 license, using artwork from Valessio S. Brito.
 
-The SpaceFun theme is based on the Debian “Open Use” (without “Debian” word)
-logo.
+The SpaceFun theme is based on the Debian “Open Use” Logo (without the “Debian”
+label).
 
 Moreblue Orbit theme (moreblue-orbit-splash, moreblue-orbit-grub and
 moreblue-orbit-wallpaper) is © 2008 Andre Ferreira and released under the
-GPLv2. It is based on the Debian “Open Use” (without “Debian” word) logo.
+GPLv2. It is based on the Debian “Open Use” Logo (without the “Debian” label).
 The GDM theme authors are Andre Ferreira, Fathi Boudra and Valessio S. Brito.
 
 emblems/emblem-debian.png is a miniaturized version of the Debian “Open Use”
-(without “Debian” word) logo.
+Logo (without the “Debian” label).
 
 The GPL license (version 2) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/GPL-2
@@ -108,3 +119,6 @@ systems, at /usr/share/common-licenses/GPL-3
 
 The LGPL license (version 2.1) can be found in plain text format, on Debian
 systems, at /usr/share/common-licenses/LGPL-2.1
+
+The LGPL license (version 3) can be found in plain text format, on Debian
+systems, at /usr/share/common-licenses/LGPL-3
