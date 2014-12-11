@@ -1,4 +1,4 @@
-desktop-base (8.0.0~exp2) UNRELEASED; urgency=medium
+desktop-base (8.0.0) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
   * Additional support for Lines theme:
@@ -15,7 +15,10 @@ desktop-base (8.0.0~exp2) UNRELEASED; urgency=medium
     (Closes: #607839)
   * Update copyright file, thanks Francesco Poli. (Closes: #772417)
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Wed, 03 Dec 2014 10:37:16 +0100
+  [ Yves-Alexis Perez ]
+  * Upload to unstable.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 11 Dec 2014 09:10:05 +0100
 
 desktop-base (8.0.0~exp1) experimental; urgency=low
 
