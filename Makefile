@@ -106,10 +106,6 @@ install:
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
-	# GDM 3 theme
-	mkdir -p $(DESTDIR)/usr/share/gdm/dconf
-	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
-	$(INSTALL) gdm3/10-desktop-base-settings $(DESTDIR)/usr/share/gdm/dconf/
 
 	# grub
 	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/

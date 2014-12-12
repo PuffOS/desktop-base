@@ -11,8 +11,5 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     if which update-grub2 > /dev/null ; then
         update-grub2 || true
     fi
-    if [ -x /usr/sbin/gdm3 ]; then
-        invoke-rc.d gdm3 reload || true
-    fi
 fi
 

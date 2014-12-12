@@ -98,9 +98,4 @@ EOF
         update-initramfs -u
     fi
 
-    # Reload gdm3 configuration
-    if [ -x /usr/sbin/gdm3 ]; then
-        invoke-rc.d gdm3 reload || true
-    fi
-
 fi

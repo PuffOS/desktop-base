@@ -3,7 +3,21 @@
 <wallpapers>
   <wallpaper>
     <!-- don't include words such as "wallpaper" (avoids translations) -->
-    <name>Debian</name>
+    <name>Lines</name>
+    <filename>/usr/share/images/desktop-base/lines.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Lines lock screen</name>
+    <filename>/usr/share/images/desktop-base/lines-lockscreen.xml</filename>
+    <options>zoom</options>
+    <pcolor>#ffffff</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper>
+    <name>Joy</name>
     <filename>/usr/share/images/desktop-base/joy.xml</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>
@@ -11,7 +25,7 @@
     <scolor>#006699</scolor>
   </wallpaper>
   <wallpaper>
-    <name>Debian Inksplat</name>
+    <name>Joy Inksplat</name>
     <filename>/usr/share/images/desktop-base/joy-inksplat-wallpaper_1920x1080.svg</filename>
     <options>zoom</options>
     <shade_type>horizontal-gradient</shade_type>

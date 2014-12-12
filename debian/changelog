@@ -1,8 +1,15 @@
-desktop-base (8.0.1) UNRELEASED; urgency=medium
+desktop-base (8.0.1) unstable; urgency=medium
 
+  [ Coucouf ]
   * Fix KSplash preview for Lines. (Closes: #772900)
 
- -- Coucouf <zecoucou@free.fr>  Fri, 12 Dec 2014 08:04:04 +0100
+  [ Josselin Mouette ]
+  * Remove old GDM theme.
+  * Add GDM/GNOME lockscreen based on Lines.
+  * gsettings-override: set it as the default.
+  * Update gnome-backgrounds.xml. Closes: #772944.
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 12 Dec 2014 19:22:33 +0100
 
 desktop-base (8.0.0) unstable; urgency=medium
 
