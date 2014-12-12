@@ -1,3 +1,9 @@
+desktop-base (8.0.1) UNRELEASED; urgency=medium
+
+  * Fix KSplash preview for Lines. (Closes: #772900)
+
+ -- Coucouf <zecoucou@free.fr>  Fri, 12 Dec 2014 08:04:04 +0100
+
 desktop-base (8.0.0) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
