@@ -107,7 +107,7 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 	# login background
-	$(INSTALL) gdm3/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
+	$(INSTALL) login/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
 
 	# grub
 	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/
