@@ -5,6 +5,7 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
     postinst script.
   * Remove references to long gone KDE3 globals in maintainer scripts.
     (Closes #659549)
+  * README.Debian: inform about updating initrds too. (Closes #612163)
 
  -- Coucouf <coucouf@Grumly>  Tue, 06 Sep 2016 08:14:12 +0200
 

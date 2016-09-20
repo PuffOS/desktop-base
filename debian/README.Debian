@@ -78,15 +78,15 @@ through the Bug Tracking System to us.
 
 desktop-base ships several plymouth themes. To activate the default theme,
 install the plymouth and plymouth-themes packages and run:
+    plymouth-set-default-theme lines
 
-  plymouth-set-default-theme lines
+and update the initrd by running:
+    update-initramfs -u
 
 Then remember to add “splash” to your kernel command line.
 To do that permamently, edit /etc/default/grub and add splash to the
 GRUB_CMDLINE_LINUX_DEFAULT variable. For example:
-
-  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 
 You may also keep the grub background and hide the kernel boot messages with:
-
-  GRUB_CMDLINE_LINUX_DEFAULT="quiet splash fbcon=vc:2"
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash fbcon=vc:2"
