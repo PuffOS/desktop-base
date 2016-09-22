@@ -84,6 +84,8 @@ EOF
 
     # GRUB background
     if which update-grub2 > /dev/null ; then
+        # Ensure the background image file has actually been written to disc
+        # before updating.
         sync
         update-grub2 || true
     fi
