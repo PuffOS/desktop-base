@@ -4,9 +4,9 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
   * Fix lintian warning command-with-path-in-maintainer-script in
     postinst script.
   * Remove references to long gone KDE3 globals in maintainer scripts.
-    (Closes #659549)
-  * README.Debian: inform about updating initrds too. (Closes #612163)
-  * Document use of sync use before grub update in postinst. (Closes #611364)
+    (Closes: #659549)
+  * README.Debian: inform about updating initrds too. (Closes: #612163)
+  * Document use of sync use before grub update in postinst. (Closes: #611364)
   * Add SDDM theming for KDE/Plasma 5:
     - Based on default SDDM theme breeze + Debian theme background.
     - Can be configured with alternatives (also works in lightdm).
