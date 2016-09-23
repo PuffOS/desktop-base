@@ -92,7 +92,19 @@ install:
 	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
 	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
+
+	## SDDM meta theme (configured with alternatives)
+	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
+	$(INSTALL) $(wildcard sddm-debian/*) $(DESTDIR)/usr/share/sddm/themes/debian-theme
+
+
 	## Lines
+	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme
+	# login background
+	$(INSTALL) lines-theme/login-background.svg $(DESTDIR)/usr/share/desktop-base/lines-theme/
+	$(INSTALL) lines-theme/login-background-with-logo.svg $(DESTDIR)/usr/share/desktop-base/lines-theme/
+	$(INSTALL) lines-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/lines-theme/
+
 	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines/images
 	$(INSTALL) $(wildcard ksplash-theme/lines/*.qml) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
 	$(INSTALL) $(wildcard ksplash-theme/lines/*.png) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
@@ -106,8 +118,6 @@ install:
 	# GNOME background descriptor
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
-	# login background
-	$(INSTALL) login/background.svg $(DESTDIR)/usr/share/images/desktop-base/login-background.svg
 
 	# grub
 	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/

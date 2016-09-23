@@ -32,6 +32,17 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/$desktopbackground
     done
 
+    # remove login theme alternatives
+    # secondaire alternatives
+    update-alternatives --remove desktop-sddm-preview \
+        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
+    # main alternatives
+    update-alternatives --remove desktop-login-background \
+        /usr/share/desktop-base/lines-theme/login-background.svg
+    update-alternatives --remove desktop-login-background \
+        /usr/share/desktop-base/lines-theme/login-background-no-logo.svg
+
+
     # remove splash alternatives
     for splash in \
           spacefun-splash.svg \

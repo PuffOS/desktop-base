@@ -52,6 +52,20 @@ spacefun-splash.svg 50
 moreblue-orbit-splash.png 40
 EOF
 
+    # Login theme
+    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+        desktop-login-background \
+        /usr/share/desktop-base/lines-theme/login-background.svg 70 \
+        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
+    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+        desktop-login-background \
+        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg 65 \
+        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
+
     # Alternatives for grub
     ## Favor widescreen / hi-res background for efi installations
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)

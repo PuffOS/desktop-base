@@ -1,0 +1,12 @@
+[SddmGreeterTheme]
+Name=Debian Theme
+Name[fr]=Défaut pour Debian
+Description=Debian theme powered by alternatives system
+Description[fr]=Thème Debian configurables par le sytème d’alternatives
+Type=sddm-theme
+Version=0.1
+Screenshot=sddm-preview.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=debian-theme
+Theme-API=2.0
