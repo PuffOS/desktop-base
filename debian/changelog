@@ -11,6 +11,8 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
     - Based on default SDDM theme breeze + Debian theme background.
     - Can be configured with alternatives (also works in lightdm).
    (Closes: #415064, #608523, #611170, #670866, #762276)
+  * Remove deprecated ksplash and kdm from KDE4. (Closes: #607842)
+  * Remove deprecated splash options from Gnome 2.
 
  -- Coucouf <coucouf@Grumly>  Tue, 06 Sep 2016 08:14:12 +0200
 

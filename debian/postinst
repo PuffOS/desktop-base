@@ -41,18 +41,8 @@ lines.xml 20
 joy.xml 10
 EOF
 
-    # Alternatives for the splash
-    while read splash priority; do
-        update-alternatives --install \
-            /usr/share/images/desktop-base/desktop-splash \
-            desktop-splash \
-            /usr/share/images/desktop-base/$splash $priority
-    done << EOF
-spacefun-splash.svg 50
-moreblue-orbit-splash.png 40
-EOF
-
     # Login theme
+    ## Lines
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
         /usr/share/desktop-base/lines-theme/login-background.svg 70 \
@@ -65,6 +55,13 @@ EOF
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
         /usr/share/desktop-base/lines-theme/sddm-preview.jpg
+    ## Joy
+    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+        desktop-login-background \
+        /usr/share/desktop-base/joy-theme/login-background.svg 60 \
+        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/joy-theme/sddm-preview.jpg
 
     # Alternatives for grub
     ## Favor widescreen / hi-res background for efi installations

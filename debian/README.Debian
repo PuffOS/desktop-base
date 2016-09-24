@@ -4,7 +4,7 @@ README for desktop-base
 1. Images
    1.1. Emblems
    1.2. Pixmaps
-   1.3. Splash and Wallpapers
+   1.3. Wallpapers
    1.4. Boot splash
 2. Desktop files
 3. Changing desktop-base images
@@ -30,9 +30,6 @@ automatically reverted to the default choice.
 
 For wallpaper you can run:
   sudo update-alternatives --config desktop-background
-
-For splash screens you can run:
-  sudo update-alternatives --config desktop-splash
 
 For login screen (only SDDM for now) you can run:
   sudo update-alternatives --config desktop-login-background

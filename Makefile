@@ -2,7 +2,6 @@ DEFAULT_BACKGROUND=desktop-background
 
 INSTALL=install -m 0644
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
-SPLASH=$(wildcard splash/*.png splash/*.svg)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
@@ -15,8 +14,6 @@ install:
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
 	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
-	# splash files
-	$(INSTALL) $(SPLASH) $(DESTDIR)/usr/share/images/desktop-base
 	# emblems
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
 	$(INSTALL) $(wildcard icons/36x36/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
@@ -65,34 +62,6 @@ install:
 	$(INSTALL) $(wildcard kde-wallpaper/Lines/contents/images/*) $(DESTDIR)/usr/share/wallpapers/Lines/contents/images/
 
 
-	# KDM theme
-	mkdir -p $(DESTDIR)/etc/default/kdm.d
-	$(INSTALL) kdm-theme/kdm.d/10_desktop-base $(DESTDIR)/etc/default/kdm.d
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
-	$(INSTALL) $(wildcard kdm-theme/joy/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/joy
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
-	$(INSTALL) $(wildcard kdm-theme/lines/*) $(DESTDIR)/usr/share/kde4/apps/kdm/themes/lines
-
-	# KSPLASH themes
-	## Joy
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
-	$(INSTALL) ksplash-theme/joy/Preview.png $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
-	$(INSTALL) ksplash-theme/joy/Theme.rc $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
-	$(INSTALL) $(wildcard ksplash-theme/joy/1024x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1024x768
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x800
-	$(INSTALL) $(wildcard ksplash-theme/joy/1280x800/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x800
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
-	$(INSTALL) $(wildcard ksplash-theme/joy/1280x1024/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1280x1024
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1366x768
-	$(INSTALL) $(wildcard ksplash-theme/joy/1366x768/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1366x768
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1600x1200
-	$(INSTALL) $(wildcard ksplash-theme/joy/1600x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1600x1200
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
-	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1080/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1080
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
-	$(INSTALL) $(wildcard ksplash-theme/joy/1920x1200/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/joy/1920x1200
-
 	## SDDM meta theme (configured with alternatives)
 	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
 	$(INSTALL) $(wildcard sddm-debian/*) $(DESTDIR)/usr/share/sddm/themes/debian-theme
@@ -105,11 +74,11 @@ install:
 	$(INSTALL) lines-theme/login-background-with-logo.svg $(DESTDIR)/usr/share/desktop-base/lines-theme/
 	$(INSTALL) lines-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/lines-theme/
 
-	install -d $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines/images
-	$(INSTALL) $(wildcard ksplash-theme/lines/*.qml) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
-	$(INSTALL) $(wildcard ksplash-theme/lines/*.png) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
-	$(INSTALL) $(wildcard ksplash-theme/lines/*.rc) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines
-	$(INSTALL) $(wildcard ksplash-theme/lines/images/*) $(DESTDIR)/usr/share/kde4/apps/ksplash/Themes/lines/images
+	## Joy
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme
+	# login background
+	$(INSTALL) joy-theme/login-background.svg $(DESTDIR)/usr/share/desktop-base/joy-theme/
+	$(INSTALL) joy-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/joy-theme/
 
 
 	# Xfce 4.6

@@ -33,23 +33,22 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     done
 
     # remove login theme alternatives
-    # secondaire alternatives
+    ## Lines
+    ### secondary alternatives
     update-alternatives --remove desktop-sddm-preview \
         /usr/share/desktop-base/lines-theme/sddm-preview.jpg
-    # main alternatives
+    ### main alternatives
     update-alternatives --remove desktop-login-background \
         /usr/share/desktop-base/lines-theme/login-background.svg
     update-alternatives --remove desktop-login-background \
         /usr/share/desktop-base/lines-theme/login-background-no-logo.svg
-
-
-    # remove splash alternatives
-    for splash in \
-          spacefun-splash.svg \
-          moreblue-orbit-splash.png \
-          ; do
-        update-alternatives --remove desktop-splash /usr/share/images/desktop-base/$splash
-    done
+    ## Joy
+    ### secondary alternatives
+    update-alternatives --remove desktop-sddm-preview \
+        /usr/share/desktop-base/joy-theme/sddm-preview.jpg
+    ### main alternatives
+    update-alternatives --remove desktop-login-background \
+        /usr/share/desktop-base/joy-theme/login-background.svg
 
     # remove grub alternatives
     for background in \
