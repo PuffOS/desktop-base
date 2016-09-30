@@ -9,7 +9,7 @@ Uploaders: Loïc Minier <lool@dooz.org>,
            Paul Tagliamonte <paultag@debian.org>,
            Eshat Cakar <info@eshat.de>
 Build-Depends: cdbs (>= 0.4.93), debhelper (>= 9)
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: http://www.debian.org/devel/debian-desktop
 Vcs-Browser: http://svn.debian.org/wsvn/debian-desktop/packages/trunk/desktop-base
 Vcs-Svn: svn://svn.debian.org/debian-desktop/packages/trunk/desktop-base

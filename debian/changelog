@@ -1,8 +1,6 @@
 desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
-  * Fix lintian warning command-with-path-in-maintainer-script in
-    postinst script.
   * Remove references to long gone KDE3 globals in maintainer scripts.
     (Closes: #659549)
   * README.Debian: inform about updating initrds too. (Closes: #612163)
@@ -13,6 +11,10 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
    (Closes: #415064, #608523, #611170, #670866, #762276)
   * Remove deprecated ksplash and kdm from KDE4. (Closes: #607842)
   * Remove deprecated splash options from Gnome 2.
+
+  * Fix lintian warning command-with-path-in-maintainer-script in
+    postinst script.
+  * Bump Standards-Version to 3.9.8 (no changes needed).
 
  -- Coucouf <coucouf@Grumly>  Tue, 06 Sep 2016 08:14:12 +0200
 
