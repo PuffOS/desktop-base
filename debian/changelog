@@ -16,6 +16,9 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
     postinst script.
   * Bump Standards-Version to 3.9.8 (no changes needed).
 
+  [ Yves-Alexis Perez ]
+  * Also use Debian wallpaper for second monitor on Xfce.       closes: #785371
+
  -- Coucouf <coucouf@Grumly>  Tue, 06 Sep 2016 08:14:12 +0200
 
 desktop-base (8.0.2) unstable; urgency=medium
