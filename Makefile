@@ -106,3 +106,29 @@ install:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
 	$(INSTALL) $(wildcard plymouth/lines/*) $(DESTDIR)/usr/share/plymouth/themes/lines
 
+
+	# Soft waves theme (Stretch default)
+	### Login background
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme
+	$(INSTALL) softwaves-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/softwaves-theme/
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/backgrounds
+	$(INSTALL) softwaves-theme/backgrounds/login.svg $(DESTDIR)/usr/share/desktop-base/softwaves-theme/backgrounds
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper/contents/images
+	$(INSTALL) softwaves-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper
+	$(INSTALL) softwaves-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper
+	$(INSTALL) $(wildcard softwaves-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper/contents/images/
+	$(INSTALL) softwaves-theme/gnome-wp-list-softwaves.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-softwaves.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/wallpaper SoftWaves
+
+	### Lockscreen
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images
+	$(INSTALL) softwaves-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen
+	$(INSTALL) softwaves-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen
+	$(INSTALL) $(wildcard softwaves-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/
+	$(INSTALL) softwaves-theme/gnome-wp-list-softwaves.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-softwaves.xml
+	# Lock screen symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/lockscreen SoftWavesLockScreen

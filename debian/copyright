@@ -43,11 +43,18 @@ Copyright Ulrich Hansen <uhansen@mainz-online.de>, Mainz, Germany, 2010,
 published under GPL2 or higher (at your option)
 They are based on the Debian “Open Use” Logo (without the “Debian” label).
 
-The .desktop  files included  in this package  were compiled  by Colin
-Walters <walters@debian.org>.
+The .desktop files and xml configuration files in this package were compiled by
+desktop-base contributors.
 
 icons/*/emblems/emblem-debian.{png,svg} are different versions of the Debian
 “Open Use” Logo (without the “Debian” label).
+
+The SDDM QML script is © 2016 David Edmundson and adapted for Debian by
+Aurélien Couderc.
+
+
+The Soft Waves theme is © 2016 Juliette Taka Belin and released under the GPLv2
+or any later version.
 
 The Lines theme is © 2014 Juliette Taka Belin and released under the GPLv2 or
 any later version.

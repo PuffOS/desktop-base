@@ -4,7 +4,19 @@ set -e
 #DEBHELPER#
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
-    # remove background alternatives
+    # Remove background alternatives for active theme
+    update-alternatives --remove desktop-background /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg
+    # Remove background alternatives for theme packages
+    while read theme filename; do
+        update-alternatives --remove \
+            desktop-background \
+            /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
+    done << EOF
+softwaves 1280x720.svg
+softwaves 1920x1080.svg
+softwaves 2560x1440.svg
+EOF
+    # Remove old background alternatives
     for background in \
           lines-wallpaper_1280x1024.svg \
           lines-wallpaper_1600x1200.svg \
@@ -24,7 +36,20 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
           ; do
         update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
     done
-    # remove desktop-background.xml alternatives
+    # Remove desktop-background.xml alternatives
+    # For active theme
+    update-alternatives --remove \
+        desktop-background.xml \
+        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml
+    # For theme packages
+    while read theme; do
+        update-alternatives --remove \
+            desktop-background.xml \
+            /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
+    done << EOF
+softwaves
+EOF
+    # For old alternatives
     for desktopbackground in \
           lines.xml \
           joy.xml \
@@ -32,7 +57,41 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
         update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/$desktopbackground
     done
 
-    # remove login theme alternatives
+    # Remove desktop-lockscreen.xml alternatives
+    # For active theme
+    update-alternatives --remove \
+        desktop-lockscreen.xml \
+        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml
+    # For theme packages
+    while read theme; do
+        update-alternatives --remove \
+            desktop-lockscreen.xml \
+            /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
+    done << EOF
+softwaves
+EOF
+
+    # Remove login theme alternatives
+    # For active theme
+    update-alternatives --remove \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/active-theme/sddm-preview.jpg
+    update-alternatives --remove \
+        desktop-login-background \
+        /usr/share/desktop-base/active-theme/backgrounds/login.svg
+    # For theme packages
+    # Alternative for theme packages
+    while read theme; do
+        update-alternatives --remove \
+            desktop-sddm-preview \
+            /usr/share/desktop-base/$theme-theme/sddm-preview.jpg
+        update-alternatives --remove \
+            desktop-login-background \
+            /usr/share/desktop-base/$theme-theme/backgrounds/login.svg
+    done << EOF
+softwaves
+EOF
+    # For old alternatives
     ## Lines
     ### secondary alternatives
     update-alternatives --remove desktop-sddm-preview \
@@ -60,4 +119,15 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
           ; do
         update-alternatives --remove desktop-grub /usr/share/images/desktop-base/$background
     done
+
+    # Remove theme package alternatives
+    while read theme; do
+        update-alternatives --remove \
+            desktop-theme \
+            /usr/share/desktop-base/$theme-theme
+    done << EOF
+softwaves
+EOF
+
+    update-alternatives --remove desktop-theme /
 fi

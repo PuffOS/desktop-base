@@ -1,0 +1,11 @@
+<background>
+  <static>
+    <duration>8640000.0</duration>
+    <file>
+      <size width="1280" height="720">/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/1280x720.svg</size>
+      <size width="1920" height="1080">/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/1920x1080.svg</size>
+      <size width="2560" height="1440">/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/2560x1440.svg</size>
+    </file>
+  </static>
+</background>
+

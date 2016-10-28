@@ -1,6 +1,12 @@
 desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
+  * Initial support for Soft Waves theme by Juliette Belin.
+    - Default theme for Gnome wallpaper and lock screen
+    - Theme available for SDDM login and Plasma 5 wallpaper and lock screen
+    - debian/copyright updated
+  * Initial support for global theme switching via alternatives
+
   * Remove references to long gone KDE3 globals in maintainer scripts.
     (Closes: #659549)
   * README.Debian: inform about updating initrds too. (Closes: #612163)

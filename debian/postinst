@@ -6,23 +6,49 @@ if [ "$1" = configure ] && dpkg --compare-versions "$2" lt-nl 7; then
 fi
 
 if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
-    # Alternatives for the background
+    # Theme package alternatives
+    while read theme priority; do
+        update-alternatives --install \
+            /usr/share/desktop-base/active-theme \
+            desktop-theme \
+            /usr/share/desktop-base/$theme-theme $priority
+    done << EOF
+softwaves 50
+EOF
+
+    # Use active theme as highest priority for background
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background \
+        desktop-background \
+        /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg 70
+    # Alternatives for the background in theme packages
+    while read theme filename priority; do
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-background \
+            desktop-background \
+            /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
+    done << EOF
+softwaves 1280x720.svg 65
+softwaves 1920x1080.svg 65
+softwaves 2560x1440.svg 65
+EOF
+    # Old alternatives for the background
     while read background priority; do
         update-alternatives --install \
             /usr/share/images/desktop-base/desktop-background \
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-lines-wallpaper_1280x1024.svg 65
-lines-wallpaper_1600x1200.svg 65
-lines-wallpaper_1920x1080.svg 70
-lines-wallpaper_1920x1200.svg 65
-lines-wallpaper_2560x1080.svg 65
-joy-wallpaper_1600x1200.svg 60
-joy-wallpaper_1280x1024.svg 60
-joy-wallpaper_1920x1080.svg 60
-joy-wallpaper_1920x1200.svg 60
-joy-inksplat-wallpaper_1920x1080.svg 60
+lines-wallpaper_1280x1024.svg 60
+lines-wallpaper_1600x1200.svg 60
+lines-wallpaper_1920x1080.svg 60
+lines-wallpaper_1920x1200.svg 60
+lines-wallpaper_2560x1080.svg 60
+joy-wallpaper_1600x1200.svg 50
+joy-wallpaper_1280x1024.svg 50
+joy-wallpaper_1920x1080.svg 50
+joy-wallpaper_1920x1200.svg 50
+joy-inksplat-wallpaper_1920x1080.svg 50
 spacefun-wallpaper.svg 50
 spacefun-wallpaper-widescreen.svg  50
 moreblue-orbit-wallpaper.svg 40
@@ -31,6 +57,21 @@ EOF
 
     # Set up an alternative for the XML version of the background
     # (for GNOME)
+    # Highest priority for active theme
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-background.xml \
+        desktop-background.xml \
+        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml 50
+    # Alternative for theme packages
+    while read theme priority; do
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-background.xml \
+            desktop-background.xml \
+            /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
+    done << EOF
+softwaves 40
+EOF
+    # Old alternatives
     while read desktopbackground priority; do
         update-alternatives --install \
             /usr/share/images/desktop-base/desktop-background.xml \
@@ -38,27 +79,63 @@ EOF
             /usr/share/images/desktop-base/$desktopbackground $priority
     done << EOF
 lines.xml 20
-joy.xml 10
+joy.xml 20
+EOF
+
+    # Set up an alternative for the XML version of the lock screen
+    # (for GNOME)
+    # Highest priority for active theme
+    update-alternatives --install \
+        /usr/share/images/desktop-base/desktop-lockscreen.xml \
+        desktop-lockscreen.xml \
+        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml 50
+    # Alternative for theme packages
+    while read theme priority; do
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-lockscreen.xml \
+            desktop-lockscreen.xml \
+            /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
+    done << EOF
+softwaves 40
 EOF
 
     # Login theme
+    # Highest priority for active theme
+    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+        desktop-login-background \
+        /usr/share/desktop-base/active-theme/backgrounds/login.svg 50 \
+        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/active-theme/sddm-preview.jpg
+    # Alternative for theme packages
+    while read theme priority; do
+        update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+            desktop-login-background \
+            /usr/share/desktop-base/$theme-theme/backgrounds/login.svg $priority \
+            --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
+            desktop-sddm-preview \
+            /usr/share/desktop-base/$theme-theme/sddm-preview.jpg
+    done << EOF
+softwaves 40
+EOF
+    # Old alternatives
     ## Lines
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background.svg 70 \
+        /usr/share/desktop-base/lines-theme/login-background.svg 20 \
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
         /usr/share/desktop-base/lines-theme/sddm-preview.jpg
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg 65 \
+        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg 20 \
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
         /usr/share/desktop-base/lines-theme/sddm-preview.jpg
     ## Joy
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
-        /usr/share/desktop-base/joy-theme/login-background.svg 60 \
+        /usr/share/desktop-base/joy-theme/login-background.svg 20 \
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
         /usr/share/desktop-base/joy-theme/sddm-preview.jpg
