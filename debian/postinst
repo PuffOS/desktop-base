@@ -1,8 +1,8 @@
 #!/bin/bash -e
 set -e
 
-if [ "$1" = configure ] && dpkg --compare-versions "$2" lt-nl 7; then
-  update-alternatives --remove desktop-grub /usr/share/images/desktop-base/moreblue-orbit-grub.png
+if [ "$1" = configure ] && [ -h /etc/alternatives/desktop-splash ] ; then
+  update-alternatives --remove-all desktop-splash
 fi
 
 if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
