@@ -4,8 +4,6 @@ set -e
 #DEBHELPER#
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
-    # Remove background alternatives for active theme
-    update-alternatives --remove desktop-background /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg
     # Remove background alternatives for theme packages
     while read theme filename; do
         update-alternatives --remove \
@@ -36,11 +34,10 @@ EOF
           ; do
         update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
     done
+    # *Last* remove background *highest priority* alternatives for active theme
+    update-alternatives --remove desktop-background /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg
+
     # Remove desktop-background.xml alternatives
-    # For active theme
-    update-alternatives --remove \
-        desktop-background.xml \
-        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml
     # For theme packages
     while read theme; do
         update-alternatives --remove \
@@ -56,12 +53,12 @@ EOF
           ; do
         update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/$desktopbackground
     done
+    # *Lastly* remove *highest priority* alternative for active theme
+    update-alternatives --remove \
+        desktop-background.xml \
+        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml
 
     # Remove desktop-lockscreen.xml alternatives
-    # For active theme
-    update-alternatives --remove \
-        desktop-lockscreen.xml \
-        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml
     # For theme packages
     while read theme; do
         update-alternatives --remove \
@@ -70,15 +67,12 @@ EOF
     done << EOF
 softwaves
 EOF
+    # *Last* remove *highest priority* alternative for active theme
+    update-alternatives --remove \
+        desktop-lockscreen.xml \
+        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml
 
     # Remove login theme alternatives
-    # For active theme
-    update-alternatives --remove \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/active-theme/sddm-preview.jpg
-    update-alternatives --remove \
-        desktop-login-background \
-        /usr/share/desktop-base/active-theme/backgrounds/login.svg
     # For theme packages
     # Alternative for theme packages
     while read theme; do
@@ -100,7 +94,7 @@ EOF
     update-alternatives --remove desktop-login-background \
         /usr/share/desktop-base/lines-theme/login-background.svg
     update-alternatives --remove desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background-no-logo.svg
+        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg
     ## Joy
     ### secondary alternatives
     update-alternatives --remove desktop-sddm-preview \
@@ -108,17 +102,39 @@ EOF
     ### main alternatives
     update-alternatives --remove desktop-login-background \
         /usr/share/desktop-base/joy-theme/login-background.svg
+    # *Last* remove *highest priority* alternative for active theme
+    update-alternatives --remove \
+        desktop-sddm-preview \
+        /usr/share/desktop-base/active-theme/sddm-preview.jpg
+    update-alternatives --remove \
+        desktop-login-background \
+        /usr/share/desktop-base/active-theme/backgrounds/login.svg
 
-    # remove grub alternatives
-    for background in \
-          lines-grub.png \
-          lines-grub-1920x1080.png \
-          joy-grub.png \
-          spacefun-grub.png \
-          spacefun-grub-widescreen.png \
-          ; do
-        update-alternatives --remove desktop-grub /usr/share/images/desktop-base/$background
-    done
+    # Remove grub background alternatives
+    while read background; do
+        update-alternatives --remove \
+            desktop-grub \
+            /usr/share/images/desktop-base/$background
+    done << EOF
+joy-grub.png
+spacefun-grub.png
+spacefun-grub-widescreen.png
+EOF
+    ## *Lastly* remove *highest priority* alternative
+    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)
+    if [ $num_grub_efi_installed -gt 0 ] ; then
+        remove_first=lines-grub.png
+        remove_last=lines-grub-1920x1080.png
+    else
+        remove_first=lines-grub-1920x1080.png
+        remove_last=lines-grub.png
+    fi
+    update-alternatives --remove \
+        desktop-grub \
+        /usr/share/images/desktop-base/$remove_first
+    update-alternatives --remove \
+        desktop-grub \
+        /usr/share/images/desktop-base/$remove_last
 
     # Remove theme package alternatives
     while read theme; do
@@ -129,5 +145,4 @@ EOF
 softwaves
 EOF
 
-    update-alternatives --remove desktop-theme /
 fi

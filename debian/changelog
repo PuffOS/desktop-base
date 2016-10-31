@@ -17,6 +17,8 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
    (Closes: #415064, #608523, #611170, #670866, #762276)
   * Remove deprecated ksplash and kdm from KDE4. (Closes: #607842)
   * Remove deprecated splash options from Gnome 2.
+  * Some cleanup in maintainer scripts to correctly handle alternatives.
+    (Closes: #773404)
 
   * Fix lintian warning command-with-path-in-maintainer-script in
     postinst script.

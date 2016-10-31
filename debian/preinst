@@ -14,21 +14,9 @@ if [ "${1}" = "upgrade" ]; then
             --divert /usr/share/pixmaps/splash/gnome-splash.png.orig \
             --remove /usr/share/pixmaps/splash/gnome-splash.png
     fi
+
+    if dpkg --compare-versions ${2} lt 9.0.0; then
+        update-alternatives --remove-all desktop-splash
+    fi
+
 fi
-
-same_conffile() {
-  CONFFILE="$1"
-  if [ -e "$CONFFILE" ]; then
-    md5sum="`md5sum \"$CONFFILE\" | sed -e \"s/ .*//\"`"
-    old_md5sum="`dpkg-query -W -f='${Conffiles}' desktop-base | sed -n -e \"\\\\' $CONFFILE '{s/ obsolete$//;s/.* //p}\"`"
-    [ "$md5sum" = "$old_md5sum" ]
-    return
-  fi
-  return 1
-}
-
-case "$1" in
-  install|upgrade)
-  ;;
-esac
-

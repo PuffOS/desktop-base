@@ -1,11 +1,7 @@
 #!/bin/bash -e
 set -e
 
-if [ "$1" = configure ] && [ -h /etc/alternatives/desktop-splash ] ; then
-  update-alternatives --remove-all desktop-splash
-fi
-
-if [ "$1" = "configure" -o "$1" = "abort-upgrade" ]; then
+if [[ "$1" = "configure" || "$1" = "abort-upgrade" || "$1" = "abort-remove" ]]; then
     # Theme package alternatives
     while read theme priority; do
         update-alternatives --install \
