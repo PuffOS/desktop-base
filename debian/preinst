@@ -15,7 +15,7 @@ if [ "${1}" = "upgrade" ]; then
             --remove /usr/share/pixmaps/splash/gnome-splash.png
     fi
 
-    if dpkg --compare-versions ${2} lt 9.0.0; then
+    if dpkg --compare-versions ${2} lt "9.0.0~exp"; then
         update-alternatives --remove-all desktop-splash
     fi
 
