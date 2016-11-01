@@ -58,7 +58,7 @@ EOF
         /usr/share/images/desktop-base/desktop-background.xml \
         desktop-background.xml \
         /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml 50
-    # Alternative for theme packages
+    # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install \
             /usr/share/images/desktop-base/desktop-background.xml \
@@ -85,7 +85,7 @@ EOF
         /usr/share/images/desktop-base/desktop-lockscreen.xml \
         desktop-lockscreen.xml \
         /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml 50
-    # Alternative for theme packages
+    # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install \
             /usr/share/images/desktop-base/desktop-lockscreen.xml \
@@ -103,7 +103,7 @@ EOF
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
         /usr/share/desktop-base/active-theme/sddm-preview.jpg
-    # Alternative for theme packages
+    # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
             desktop-login-background \
@@ -137,33 +137,46 @@ EOF
         /usr/share/desktop-base/joy-theme/sddm-preview.jpg
 
     # Alternatives for grub
+    # Highest priority for active theme
     ## Favor widescreen / hi-res background for efi installations
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
-        lines_grub_prio=15
-        lines_grub_1920_prio=20
+        grub_prio_4x3=15
+        grub_prio_16x9=20
     else
-        lines_grub_prio=20
-        lines_grub_1920_prio=15
+        grub_prio_4x3=20
+        grub_prio_16x9=15
     fi
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/lines-grub.png $lines_grub_prio
+        /usr/share/desktop-base/active-theme/grub/grub-4x3.png $grub_prio_4x3
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/images/desktop-base/lines-grub-1920x1080.png $lines_grub_1920_prio
+        /usr/share/desktop-base/active-theme/grub/grub-16x9.png $grub_prio_16x9
+    # Alternatives for theme packages
+    while read theme ratio priority; do
+        update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png \
+            desktop-grub \
+            /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png $priority
+    done << EOF
+softwaves 4x3 15
+softwaves 16x9 15
+EOF
 
+    # Old alternatives
     while read background priority; do
         update-alternatives --install \
             /usr/share/images/desktop-base/desktop-grub.png \
             desktop-grub \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-joy-grub.png 15
-spacefun-grub.png 15
-spacefun-grub-widescreen.png 14
+lines-grub.png 10
+lines-grub-1920x1080.png 10
+joy-grub.png 10
+spacefun-grub.png 10
+spacefun-grub-widescreen.png 10
 EOF
 
     # GRUB background

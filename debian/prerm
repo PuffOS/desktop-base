@@ -111,11 +111,23 @@ EOF
         /usr/share/desktop-base/active-theme/backgrounds/login.svg
 
     # Remove grub background alternatives
+    # For theme packages
+    while read theme ratio; do
+        update-alternatives --remove \
+            desktop-grub \
+            /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png
+    done << EOF
+softwaves 4x3
+softwaves 16x9
+EOF
+    # For old alternatives
     while read background; do
         update-alternatives --remove \
             desktop-grub \
             /usr/share/images/desktop-base/$background
     done << EOF
+lines-grub.png
+lines-grub-1920x1080.png
 joy-grub.png
 spacefun-grub.png
 spacefun-grub-widescreen.png
@@ -123,18 +135,18 @@ EOF
     ## *Lastly* remove *highest priority* alternative
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
-        remove_first=lines-grub.png
-        remove_last=lines-grub-1920x1080.png
+        remove_first_ratio=4x3
+        remove_last_ratio=16x9
     else
-        remove_first=lines-grub-1920x1080.png
-        remove_last=lines-grub.png
+        remove_first_ratio=16x9
+        remove_last_ratio=4x3
     fi
     update-alternatives --remove \
         desktop-grub \
-        /usr/share/images/desktop-base/$remove_first
+        /usr/share/desktop-base/active-theme/grub/grub-$remove_first_ratio.png
     update-alternatives --remove \
         desktop-grub \
-        /usr/share/images/desktop-base/$remove_last
+        /usr/share/desktop-base/active-theme/grub/grub-$remove_last_ratio.png
 
     # Remove theme package alternatives
     while read theme; do

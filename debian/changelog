@@ -2,7 +2,8 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
   * Initial support for Soft Waves theme by Juliette Belin.
-    - Default theme for Gnome wallpaper and lock screen
+    - Default theme for GRUB. (Closes: #598776, #773369)
+    - Default theme Gnome wallpaper and lock screen
     - Theme available for SDDM login and Plasma 5 wallpaper and lock screen
     - debian/copyright updated
   * Initial support for global theme switching via alternatives
@@ -27,7 +28,7 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
   [ Yves-Alexis Perez ]
   * Also use Debian wallpaper for second monitor on Xfce.       closes: #785371
 
- -- Coucouf <coucouf@Grumly>  Tue, 06 Sep 2016 08:14:12 +0200
+ -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 06 Sep 2016 08:14:12 +0200
 
 desktop-base (8.0.2) unstable; urgency=medium
 

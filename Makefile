@@ -1,15 +1,25 @@
+GRUB_THEMES=softwaves-theme/grub
 DEFAULT_BACKGROUND=desktop-background
 
-INSTALL=install -m 0644
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
-all:
+all: build-grub
 
-clean:
+build-grub clean-grub install-grub:
+	@target=`echo $@ | sed s/-grub//`; \
+	for grub_theme in $(GRUB_THEMES) ; do \
+		if [ -f $$grub_theme/Makefile ] ; then \
+			$(MAKE) $$target -C $$grub_theme || exit 1; \
+		fi \
+	done$
 
-install:
+clean: clean-grub
+
+install: install-grub install-local
+
+install-local:
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
@@ -132,3 +142,5 @@ install:
 	# Lock screen symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/lockscreen SoftWavesLockScreen
+
+include Makefile.inc
