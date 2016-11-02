@@ -11,16 +11,19 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
 softwaves 1280x720.svg
+softwaves 1280x800.svg
 softwaves 1920x1080.svg
+softwaves 1920x1200.svg
 softwaves 2560x1440.svg
+softwaves 2560x1600.svg
+lines 1280x1024.svg
+lines 1600x1200.svg
+lines 1920x1080.svg
+lines 1920x1200.svg
+lines 2560x1080.svg
 EOF
     # Remove old background alternatives
     for background in \
-          lines-wallpaper_1280x1024.svg \
-          lines-wallpaper_1600x1200.svg \
-          lines-wallpaper_1920x1080.svg \
-          lines-wallpaper_1920x1200.svg \
-          lines-wallpaper_2560x1080.svg \
           joy-wallpaper_1600x1200.svg \
           joy-wallpaper_1600x1200.svg \
           joy-wallpaper_1280x1024.svg \
@@ -45,10 +48,10 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
     done << EOF
 softwaves
+lines
 EOF
     # For old alternatives
     for desktopbackground in \
-          lines.xml \
           joy.xml \
           ; do
         update-alternatives --remove desktop-background.xml /usr/share/images/desktop-base/$desktopbackground
@@ -66,6 +69,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
     done << EOF
 softwaves
+lines
 EOF
     # *Last* remove *highest priority* alternative for active theme
     update-alternatives --remove \
@@ -75,40 +79,32 @@ EOF
     # Remove login theme alternatives
     # For theme packages
     # Alternative for theme packages
-    while read theme; do
+    while read theme background sddm_preview; do
         update-alternatives --remove \
             desktop-sddm-preview \
-            /usr/share/desktop-base/$theme-theme/sddm-preview.jpg
+            /usr/share/desktop-base/$theme-theme/login/$sddm_preview
         update-alternatives --remove \
             desktop-login-background \
-            /usr/share/desktop-base/$theme-theme/backgrounds/login.svg
+            /usr/share/desktop-base/$theme-theme/login/$background
     done << EOF
-softwaves
+softwaves background.svg sddm-preview.jpg
+lines background.svg sddm-preview.jpg
+lines background-nologo.svg sddm-preview-nologo.jpg
 EOF
     # For old alternatives
-    ## Lines
-    ### secondary alternatives
-    update-alternatives --remove desktop-sddm-preview \
-        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
-    ### main alternatives
-    update-alternatives --remove desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background.svg
-    update-alternatives --remove desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg
     ## Joy
     ### secondary alternatives
     update-alternatives --remove desktop-sddm-preview \
         /usr/share/desktop-base/joy-theme/sddm-preview.jpg
-    ### main alternatives
     update-alternatives --remove desktop-login-background \
         /usr/share/desktop-base/joy-theme/login-background.svg
     # *Last* remove *highest priority* alternative for active theme
     update-alternatives --remove \
         desktop-sddm-preview \
-        /usr/share/desktop-base/active-theme/sddm-preview.jpg
+        /usr/share/desktop-base/active-theme/login/sddm-preview.jpg
     update-alternatives --remove \
         desktop-login-background \
-        /usr/share/desktop-base/active-theme/backgrounds/login.svg
+        /usr/share/desktop-base/active-theme/login/background.svg
 
     # Remove grub background alternatives
     # For theme packages
@@ -119,6 +115,8 @@ EOF
     done << EOF
 softwaves 4x3
 softwaves 16x9
+lines 4x3
+lines 16x9
 EOF
     # For old alternatives
     while read background; do
@@ -126,8 +124,6 @@ EOF
             desktop-grub \
             /usr/share/images/desktop-base/$background
     done << EOF
-lines-grub.png
-lines-grub-1920x1080.png
 joy-grub.png
 spacefun-grub.png
 spacefun-grub-widescreen.png
@@ -154,7 +150,12 @@ EOF
             desktop-theme \
             /usr/share/desktop-base/$theme-theme
     done << EOF
-softwaves
+lines
 EOF
+
+    ## *Lastly* remove *highest priority* alternative
+    update-alternatives --remove \
+        desktop-theme \
+        /usr/share/desktop-base/softwaves-theme
 
 fi

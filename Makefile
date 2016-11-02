@@ -1,4 +1,4 @@
-GRUB_THEMES=softwaves-theme/grub
+GRUB_THEMES=lines-theme/grub softwaves-theme/grub
 DEFAULT_BACKGROUND=desktop-background
 
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
@@ -63,26 +63,12 @@ install-local:
 	$(INSTALL) kde-wallpaper/joy_inksplat/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images
 	$(INSTALL) $(wildcard kde-wallpaper/joy_inksplat/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images/
-	## Lines
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines
-	$(INSTALL) kde-wallpaper/Lines/metadata.desktop $(DESTDIR)/usr/share/wallpapers/Lines/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines/contents
-	$(INSTALL) kde-wallpaper/Lines/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/Lines/contents/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/Lines/contents/images
-	$(INSTALL) $(wildcard kde-wallpaper/Lines/contents/images/*) $(DESTDIR)/usr/share/wallpapers/Lines/contents/images/
 
 
 	## SDDM meta theme (configured with alternatives)
 	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
 	$(INSTALL) $(wildcard sddm-debian/*) $(DESTDIR)/usr/share/sddm/themes/debian-theme
 
-
-	## Lines
-	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme
-	# login background
-	$(INSTALL) lines-theme/login-background.svg $(DESTDIR)/usr/share/desktop-base/lines-theme/
-	$(INSTALL) lines-theme/login-background-with-logo.svg $(DESTDIR)/usr/share/desktop-base/lines-theme/
-	$(INSTALL) lines-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/lines-theme/
 
 	## Joy
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme
@@ -99,8 +85,6 @@ install-local:
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 
 	# grub
-	$(INSTALL) grub/lines-grub.png $(DESTDIR)/usr/share/images/desktop-base/
-	$(INSTALL) grub/lines-grub-1920x1080.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
@@ -116,19 +100,40 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
 	$(INSTALL) $(wildcard plymouth/lines/*) $(DESTDIR)/usr/share/plymouth/themes/lines
 
-
-	# Soft waves theme (Stretch default)
+	# Lines theme (Jessie’s default)
 	### Login background
-	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme
-	$(INSTALL) softwaves-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/softwaves-theme/
-	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/backgrounds
-	$(INSTALL) softwaves-theme/backgrounds/login.svg $(DESTDIR)/usr/share/desktop-base/softwaves-theme/backgrounds
+	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/login
+	$(INSTALL) $(wildcard lines-theme/login/*) $(DESTDIR)/usr/share/desktop-base/lines-theme/login
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper/contents/images
+	$(INSTALL) lines-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper
+	$(INSTALL) lines-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper
+	$(INSTALL) $(wildcard lines-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper/contents/images/
+	$(INSTALL) lines-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-lines.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/lines-theme/wallpaper Lines
+
+	### Lockscreen
+	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/lockscreen/contents/images
+	$(INSTALL) lines-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/lines-theme/lockscreen
+	$(INSTALL) lines-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/lines-theme/lockscreen
+	$(INSTALL) $(wildcard lines-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/lines-theme/lockscreen/contents/images/
+	# Lock screen symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/lines-theme/lockscreen LinesLockScreen
+
+
+	# Soft waves theme (Stretch’s default)
+	### Login background
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
+	$(INSTALL) $(wildcard softwaves-theme/login/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper/contents/images
 	$(INSTALL) softwaves-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper
 	$(INSTALL) softwaves-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper
 	$(INSTALL) $(wildcard softwaves-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper/contents/images/
-	$(INSTALL) softwaves-theme/gnome-wp-list-softwaves.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-softwaves.xml
+	$(INSTALL) softwaves-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-softwaves.xml
 	# Wallpaper symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/wallpaper SoftWaves
@@ -138,7 +143,6 @@ install-local:
 	$(INSTALL) softwaves-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen
 	$(INSTALL) softwaves-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen
 	$(INSTALL) $(wildcard softwaves-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/lockscreen/contents/images/
-	$(INSTALL) softwaves-theme/gnome-wp-list-softwaves.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-softwaves.xml
 	# Lock screen symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/lockscreen SoftWavesLockScreen

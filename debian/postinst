@@ -10,6 +10,7 @@ if [[ "$1" = "configure" || "$1" = "abort-upgrade" || "$1" = "abort-remove" ]]; 
             /usr/share/desktop-base/$theme-theme $priority
     done << EOF
 softwaves 50
+lines 40
 EOF
 
     # Use active theme as highest priority for background
@@ -25,8 +26,16 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
 softwaves 1280x720.svg 65
+softwaves 1280x800.svg 65
 softwaves 1920x1080.svg 65
+softwaves 1920x1200.svg 65
 softwaves 2560x1440.svg 65
+softwaves 2560x1600.svg 65
+lines 1280x1024.svg 60
+lines 1600x1200.svg 60
+lines 1920x1080.svg 60
+lines 1920x1200.svg 60
+lines 2560x1080.svg 60
 EOF
     # Old alternatives for the background
     while read background priority; do
@@ -35,11 +44,6 @@ EOF
             desktop-background \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-lines-wallpaper_1280x1024.svg 60
-lines-wallpaper_1600x1200.svg 60
-lines-wallpaper_1920x1080.svg 60
-lines-wallpaper_1920x1200.svg 60
-lines-wallpaper_2560x1080.svg 60
 joy-wallpaper_1600x1200.svg 50
 joy-wallpaper_1280x1024.svg 50
 joy-wallpaper_1920x1080.svg 50
@@ -66,6 +70,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
     done << EOF
 softwaves 40
+lines 30
 EOF
     # Old alternatives
     while read desktopbackground priority; do
@@ -74,7 +79,6 @@ EOF
             desktop-background.xml \
             /usr/share/images/desktop-base/$desktopbackground $priority
     done << EOF
-lines.xml 20
 joy.xml 20
 EOF
 
@@ -93,41 +97,31 @@ EOF
             /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
     done << EOF
 softwaves 40
+lines 30
 EOF
 
     # Login theme
     # Highest priority for active theme
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
-        /usr/share/desktop-base/active-theme/backgrounds/login.svg 50 \
+        /usr/share/desktop-base/active-theme/login/background.svg 50 \
         --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
         desktop-sddm-preview \
-        /usr/share/desktop-base/active-theme/sddm-preview.jpg
+        /usr/share/desktop-base/active-theme/login/sddm-preview.jpg
     # Alternatives for theme packages
-    while read theme priority; do
+    while read theme background sddm_preview priority; do
         update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
             desktop-login-background \
-            /usr/share/desktop-base/$theme-theme/backgrounds/login.svg $priority \
+            /usr/share/desktop-base/$theme-theme/login/$background $priority \
             --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
             desktop-sddm-preview \
-            /usr/share/desktop-base/$theme-theme/sddm-preview.jpg
+            /usr/share/desktop-base/$theme-theme/login/$sddm_preview
     done << EOF
-softwaves 40
+softwaves background.svg sddm-preview.jpg 40
+lines background.svg sddm-preview.jpg 30
+lines background-nologo.svg sddm-preview-nologo.jpg 30
 EOF
     # Old alternatives
-    ## Lines
-    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-        desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background.svg 20 \
-        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
-    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-        desktop-login-background \
-        /usr/share/desktop-base/lines-theme/login-background-with-logo.svg 20 \
-        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/lines-theme/sddm-preview.jpg
     ## Joy
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
@@ -163,6 +157,8 @@ EOF
     done << EOF
 softwaves 4x3 15
 softwaves 16x9 15
+lines 4x3 14
+lines 16x9 14
 EOF
 
     # Old alternatives
@@ -172,8 +168,6 @@ EOF
             desktop-grub \
             /usr/share/images/desktop-base/$background $priority
     done << EOF
-lines-grub.png 10
-lines-grub-1920x1080.png 10
 joy-grub.png 10
 spacefun-grub.png 10
 spacefun-grub-widescreen.png 10
