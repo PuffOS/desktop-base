@@ -40,10 +40,6 @@ install-local:
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
-	# KDE Config
-	mkdir -p $(DESTDIR)/usr/share/kde4/config
-	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4/config
-
 	# KDE Wallpaper
 	## Joy
 	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy
