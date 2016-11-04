@@ -20,12 +20,12 @@ d = desktops()
 
 for (i in d) {
     // Only set up the wallpaper if the plugin is the default.
-    // Otherwise it means the user chose another plugin and we don’t want to override user’s choice.
+    // Otherwise it means the user chose another plugin and we don’t want to override that.
     if (d[i].wallpaperPlugin == 'org.kde.image') {
         d[i].currentConfigGroup = Array('Wallpaper', 'org.kde.image', 'General')
         if (!d[i].readConfig('Image')) {
             // Only set up the wallpaper if the wallpaper image is empty (=default).
-            // Otherwise it means the user select a picture and we don’t want to override user’s choice.
+            // Otherwise it means the user select a picture and we don’t want to override that.
             d[i].writeConfig('Image', 'DebianTheme');
         }
     }
