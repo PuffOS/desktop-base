@@ -2,9 +2,10 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
   * Initial support for Soft Waves theme by Juliette Belin.
-    - Default theme for GRUB. (Closes: #598776, #773369)
-    - Default theme Gnome wallpaper and lock screen
-    - Theme available for SDDM login and Plasma 5 wallpaper and lock screen
+    - Default theme for GRUB (Closes: #598776, #773369)
+    - Default theme for Gnome wallpaper and lock screen
+    - Default theme for Plasma 5 wallpaper (Closes: #831730)
+    - Theme available for SDDM login and lock screen
     - debian/copyright updated
   * Initial support for global theme switching via alternatives
 

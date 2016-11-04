@@ -41,12 +41,8 @@ install-local:
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
 	# KDE Config
-	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
-	$(INSTALL) $(wildcard profiles/kde-profile/share/config/*) $(DESTDIR)/usr/share/desktop-base/profiles/kde-profile/share/config
 	mkdir -p $(DESTDIR)/usr/share/kde4/config
 	$(INSTALL) profiles/kde-profile/kdeglobals $(DESTDIR)/usr/share/kde4/config
-	mkdir -p $(DESTDIR)/usr/share/kde4/apps/plasma-desktop/init/
-	$(INSTALL) kde-wallpaper/10-desktop-base.js $(DESTDIR)/usr/share/kde4/apps/plasma-desktop/init/
 
 	# KDE Wallpaper
 	## Joy
@@ -65,10 +61,13 @@ install-local:
 	$(INSTALL) $(wildcard kde-wallpaper/joy_inksplat/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images/
 
 
-	## SDDM meta theme (configured with alternatives)
+	# SDDM meta theme (configured with alternatives)
 	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
 	$(INSTALL) $(wildcard sddm-debian/*) $(DESTDIR)/usr/share/sddm/themes/debian-theme
 
+	# Set Plasma 5/KDE default wallpaper
+	install -d $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates
+	$(INSTALL) defaults/plasma5/desktop-base.js $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/
 
 	## Joy
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme

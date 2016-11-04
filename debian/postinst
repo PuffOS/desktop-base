@@ -100,6 +100,23 @@ softwaves 40
 lines 30
 EOF
 
+    # Set up an alternative for the wallpaper for Plasma 5/KDE
+    # Highest priority for active theme
+    update-alternatives --install \
+        /usr/share/wallpapers/DebianTheme \
+        desktop-plasma5-wallpaper \
+        /usr/share/desktop-base/active-theme/wallpaper 50
+    # Alternatives for theme packages
+    while read theme priority; do
+        update-alternatives --install \
+            /usr/share/wallpapers/DebianTheme \
+            desktop-plasma5-wallpaper \
+            /usr/share/desktop-base/$theme-theme/wallpaper $priority
+    done << EOF
+softwaves 40
+lines 30
+EOF
+
     # Login theme
     # Highest priority for active theme
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
