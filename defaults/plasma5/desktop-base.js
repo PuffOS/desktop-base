@@ -25,7 +25,7 @@ for (i in d) {
         d[i].currentConfigGroup = Array('Wallpaper', 'org.kde.image', 'General')
         if (!d[i].readConfig('Image')) {
             // Only set up the wallpaper if the wallpaper image is empty (=default).
-            // Otherwise it means the user select a picture and we don’t want to override that.
+            // Otherwise it means the user selected a picture and we don’t want to override that.
             d[i].writeConfig('Image', 'DebianTheme');
         }
     }
