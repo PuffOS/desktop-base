@@ -145,7 +145,7 @@ spacefun-grub.png
 spacefun-grub-widescreen.png
 EOF
     ## *Lastly* remove *highest priority* alternative
-    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)
+    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
         remove_first_ratio=4x3
         remove_last_ratio=16x9

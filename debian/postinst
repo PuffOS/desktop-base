@@ -153,7 +153,7 @@ EOF
     # Alternatives for grub
     # Highest priority for active theme
     ## Favor widescreen / hi-res background for efi installations
-    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" | grep "^i" | wc -l)
+    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
         grub_prio_4x3=15
         grub_prio_16x9=20
