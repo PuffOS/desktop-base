@@ -1,6 +1,7 @@
 #!/bin/sh -e
 set -e
 
+# Tag to allow some debhelper commands to inject relevant code
 #DEBHELPER#
 
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
