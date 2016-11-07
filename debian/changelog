@@ -1,4 +1,4 @@
-desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
+desktop-base (9.0.0~exp1) experimental; urgency=medium
 
   [ Aurélien COUDERC ]
   * Initial support for Soft Waves theme by Juliette Belin.
@@ -29,7 +29,7 @@ desktop-base (9.0.0~exp1) UNRELEASED; urgency=medium
   [ Yves-Alexis Perez ]
   * Also use Debian wallpaper for second monitor on Xfce.       closes: #785371
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 06 Sep 2016 08:14:12 +0200
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 07 Nov 2016 21:32:30 +0100
 
 desktop-base (8.0.2) unstable; urgency=medium
 
