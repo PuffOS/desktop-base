@@ -18,8 +18,8 @@ if [ "${1}" = "upgrade" ]; then
             --remove /usr/share/pixmaps/splash/gnome-splash.png
     fi
 
-    if dpkg --compare-versions ${2} lt "9.0.0~exp"; then
-        # Remove desktop splash alternative that we don’t ship anymore
+    if dpkg --compare-versions ${2} lt "9.0.0~"; then
+        # Remove alternative for desktop splash we don’t ship anymore
         update-alternatives --remove-all desktop-splash
 
         # Remove alternatives for Lines we now ship elsewhere as a theme pack
@@ -50,6 +50,18 @@ if [ "${1}" = "upgrade" ]; then
         done << EOF
 lines-grub.png
 lines-grub-1920x1080.png
+EOF
+    fi
+
+    if dpkg --compare-versions ${2} lt "9.0.0~exp2"; then
+        # Remove alternatives for moreblue wallpapers we don’t ship anymore
+        while read background; do
+            update-alternatives --remove \
+                desktop-background \
+                /usr/share/images/desktop-base/$background
+    done << EOF
+moreblue-orbit-wallpaper.svg
+moreblue-orbit-wallpaper-widescreen.svg
 EOF
     fi
 

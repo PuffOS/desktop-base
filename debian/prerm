@@ -33,8 +33,6 @@ EOF
           joy-inksplat-wallpaper_1920x1080.svg \
           spacefun-wallpaper.svg \
           spacefun-wallpaper-widescreen.svg \
-          moreblue-orbit-wallpaper.svg \
-          moreblue-orbit-wallpaper-widescreen.svg \
           ; do
         update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
     done
