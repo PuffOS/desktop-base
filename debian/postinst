@@ -199,8 +199,7 @@ EOF
         update-grub2 || true
     fi
 
-    which update-initramfs > /dev/null
-    if [ $? -eq 0 ] ; then
+    if which update-initramfs > /dev/null; then
         update-initramfs -u
     fi
 
