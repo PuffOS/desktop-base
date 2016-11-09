@@ -63,6 +63,19 @@ EOF
 moreblue-orbit-wallpaper.svg
 moreblue-orbit-wallpaper-widescreen.svg
 EOF
+
+        # Remove old alternatives for joy/spacefun grub themes now shipped in
+        # theme packs.
+        while read background; do
+            update-alternatives --remove \
+                desktop-grub \
+                /usr/share/images/desktop-base/$background
+        done << EOF
+joy-grub.png
+spacefun-grub.png
+spacefun-grub-widescreen.png
+EOF
+
     fi
 
 fi

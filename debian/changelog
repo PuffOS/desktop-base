@@ -2,7 +2,10 @@ desktop-base (9.0.0~exp2) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
   * Remove Moreblue theme from Lenny.
-  * Fix detection of update-initramfs. (Closes: #843727) 
+  * Generate all GRUB bitmaps from SVG at build time instead of versionning
+    them.
+
+  * Fix detection of update-initramfs. (Closes: #843727)
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 07 Nov 2016 22:28:06 +0100
 

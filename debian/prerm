@@ -131,16 +131,10 @@ softwaves 4x3
 softwaves 16x9
 lines 4x3
 lines 16x9
-EOF
-    # For old alternatives
-    while read background; do
-        update-alternatives --remove \
-            desktop-grub \
-            /usr/share/images/desktop-base/$background
-    done << EOF
-joy-grub.png
-spacefun-grub.png
-spacefun-grub-widescreen.png
+joy 4x3
+joy 16x9
+spacefun 4x3
+spacefun 16x9
 EOF
     ## *Lastly* remove *highest priority* alternative
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)

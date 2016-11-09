@@ -1,4 +1,4 @@
-GRUB_THEMES=lines-theme/grub softwaves-theme/grub
+GRUB_THEMES=softwaves-theme/grub lines-theme/grub joy-theme/grub spacefun-theme/grub
 DEFAULT_BACKGROUND=desktop-background
 
 BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
@@ -80,9 +80,6 @@ install-local:
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 
 	# grub
-	$(INSTALL) grub/joy-grub.png $(DESTDIR)/usr/share/images/desktop-base/
-	$(INSTALL) grub/spacefun-grub.png $(DESTDIR)/usr/share/images/desktop-base/
-	$(INSTALL) grub/spacefun-grub-widescreen.png $(DESTDIR)/usr/share/images/desktop-base/
 	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
 
 	# plymouth

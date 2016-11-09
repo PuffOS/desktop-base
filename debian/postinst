@@ -177,18 +177,10 @@ softwaves 4x3 15
 softwaves 16x9 15
 lines 4x3 14
 lines 16x9 14
-EOF
-
-    # Old alternatives
-    while read background priority; do
-        update-alternatives --install \
-            /usr/share/images/desktop-base/desktop-grub.png \
-            desktop-grub \
-            /usr/share/images/desktop-base/$background $priority
-    done << EOF
-joy-grub.png 10
-spacefun-grub.png 10
-spacefun-grub-widescreen.png 10
+joy 4x3 14
+joy 16x9 14
+spacefun 4x3 14
+spacefun 16x9 14
 EOF
 
     # GRUB background
