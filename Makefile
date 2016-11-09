@@ -79,9 +79,6 @@ install-local:
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 
-	# grub
-	$(INSTALL) grub/grub_background.sh $(DESTDIR)/usr/share/desktop-base/
-
 	# plymouth
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
 	$(INSTALL) $(wildcard plymouth/spacefun/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun

@@ -148,42 +148,51 @@ EOF
         desktop-sddm-preview \
         /usr/share/desktop-base/joy-theme/sddm-preview.jpg
 
-    # Alternatives for grub
+    # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme
     ## Favor widescreen / hi-res background for efi installations
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
-        grub_prio_4x3=15
-        grub_prio_16x9=20
+        grub_prio_4x3=45
+        grub_prio_16x9=50
     else
-        grub_prio_4x3=20
-        grub_prio_16x9=15
+        grub_prio_4x3=50
+        grub_prio_16x9=45
     fi
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-4x3.png $grub_prio_4x3
+        /usr/share/desktop-base/active-theme/grub/grub-4x3.png $grub_prio_4x3 \
+        --slave /usr/share/desktop-base/grub_background.sh \
+        desktop-grub.sh \
+        /usr/share/desktop-base/active-theme/grub/grub_background.sh
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-16x9.png $grub_prio_16x9
+        /usr/share/desktop-base/active-theme/grub/grub-16x9.png $grub_prio_16x9 \
+        --slave /usr/share/desktop-base/grub_background.sh \
+        desktop-grub.sh \
+        /usr/share/desktop-base/active-theme/grub/grub_background.sh
     # Alternatives for theme packages
     while read theme ratio priority; do
         update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png \
             desktop-grub \
-            /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png $priority
+            /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png $priority \
+            --slave /usr/share/desktop-base/grub_background.sh \
+            desktop-grub.sh \
+            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
     done << EOF
-softwaves 4x3 15
-softwaves 16x9 15
-lines 4x3 14
-lines 16x9 14
-joy 4x3 14
-joy 16x9 14
-spacefun 4x3 14
-spacefun 16x9 14
+softwaves 4x3 40
+softwaves 16x9 40
+lines 4x3 30
+lines 16x9 30
+joy 4x3 30
+joy 16x9 30
+spacefun 4x3 30
+spacefun 16x9 30
 EOF
 
-    # GRUB background
+    # Apply GRUB background update into /boot
     if which update-grub2 > /dev/null ; then
         # Ensure the background image file has actually been written to disc
         # before updating.

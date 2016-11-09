@@ -124,6 +124,9 @@ EOF
     # For theme packages
     while read theme ratio; do
         update-alternatives --remove \
+            desktop-grub.sh \
+            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
+        update-alternatives --remove \
             desktop-grub \
             /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png
     done << EOF
@@ -146,11 +149,30 @@ EOF
         remove_last_ratio=4x3
     fi
     update-alternatives --remove \
+        desktop-grub.sh \
+        /usr/share/desktop-base/active-theme/grub/grub_background.sh
+    update-alternatives --remove \
         desktop-grub \
         /usr/share/desktop-base/active-theme/grub/grub-$remove_first_ratio.png
     update-alternatives --remove \
         desktop-grub \
         /usr/share/desktop-base/active-theme/grub/grub-$remove_last_ratio.png
+
+    # Remove alternative for the GRUB background/colors config
+    # Alternatives for theme packages
+    while read theme priority; do
+        update-alternatives --remove \
+            desktop-grub.sh \
+            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
+    done << EOF
+softwaves
+lines
+EOF
+    # *Lastly* remove *highest priority* alternative
+    update-alternatives --remove \
+        desktop-grub.sh \
+        /usr/share/desktop-base/active-theme/grub/grub_background.sh
+
 
     # Remove theme package alternatives
     while read theme; do

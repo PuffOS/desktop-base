@@ -4,6 +4,8 @@ desktop-base (9.0.0~exp2) UNRELEASED; urgency=medium
   * Remove Moreblue theme from Lenny.
   * Generate all GRUB bitmaps from SVG at build time instead of versionning
     them.
+  * Include GRUB text/background colors in the theme pack / alternatives
+    system. (Closes: #606383)
 
   * Fix detection of update-initramfs. (Closes: #843727)
 
