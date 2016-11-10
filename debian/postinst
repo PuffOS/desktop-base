@@ -197,7 +197,7 @@ EOF
         # Ensure the background image file has actually been written to disc
         # before updating.
         sync
-        update-grub || true
+        update-grub
     fi
 
     if which update-initramfs > /dev/null; then
