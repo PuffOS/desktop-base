@@ -193,11 +193,11 @@ spacefun 16x9 30
 EOF
 
     # Apply GRUB background update into /boot
-    if which update-grub2 > /dev/null ; then
+    if which update-grub > /dev/null ; then
         # Ensure the background image file has actually been written to disc
         # before updating.
         sync
-        update-grub2 || true
+        update-grub || true
     fi
 
     if which update-initramfs > /dev/null; then
