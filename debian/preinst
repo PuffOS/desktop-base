@@ -64,8 +64,38 @@ moreblue-orbit-wallpaper.svg
 moreblue-orbit-wallpaper-widescreen.svg
 EOF
 
-        # Remove old alternatives for joy/spacefun grub themes now shipped in
-        # theme packs.
+        # Remove alternatives for Joy/Spacefun we now ship elsewhere as a theme
+        # pack.
+        # Wallpapers
+        while read background; do
+            update-alternatives --remove \
+                desktop-background \
+                /usr/share/images/desktop-base/$background
+    done << EOF
+joy-wallpaper_1600x1200.svg
+joy-wallpaper_1280x1024.svg
+joy-wallpaper_1920x1080.svg
+joy-wallpaper_1920x1200.svg
+joy-inksplat-wallpaper_1920x1080.svg
+spacefun-wallpaper.svg
+spacefun-wallpaper-widescreen.svg
+EOF
+        # Wallpaper XML descriptions (for Gnome)
+        while read desktopbackground; do
+            update-alternatives --remove \
+                desktop-background.xml \
+                /usr/share/images/desktop-base/$desktopbackground
+        done << EOF
+joy.xml
+EOF
+        # SDDM background
+        update-alternatives --remove \
+            desktop-sddm-preview \
+            /usr/share/desktop-base/joy-theme/sddm-preview.jpg
+        update-alternatives --remove \
+            desktop-login-background \
+            /usr/share/desktop-base/joy-theme/login-background.svg
+        # GRUB backgrounds
         while read background; do
             update-alternatives --remove \
                 desktop-grub \
@@ -75,6 +105,7 @@ joy-grub.png
 spacefun-grub.png
 spacefun-grub-widescreen.png
 EOF
+
 
     fi
 

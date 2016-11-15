@@ -14,6 +14,9 @@ if [[ "$1" = "configure" || "$1" = "abort-upgrade" || "$1" = "abort-remove" ]]; 
     done << EOF
 softwaves 50
 lines 40
+joy 30
+joy-inksplat 30
+spacefun 30
 EOF
 
     # Use active theme as highest priority for background
@@ -28,8 +31,11 @@ EOF
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
+softwaves 1024x768.svg 65
 softwaves 1280x720.svg 65
 softwaves 1280x800.svg 65
+softwaves 1280x1024.svg 65
+softwaves 1600x1200.svg 65
 softwaves 1920x1080.svg 65
 softwaves 1920x1200.svg 65
 softwaves 2560x1440.svg 65
@@ -39,21 +45,20 @@ lines 1600x1200.svg 60
 lines 1920x1080.svg 60
 lines 1920x1200.svg 60
 lines 2560x1080.svg 60
-EOF
-    # Old alternatives for the background
-    while read background priority; do
-        update-alternatives --install \
-            /usr/share/images/desktop-base/desktop-background \
-            desktop-background \
-            /usr/share/images/desktop-base/$background $priority
-    done << EOF
-joy-wallpaper_1600x1200.svg 50
-joy-wallpaper_1280x1024.svg 50
-joy-wallpaper_1920x1080.svg 50
-joy-wallpaper_1920x1200.svg 50
-joy-inksplat-wallpaper_1920x1080.svg 50
-spacefun-wallpaper.svg 50
-spacefun-wallpaper-widescreen.svg  50
+joy 1280x720.svg 50
+joy 1280x1024.svg 50
+joy 1600x1200.svg 50
+joy 1920x1080.svg 50
+joy 1920x1200.svg 50
+joy-inksplat 1280x720.svg 50
+joy-inksplat 1280x1024.svg 50
+joy-inksplat 1600x1200.svg 50
+joy-inksplat 1920x1080.svg 50
+joy-inksplat 1920x1200.svg 50
+spacefun 1280x720.svg 50
+spacefun 1280x1024.svg 50
+spacefun 1920x1080.svg 50
+spacefun 1920x1200.svg 50
 EOF
 
     # Set up an alternative for the XML version of the background
@@ -72,15 +77,9 @@ EOF
     done << EOF
 softwaves 40
 lines 30
-EOF
-    # Old alternatives
-    while read desktopbackground priority; do
-        update-alternatives --install \
-            /usr/share/images/desktop-base/desktop-background.xml \
-            desktop-background.xml \
-            /usr/share/images/desktop-base/$desktopbackground $priority
-    done << EOF
-joy.xml 20
+joy 20
+joy-inksplat 20
+spacefun 20
 EOF
 
     # Set up an alternative for the XML version of the lock screen
@@ -139,14 +138,6 @@ softwaves background.svg sddm-preview.jpg 40
 lines background.svg sddm-preview.jpg 30
 lines background-nologo.svg sddm-preview-nologo.jpg 30
 EOF
-    # Old alternatives
-    ## Joy
-    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-        desktop-login-background \
-        /usr/share/desktop-base/joy-theme/login-background.svg 20 \
-        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/joy-theme/sddm-preview.jpg
 
     # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme

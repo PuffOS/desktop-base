@@ -1,7 +1,6 @@
 GRUB_THEMES=softwaves-theme/grub lines-theme/grub joy-theme/grub spacefun-theme/grub
 DEFAULT_BACKGROUND=desktop-background
 
-BACKGROUNDS=$(wildcard backgrounds/*.png backgrounds/*.jpg backgrounds/*.svg backgrounds/*.tga backgrounds/*.xml)
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
@@ -22,7 +21,6 @@ install: install-grub install-local
 install-local:
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
-	$(INSTALL) $(BACKGROUNDS) $(DESTDIR)/usr/share/images/desktop-base
 	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
 	# emblems
 	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
@@ -40,22 +38,6 @@ install-local:
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
-	# KDE Wallpaper
-	## Joy
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy
-	$(INSTALL) kde-wallpaper/joy/metadata.desktop $(DESTDIR)/usr/share/wallpapers/joy/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents
-	$(INSTALL) kde-wallpaper/joy/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy/contents/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy/contents/images
-	$(INSTALL) $(wildcard kde-wallpaper/joy/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy/contents/images/
-	# Inksplat Version
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat
-	$(INSTALL) kde-wallpaper/joy_inksplat/metadata.desktop $(DESTDIR)/usr/share/wallpapers/joy_inksplat/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents
-	$(INSTALL) kde-wallpaper/joy_inksplat/contents/screenshot.png $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/
-	mkdir -p $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images
-	$(INSTALL) $(wildcard kde-wallpaper/joy_inksplat/contents/images/*) $(DESTDIR)/usr/share/wallpapers/joy_inksplat/contents/images/
-
 
 	# SDDM meta theme (configured with alternatives)
 	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
@@ -65,19 +47,12 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates
 	$(INSTALL) defaults/plasma5/desktop-base.js $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/
 
-	## Joy
-	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme
-	# login background
-	$(INSTALL) joy-theme/login-background.svg $(DESTDIR)/usr/share/desktop-base/joy-theme/
-	$(INSTALL) joy-theme/sddm-preview.jpg $(DESTDIR)/usr/share/desktop-base/joy-theme/
-
-
 	# Xfce 4.6
 	mkdir -p $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
 	$(INSTALL) $(wildcard profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml/*) $(DESTDIR)/usr/share/desktop-base/profiles/xdg-config/xfce4/xfconf/xfce-perchannel-xml
-	# GNOME background descriptor
+
+	# GNOME background descriptors
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
-	$(INSTALL) gnome-backgrounds.xml $(DESTDIR)/usr/share/gnome-background-properties/debian.xml
 
 	# plymouth
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
@@ -88,6 +63,61 @@ install-local:
 
 	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
 	$(INSTALL) $(wildcard plymouth/lines/*) $(DESTDIR)/usr/share/plymouth/themes/lines
+
+
+	# Space Fun theme (Squeeze’s default)
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper/contents/images
+	$(INSTALL) spacefun-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper
+	$(INSTALL) spacefun-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper
+	$(INSTALL) $(wildcard spacefun-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper/contents/images/
+	$(INSTALL) spacefun-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-spacefun.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/spacefun-theme/wallpaper SpaceFun
+
+	### Lockscreen (same as wallpaper)
+	cd $(DESTDIR)/usr/share/desktop-base/spacefun-theme && ln -s wallpaper lockscreen
+
+
+	# Joy theme (Wheezy’s default)
+	### Login background
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/login
+	$(INSTALL) $(wildcard joy-theme/login/*) $(DESTDIR)/usr/share/desktop-base/joy-theme/login
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper/contents/images
+	$(INSTALL) joy-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper
+	$(INSTALL) joy-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper
+	$(INSTALL) $(wildcard joy-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper/contents/images/
+	$(INSTALL) joy-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-joy.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/joy-theme/wallpaper Joy
+
+	### Lockscreen
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/lockscreen/contents/images
+	$(INSTALL) joy-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/joy-theme/lockscreen
+	$(INSTALL) joy-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/joy-theme/lockscreen
+	$(INSTALL) $(wildcard joy-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/joy-theme/lockscreen/contents/images/
+	# Lock screen symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/joy-theme/lockscreen JoyLockScreen
+
+
+	# Joy Inksplat theme (Wheezy’s alternate theme)
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper/contents/images
+	$(INSTALL) joy-inksplat-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper
+	$(INSTALL) joy-inksplat-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper
+	$(INSTALL) $(wildcard joy-inksplat-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper/contents/images/
+	$(INSTALL) joy-inksplat-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-joy-inksplat.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/joy-inksplat-theme/wallpaper JoyInksplat
+
+	### Lockscreen (same as Joy)
+	cd $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme && ln -s /usr/share/desktop-base/joy-theme/lockscreen lockscreen
+
 
 	# Lines theme (Jessie’s default)
 	### Login background
