@@ -1,8 +1,8 @@
 [SddmGreeterTheme]
-Name=Debian Theme
-Name[fr]=Thème Debian
-Description=Debian theme based on Plasma Breeze theme and powered by alternatives system
-Description[fr]=Thème Debian basé sur le thème Plasma Breeze et configurables par le sytème d’alternatives
+Name=Debian Breeze
+Name[fr]=Debian Brise
+Description=Debian theme based on Breeze
+Description[fr]=Thème Debian basé sur Brise
 Type=sddm-theme
 Version=0.1
 Screenshot=sddm-preview.jpg

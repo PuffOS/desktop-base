@@ -3,7 +3,7 @@ desktop-base (9.0.0~exp2) UNRELEASED; urgency=medium
   [ Aurélien COUDERC ]
   * Additional wallpaper ratios for Soft Waves theme.
   * Remove Moreblue theme from Lenny.
-  * Move Joy/Spacefun wallpapers to theme pack structure.
+  * Add theme pack support Joy/Spacefun themes.
   * Generate all GRUB bitmaps from SVG at build time instead of versioning
     them.
   * Include GRUB text/background colors in the theme pack / alternatives

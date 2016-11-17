@@ -66,6 +66,9 @@ install-local:
 
 
 	# Space Fun theme (Squeeze’s default)
+	### Login background
+	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
+	$(INSTALL) $(wildcard spacefun-theme/login/*) $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper/contents/images
 	$(INSTALL) spacefun-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper

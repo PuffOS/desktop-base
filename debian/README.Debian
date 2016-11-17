@@ -215,7 +215,8 @@ A theme pack should contain the following elements:
 ./login/sddm-preview.jpg
 -> To provide the login background alternative for LightDM, SDDM…
    The SDDM-preview.jpg will make the theme recognizable from the Plasma 5
-   preferences.
+   preferences. To create it, set-up a new alternative, start SDDM, take a
+   screenshot and resize it to a 900x506 pixels JPG.
 
 ./lockscreen/gnome-background.xml
 ./lockscreen/contents/images

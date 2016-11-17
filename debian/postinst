@@ -98,6 +98,8 @@ EOF
     done << EOF
 softwaves 40
 lines 30
+joy 20
+spacefun 20
 EOF
 
     # Set up an alternative for the wallpaper for Plasma 5/KDE
@@ -115,6 +117,9 @@ EOF
     done << EOF
 softwaves 40
 lines 30
+joy 20
+joy-inksplat 20
+spacefun 20
 EOF
 
     # Login theme
@@ -137,6 +142,8 @@ EOF
 softwaves background.svg sddm-preview.jpg 40
 lines background.svg sddm-preview.jpg 30
 lines background-nologo.svg sddm-preview-nologo.jpg 30
+joy background.svg sddm-preview.jpg 20
+spacefun background.svg sddm-preview.jpg 20
 EOF
 
     # Set up an alternative for the GRUB background/colors config

@@ -70,6 +70,8 @@ EOF
     done << EOF
 softwaves
 lines
+joy
+spacefun
 EOF
     # *Last* remove *highest priority* alternative for active theme
     update-alternatives --remove \
@@ -109,6 +111,7 @@ softwaves background.svg sddm-preview.jpg
 lines background.svg sddm-preview.jpg
 lines background-nologo.svg sddm-preview-nologo.jpg
 joy background.svg sddm-preview.jpg
+spacefun background.svg sddm-preview.jpg
 EOF
     # *Last* remove *highest priority* alternative for active theme
     update-alternatives --remove \
@@ -118,8 +121,19 @@ EOF
         desktop-login-background \
         /usr/share/desktop-base/active-theme/login/background.svg
 
-    # Remove grub background alternatives
-    # For theme packages
+    # Remove GRUB alternatives
+    # Remove alternative for the GRUB background/colors config
+    while read theme priority; do
+        update-alternatives --remove \
+            desktop-grub.sh \
+            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
+    done << EOF
+softwaves
+lines
+joy
+spacefun
+EOF
+    # Remove background alternatives
     while read theme ratio; do
         update-alternatives --remove \
             desktop-grub.sh \
@@ -155,23 +169,6 @@ EOF
     update-alternatives --remove \
         desktop-grub \
         /usr/share/desktop-base/active-theme/grub/grub-$remove_last_ratio.png
-
-    # Remove alternative for the GRUB background/colors config
-    # Alternatives for theme packages
-    while read theme priority; do
-        update-alternatives --remove \
-            desktop-grub.sh \
-            /usr/share/desktop-base/$theme-theme/grub/grub_background.sh
-    done << EOF
-softwaves
-lines
-joy
-spacefun
-EOF
-    # *Lastly* remove *highest priority* alternative
-    update-alternatives --remove \
-        desktop-grub.sh \
-        /usr/share/desktop-base/active-theme/grub/grub_background.sh
 
 
     # Remove theme package alternatives
