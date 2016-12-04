@@ -126,24 +126,18 @@ EOF
     # Highest priority for active theme
     update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
         desktop-login-background \
-        /usr/share/desktop-base/active-theme/login/background.svg 50 \
-        --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/active-theme/login/sddm-preview.jpg
+        /usr/share/desktop-base/active-theme/login/background.svg 50
     # Alternatives for theme packages
-    while read theme background sddm_preview priority; do
+    while read theme background priority; do
         update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
             desktop-login-background \
-            /usr/share/desktop-base/$theme-theme/login/$background $priority \
-            --slave /usr/share/sddm/themes/debian-theme/sddm-preview.jpg \
-            desktop-sddm-preview \
-            /usr/share/desktop-base/$theme-theme/login/$sddm_preview
+            /usr/share/desktop-base/$theme-theme/login/$background $priority
     done << EOF
-softwaves background.svg sddm-preview.jpg 40
-lines background.svg sddm-preview.jpg 30
-lines background-nologo.svg sddm-preview-nologo.jpg 30
-joy background.svg sddm-preview.jpg 20
-spacefun background.svg sddm-preview.jpg 20
+softwaves background.svg 40
+lines background.svg 30
+lines background-nologo.svg 30
+joy background.svg 20
+spacefun background.svg 20
 EOF
 
     # Set up an alternative for the GRUB background/colors config

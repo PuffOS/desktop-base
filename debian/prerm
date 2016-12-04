@@ -99,24 +99,18 @@ EOF
     # Remove login theme alternatives
     # For theme packages
     # Alternative for theme packages
-    while read theme background sddm_preview; do
-        update-alternatives --remove \
-            desktop-sddm-preview \
-            /usr/share/desktop-base/$theme-theme/login/$sddm_preview
+    while read theme background; do
         update-alternatives --remove \
             desktop-login-background \
             /usr/share/desktop-base/$theme-theme/login/$background
     done << EOF
-softwaves background.svg sddm-preview.jpg
-lines background.svg sddm-preview.jpg
-lines background-nologo.svg sddm-preview-nologo.jpg
-joy background.svg sddm-preview.jpg
-spacefun background.svg sddm-preview.jpg
+softwaves background.svg
+lines background.svg
+lines background-nologo.svg
+joy background.svg
+spacefun background.svg
 EOF
     # *Last* remove *highest priority* alternative for active theme
-    update-alternatives --remove \
-        desktop-sddm-preview \
-        /usr/share/desktop-base/active-theme/login/sddm-preview.jpg
     update-alternatives --remove \
         desktop-login-background \
         /usr/share/desktop-base/active-theme/login/background.svg

@@ -1,15 +1,16 @@
-desktop-base (9.0.0~exp2) UNRELEASED; urgency=medium
+desktop-base (9.0.0) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
+  * Fix detection of update-initramfs. (Closes: #843727)
+  * Include GRUB text/background colors in the theme pack / alternatives
+    system. (Closes: #606383)
+
   * Additional wallpaper and lockscreen ratios for Soft Waves theme.
   * Remove Moreblue theme from Lenny.
   * Add theme pack support Joy/Spacefun themes.
   * Generate all GRUB bitmaps from SVG at build time instead of versioning
     them.
-  * Include GRUB text/background colors in the theme pack / alternatives
-    system. (Closes: #606383)
-
-  * Fix detection of update-initramfs. (Closes: #843727)
+  * Stop shipping SDDM breeze-based theme, now in plasma-workspace.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 07 Nov 2016 22:28:06 +0100
 

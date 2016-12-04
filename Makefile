@@ -39,10 +39,6 @@ install-local:
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
 
-	# SDDM meta theme (configured with alternatives)
-	install -d $(DESTDIR)/usr/share/sddm/themes/debian-theme
-	$(INSTALL) $(wildcard sddm-debian/*) $(DESTDIR)/usr/share/sddm/themes/debian-theme
-
 	# Set Plasma 5/KDE default wallpaper
 	install -d $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates
 	$(INSTALL) defaults/plasma5/desktop-base.js $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/
