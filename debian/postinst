@@ -157,23 +157,23 @@ EOF
     ## Favor widescreen / hi-res background for efi installations
     num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
-        grub_prio_4x3=45
-        grub_prio_16x9=50
+        grub_first_ratio="16x9"
+        grub_second_ratio="4x3"
     else
-        grub_prio_4x3=50
-        grub_prio_16x9=45
+        grub_first_ratio="4x3"
+        grub_second_ratio="16x9"
     fi
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-4x3.png $grub_prio_4x3 \
+        /usr/share/desktop-base/active-theme/grub/grub-${grub_first_ratio}.png 50 \
         --slave /usr/share/desktop-base/grub_background.sh \
         desktop-grub.sh \
         /usr/share/desktop-base/active-theme/grub/grub_background.sh
     update-alternatives --install \
         /usr/share/images/desktop-base/desktop-grub.png \
         desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-16x9.png $grub_prio_16x9 \
+        /usr/share/desktop-base/active-theme/grub/grub-${grub_second_ratio}.png 45 \
         --slave /usr/share/desktop-base/grub_background.sh \
         desktop-grub.sh \
         /usr/share/desktop-base/active-theme/grub/grub_background.sh
