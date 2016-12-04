@@ -22,7 +22,7 @@
    sodipodi:docname="2560x1600.svg"><metadata
      id="metadata190"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs188" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -36,9 +36,9 @@
      inkscape:window-height="1007"
      id="namedview186"
      showgrid="false"
-     inkscape:zoom="0.55625733"
-     inkscape:cx="933.24637"
-     inkscape:cy="742.05519"
+     inkscape:zoom="0.39333333"
+     inkscape:cx="1315.0055"
+     inkscape:cy="763.4813"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -427,7 +427,7 @@
          inkscape:connector-curvature="0"
          style="fill:#ffffff" /></g></g><g
      id="debian_1_"
-     transform="matrix(0.933331,0,0,0.933331,632.77621,308.39837)"><g
+     transform="matrix(0.7466648,0,0,0.7466648,928.07178,452.31761)"><g
        id="g163"><path
          d="m 1439.256,762.536 c -0.104,0.113 -0.104,17.837 -0.328,22.464 -0.217,3.741 -0.552,11.778 -8.479,11.778 -8.15,0 -10.133,-9.36 -10.79,-13.434 -0.772,-4.512 -0.772,-8.261 -0.772,-9.905 0,-5.286 0.33,-20.044 12.772,-20.044 3.746,0 5.838,1.104 7.489,1.979 l 0.108,7.162 z m -31.93,12.997 c 0,31.049 16.517,31.049 18.938,31.049 6.826,0 11.233,-3.745 13.104,-10.239 l 0.222,9.797 c 2.091,-0.107 4.188,-0.328 7.6,-0.328 1.212,0 2.196,0 3.084,0.109 0.882,0 1.761,0.108 2.753,0.219 -1.763,-3.521 -3.083,-11.445 -3.083,-28.63 0,-16.733 0,-45.03 1.433,-53.622 -3.963,1.875 -7.381,3.087 -14.868,3.745 2.977,3.194 2.977,4.847 2.977,19.373 -2.09,-0.656 -4.735,-1.429 -9.249,-1.429 -19.717,0.004 -22.911,17.178 -22.911,29.956"
          id="path165"
