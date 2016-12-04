@@ -8,6 +8,8 @@ desktop-base (9.0.0) UNRELEASED; urgency=medium
   * Additional wallpaper and lockscreen ratios for Soft Waves theme.
   * Remove Moreblue theme from Lenny.
   * Add theme pack support Joy/Spacefun themes.
+
+  * Use dash instead of bash for postinst
   * Generate all GRUB bitmaps from SVG at build time instead of versioning
     them.
   * Stop shipping SDDM breeze-based theme, now in plasma-workspace.
