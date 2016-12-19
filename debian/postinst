@@ -5,7 +5,7 @@ set -e
 #DEBHELPER#
 
 if [ "${1}" = "configure" ]; then
-    if dpkg --compare-versions ${2} lt "9.0.0"; then
+    if dpkg --compare-versions ${2} le "9.0.0~exp1"; then
         # Try remove folder if empty, left after 9.0.0~exp1 conf suppression
         # by debhelper conffile handling
         OLD_KDM_DIR=/etc/default/kdm.d
