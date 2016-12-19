@@ -1,4 +1,4 @@
-desktop-base (9.0.0) UNRELEASED; urgency=medium
+desktop-base (9.0.0~exp2) experimental; urgency=medium
 
   [ Aurélien COUDERC ]
   * Fix detection of update-initramfs. (Closes: #843727)
@@ -14,7 +14,7 @@ desktop-base (9.0.0) UNRELEASED; urgency=medium
     them.
   * Stop shipping SDDM breeze-based theme, now in plasma-workspace.
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 07 Nov 2016 22:28:06 +0100
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 19 Dec 2016 14:51:42 +0100
 
 desktop-base (9.0.0~exp1) experimental; urgency=medium
 
