@@ -106,7 +106,8 @@ You can change the theme pack selection with:
 Following a theme switch you’ll also need to run the GRUB menu update command:
     update-grub
 
-Plymouth theme switching is currently not supported inside theme packs.
+Plymouth theme switching is currently not supported inside theme packs so
+you’ll have to do it by hand for now with plymouth-set-default-theme command.
 
 2.2. Individual alternatives
 
@@ -189,14 +190,65 @@ if you want to provide additional theme packs for Debian.
 
 A theme pack should contain the following elements:
 
+-> A section in the global package Makefile.
+       You should be able to copy the section for an existing theme, just take
+   care to replace all theme name occurrences with that of your new theme.
+       At some point it would be desirable to have the Makefile parts inside
+   each theme’s folders so the themes can be self contained, and the main
+   Makefile will only have to detect the themes present in the sources.
+ 
+./grub/Makefile
+./grub/grub-4x3.svg
+./grub/grub-16x9.svg
+-> SVG and Makefile used to produce the GRUB background images. The Makefile
+   can be copy-pasted from and existing theme pack and should generate the
+   PNGs corresponding to each SVG in the GRUB folder.
+   For best compatibility grub-4x3.svg should generate a 640x480 PNG for used
+   by system with classical BIOS. grub-16x9.svg should generate 1920x1080 PNG
+   for used by more recent EFI firmwares.
+./grub/grub_background.sh
+-> Shell file containing variables to configure GRUB. This file is sourced
+   when running « update-grub ».
+
+./plymouth/debian.png
+./plymouth/logo.png
+…
+-> Assets used in the Plymouth splash screen
+./plymouth/${theme}.plymouth
+-> Descriptor file for the Plymouth theme, a bit like .desktop files for
+   applications. Copy and adapt to your needs.
+./plymouth/${theme}.script
+-> Script handling everything plymouthy when splash is activated, from just
+   just after grub to display manager. It’s a massive amount of work to get
+   everything right, including encrypted partitions password input, system
+   messages, fsck feedback… so it’s highly recommanded to start with an
+   existing script and adapt the background setup and animation to the needs
+   of your theme.
+./plymouthd.default
+-> Should be a drop in replacement for /usr/share/plymouth/plymouthd.defaults
+   selecting your team. This file is not currently used but when we finish
+   integrating plymouth with the themes pack system we’ll be able to handle
+   plymouth theme switching with the rest of the theme elements in Debian.
+
+./login/background.svg
+-> To provide the login background alternative for LightDM, SDDM…
+
 ./gnome-wp-list.xml
 -> To make the wallpaper and lock screen selectable in Gnome preferences.
    This file describes a list of XML files, one for each image packs provided.
    Gnome uses these image packs to select the most appropriate version of a
    wallpaper depending on the user’s screen resolution.
 
-./login/background.svg
--> To provide the login background alternative for LightDM, SDDM…
+./wallpaper/gnome-background.xml
+./wallpaper/contents/images/2560x1440.svg
+./wallpaper/contents/images/1280x720.svg
+./wallpaper/contents/images/1920x1200.svg
+./wallpaper/contents/images/1920x1080.svg
+./wallpaper/contents/images/1280x800.svg
+./wallpaper/contents/images/2560x1600.svg
+…
+./wallpaper/metadata.desktop
+-> Wallpaper image pack, similar to the lock screen pack described above.
 
 ./lockscreen/gnome-background.xml
 ./lockscreen/contents/images
@@ -218,29 +270,10 @@ A theme pack should contain the following elements:
    and a single version could suffice as long as it’s appearance is not broken
    when cropped at different resolutions.
 
-./wallpaper/gnome-background.xml
-./wallpaper/contents/images/2560x1440.svg
-./wallpaper/contents/images/1280x720.svg
-./wallpaper/contents/images/1920x1200.svg
-./wallpaper/contents/images/1920x1080.svg
-./wallpaper/contents/images/1280x800.svg
-./wallpaper/contents/images/2560x1600.svg
-…
-./wallpaper/metadata.desktop
--> Wallpaper image pack, similar to the lock screen pack described above.
-
-./grub/Makefile
-./grub/grub-4x3.svg
-./grub/grub-16x9.svg
--> SVG and Makefile used to produce the GRUB background images. The Makefile
-   can be copy-pasted from and existing theme pack and should generate the
-   PNGs corresponding to each SVG in the GRUB folder.
-   For best compatibility grub-4x3.svg should generate a 640x480 PNG for used
-   by system with classical BIOS. grub-16x9.svg should generate 1920x1080 PNG
-   for used by more recent EFI firmwares.
-./grub/grub_background.sh
--> Shell file containing variables to configure GRUB. This file is sourced
-   when running « update-grub ».
+./sources
+-> Additional sources for theme elements that are not shipped as SVG in the
+   binary package, or for visuals not strictly related to the desktop theme
+   (CD covers, t-shirts…).
 
 
 4. Contributing
