@@ -3,6 +3,8 @@ desktop-base (9.0.0) UNRELEASED; urgency=medium
   [ Aurélien COUDERC ]
   * Implement Plymouth splash for Stretch’s soft Waves theme.
     (Closes: #843998, #842078)
+  *  Prepare for plymouth splash integration into theme packs that will allow
+     splash selection via alternatives in the future.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 27 Dec 2016 17:58:13 +0100
 
