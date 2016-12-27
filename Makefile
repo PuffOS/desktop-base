@@ -50,21 +50,16 @@ install-local:
 	# GNOME background descriptors
 	mkdir -p $(DESTDIR)/usr/share/gnome-background-properties
 
-	# plymouth
-	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
-	$(INSTALL) $(wildcard plymouth/spacefun/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
-
-	install -d $(DESTDIR)/usr/share/plymouth/themes/joy
-	$(INSTALL) $(wildcard plymouth/joy/*) $(DESTDIR)/usr/share/plymouth/themes/joy
-
-	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
-	$(INSTALL) $(wildcard plymouth/lines/*) $(DESTDIR)/usr/share/plymouth/themes/lines
-
 
 	# Space Fun theme (Squeeze’s default)
+	### Plymouth theme
+	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
+	$(INSTALL) $(wildcard spacefun-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
+	cd $(DESTDIR)/usr/share/desktop-base/spacefun-theme && ln -s /usr/share/plymouth/themes/spacefun plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
 	$(INSTALL) $(wildcard spacefun-theme/login/*) $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
+
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper/contents/images
 	$(INSTALL) spacefun-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/spacefun-theme/wallpaper
@@ -80,9 +75,14 @@ install-local:
 
 
 	# Joy theme (Wheezy’s default)
+	### Plymouth theme
+	install -d $(DESTDIR)/usr/share/plymouth/themes/joy
+	$(INSTALL) $(wildcard joy-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/joy
+	cd $(DESTDIR)/usr/share/desktop-base/joy-theme && ln -s /usr/share/plymouth/themes/joy plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/login
 	$(INSTALL) $(wildcard joy-theme/login/*) $(DESTDIR)/usr/share/desktop-base/joy-theme/login
+
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper/contents/images
 	$(INSTALL) joy-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/joy-theme/wallpaper
@@ -102,8 +102,10 @@ install-local:
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/joy-theme/lockscreen JoyLockScreen
 
-
 	# Joy Inksplat theme (Wheezy’s alternate theme)
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme
+	### Plymouth theme
+	cd $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme && ln -s /usr/share/plymouth/themes/joy plymouth
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper/contents/images
 	$(INSTALL) joy-inksplat-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper
@@ -113,15 +115,19 @@ install-local:
 	# Wallpaper symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/joy-inksplat-theme/wallpaper JoyInksplat
-
 	### Lockscreen (same as Joy)
 	cd $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme && ln -s /usr/share/desktop-base/joy-theme/lockscreen lockscreen
 
 
 	# Lines theme (Jessie’s default)
+	### Plymouth theme
+	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
+	$(INSTALL) $(wildcard lines-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/lines
+	cd $(DESTDIR)/usr/share/desktop-base/lines-theme && ln -s /usr/share/plymouth/themes/lines plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/login
 	$(INSTALL) $(wildcard lines-theme/login/*) $(DESTDIR)/usr/share/desktop-base/lines-theme/login
+
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper/contents/images
 	$(INSTALL) lines-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/lines-theme/wallpaper
@@ -143,9 +149,14 @@ install-local:
 
 
 	# Soft waves theme (Stretch’s default)
+	### Plymouth theme
+	install -d $(DESTDIR)/usr/share/plymouth/themes/softwaves
+	$(INSTALL) $(wildcard softwaves-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/softwaves
+	cd $(DESTDIR)/usr/share/desktop-base/softwaves-theme && ln -s /usr/share/plymouth/themes/softwaves plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
 	$(INSTALL) $(wildcard softwaves-theme/login/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
+
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper/contents/images
 	$(INSTALL) softwaves-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/softwaves-theme/wallpaper
