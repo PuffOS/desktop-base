@@ -219,9 +219,9 @@ A theme pack should contain the following elements:
    applications. Copy and adapt to your needs.
 ./plymouth/${theme}.script
 -> Script handling everything plymouthy when splash is activated, from just
-   just after grub to display manager. It’s a massive amount of work to get
+   after grub to display manager. It’s a massive amount of work to get
    everything right, including encrypted partitions password input, system
-   messages, fsck feedback… so it’s highly recommanded to start with an
+   messages, fsck feedback… so it’s highly recommended to start with an
    existing script and adapt the background setup and animation to the needs
    of your theme.
 ./plymouthd.default
