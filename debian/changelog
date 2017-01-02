@@ -1,4 +1,4 @@
-desktop-base (9.0.0) UNRELEASED; urgency=medium
+desktop-base (9.0.0) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
   * Implement Plymouth splash for Stretch’s soft Waves theme.
@@ -9,7 +9,7 @@ desktop-base (9.0.0) UNRELEASED; urgency=medium
     package.
   * Added myself to the uploaders.
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 27 Dec 2016 17:58:13 +0100
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 02 Jan 2017 15:56:32 +0100
 
 desktop-base (9.0.0~exp2) experimental; urgency=medium
 
