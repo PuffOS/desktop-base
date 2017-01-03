@@ -29,6 +29,13 @@
 NB_ROTATION_STEPS = 70;
 NB_REFRESHS_BETWEEN_ANIMS = 3;
 
+# Initial position of the center of the logo in % of background
+DEBIAN_POS_PCT.y = 0.7; # Debian image position in % of screen height
+DEBIAN_HEIGHT_PCT = 0.07; # Debian image height in % of smallest screen dimension
+LOGO_CENTER_PCT.x = 0.5; # Debian swirl image position in % of screen height & width
+LOGO_CENTER_PCT.y = 0.442;
+logo_size_pct = 0.18; # Debian swirl image size in % of smallest screen dimension
+
 #------------------------------- Globals -------------------------------------------
 # are we currently prompting for a password?
 prompt_active = 0;
@@ -107,7 +114,7 @@ fun TextYOffset() {
     local.min_height;
 
     # Put the 1st line below the logo + some spacing 
-    y = debian9_sprite.GetY() + debian9.GetHeight();
+    y = debian_sprite.GetY() + debian.GetHeight();
     #Debug("y = " + y);
 
     text_height = first_line_height * 7.5;
@@ -130,18 +137,11 @@ small_dimension = Math.Min(window_max.width, window_max.height);
 #Debug("Window.GetX():" + Window.GetX() + ", Window.GetY():" + Window.GetY());
 #Debug("Window is [" + window_max.width + ";" + window_max.height + "], ratio=" + screen_ratio);
 
-# Initial position of the center of the logo in % of background
-debian9_pct.y = 0.7;
-debian9_height_pct = 0.07;
-logo_center_pct.x = 0.5;
-logo_center_pct.y = 0.442;
-logo_size_pct = 0.18;
-
-debian9_height = small_dimension * debian9_height_pct;
-debian9_pos.y = window_max.height * debian9_pct.y - debian9_height/2;
+debian_height = small_dimension * DEBIAN_HEIGHT_PCT;
+debian_pos.y = window_max.height * DEBIAN_POS_PCT.y - debian_height/2;
 logo_size = small_dimension * logo_size_pct;
-logo_center.x = window_max.width * logo_center_pct.x;
-logo_center.y = window_max.height * logo_center_pct.y;
+logo_center.x = window_max.width * LOGO_CENTER_PCT.x;
+logo_center.y = window_max.height * LOGO_CENTER_PCT.y;
 #Debug("Logo center at [" + logo_center.x + ";" + logo_center.y + "], size=" + logo_size + "px");
 
 logo_pos.x = logo_center.x - logo_size/2;
@@ -163,16 +163,16 @@ bg_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - scaled_bg_image.Ge
                       Window.GetY() + Window.GetHeight() / 2 - scaled_bg_image.GetHeight() / 2,
                       -1000);
 
-#------------------------------- Debian9 ----------------------------------------------
-debian9 = Image("debian.png");
+#------------------------------- Debian ----------------------------------------------
+debian = Image("debian.png");
 # Target same height as logo
-debian9_scale_factor = debian9_height / debian9.GetHeight();
-debian9 = debian9.Scale(debian9.GetWidth()  * debian9_scale_factor,
-                        debian9.GetHeight() * debian9_scale_factor);
-debian9_sprite = Sprite(debian9);
-debian9_sprite.SetPosition(window_max.width / 2 - debian9.GetWidth() / 2,
-                           debian9_pos.y,
-                           -90);
+debian_scale_factor = debian_height / debian.GetHeight();
+debian = debian.Scale(debian.GetWidth()  * debian_scale_factor,
+                      debian.GetHeight() * debian_scale_factor);
+debian_sprite = Sprite(debian);
+debian_sprite.SetPosition(window_max.width / 2 - debian.GetWidth() / 2,
+                          debian_pos.y,
+                          -90);
 
 #------------------------------- Logo ----------------------------------------------
 logo = Image("logo.png");
