@@ -68,18 +68,18 @@ logo_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - logo_image.GetWi
                         -100);
 
 #------------------------------- Debian8 ----------------------------------------------
-debian8_image = Image("debian8.png");
-debian8_width = logo_image.GetWidth();
-debian8_scale_factor = debian8_width / debian8_image.GetWidth() * 0.24;
-if (debian8_scale_factor < 1) {
-	debian8_image = debian8_image.Scale(debian8_image.GetWidth() * debian8_scale_factor,
-                              debian8_image.GetHeight() * debian8_scale_factor);
+debian_image = Image("debian.png");
+debian_width = logo_image.GetWidth();
+debian_scale_factor = debian_width / debian_image.GetWidth() * 0.24;
+if (debian_scale_factor < 1) {
+    debian_image = debian_image.Scale(debian_image.GetWidth() * debian_scale_factor,
+                                      debian_image.GetHeight() * debian_scale_factor);
 }
-debian8_sprite = Sprite(debian8_image);
-debian8_to_bottom_edge = Window.GetHeight() * 0.10;
-debian8_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - debian8_image.GetWidth() / 2,
-                           Window.GetY() + Window.GetHeight() - debian8_to_bottom_edge - debian8_image.GetHeight(),
-                        -90);
+debian_sprite = Sprite(debian_image);
+debian_to_bottom_edge = Window.GetHeight() * 0.10;
+debian_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - debian_image.GetWidth() / 2,
+                          Window.GetY() + Window.GetHeight() - debian_to_bottom_edge - debian_image.GetHeight(),
+                         -90);
 #------------------------------- Electrons --------------------------------------------
 
 electron_image = Image("electron.png");
@@ -213,9 +213,9 @@ fun TextYOffset() {
     if (y + text_height > min_height)
         y = min_height - text_height;
 
-    # Ensure we don’t bump into the Debian8 image.
+    # Ensure we don’t bump into the Debian image.
     # The approx height of the 3 text lines + password input is 140 px.
-    y = Math.Min(y, debian8_sprite.GetY() - 140);
+    y = Math.Min(y, debian_sprite.GetY() - 140);
 
     return y;
 }
