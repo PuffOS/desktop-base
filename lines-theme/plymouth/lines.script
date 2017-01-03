@@ -67,7 +67,7 @@ logo_sprite.SetPosition(Window.GetX() + Window.GetWidth() / 2 - logo_image.GetWi
                         Window.GetY() + logo_to_top_edge,
                         -100);
 
-#------------------------------- Debian8 ----------------------------------------------
+#------------------------------- Debian ----------------------------------------------
 debian_image = Image("debian.png");
 debian_width = logo_image.GetWidth();
 debian_scale_factor = debian_width / debian_image.GetWidth() * 0.24;
