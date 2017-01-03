@@ -213,6 +213,10 @@ fun TextYOffset() {
     if (y + text_height > min_height)
         y = min_height - text_height;
 
+    # Ensure we don’t bump into the Debian8 image.
+    # The approx height of the 3 text lines + password input is 140 px.
+    y = Math.Min(y, debian8_sprite.GetY() - 140);
+
     return y;
 }
 
