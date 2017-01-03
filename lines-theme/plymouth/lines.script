@@ -133,6 +133,7 @@ for (i = 0; i < ELECTRONS_DISPLAYED; i++) {
 	anim.angle_incr = anim.arc / (anim.stop_iter - anim.start_iter) * anim.rotat_dir;
 	for (j = 0; j < 5; j++) {
 		electron_sprite[i][j] = Sprite(electron_image);
+		electron_sprite[i][j].SetOpacity(0);
 		electron_sprite[i][j].base_opacity = 1-(0.2*j);
 		electron_sprite[i][j].angle_diff = -(anim.rotat_dir*j*0.01);
 	}
