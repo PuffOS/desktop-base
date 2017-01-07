@@ -1,9 +1,10 @@
 desktop-base (9.0.1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
-  * On Lines Plymouth splash, ensure password field doesn’t bump into the
-    Debian image even for smaller height screens. (Closes: #774226)
-  * Remove 8 from Debian8 in Lines Plymouth splash. 
+  * Plymouth/softWaves: raise messages and password field a little.
+  * Plymouth/Lines: ensure password field doesn’t bump into the Debian image
+    even for smaller height screens. (Closes: #774226)
+  * Plymouth/Lines: Remove 8 from Debian8 assets.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 03 Jan 2017 21:50:10 +0100
 
