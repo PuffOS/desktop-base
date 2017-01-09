@@ -201,7 +201,11 @@ EOF
         # Ensure the background image file has actually been written to disc
         # before updating.
         sync
-        update-grub
+        # Report success whatever grub return status. This is needed at least
+        # in live systems fon installation to succeed (see #850601).
+        # Until we find a better solution like detecting we’re in a live image
+        # and not calling update-grub at all.
+        update-grub || echo "Updating grub failed, report success anyway!"
     fi
 
     if which update-initramfs > /dev/null; then

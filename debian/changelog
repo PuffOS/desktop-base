@@ -1,6 +1,8 @@
 desktop-base (9.0.1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
+  * postinst: Report success even when update-grub fails, this is needed
+    for installation to work inside live systems. (Closes: #850601).
   * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support.
     (Closes: #850181)
   * Plymouth/softWaves: raise messages and password field a little.
