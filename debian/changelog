@@ -1,6 +1,8 @@
 desktop-base (9.0.1) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
+  * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support.
+    (Closes: #850181)
   * Plymouth/softWaves: raise messages and password field a little.
   * Plymouth/Lines: ensure password field doesn’t bump into the Debian image
     even for smaller height screens. (Closes: #774226)
