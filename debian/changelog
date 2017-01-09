@@ -3,9 +3,11 @@ desktop-base (9.0.1) UNRELEASED; urgency=medium
   [ Aurélien COUDERC ]
   * postinst: Report success even when update-grub fails, this is needed
     for installation to work inside live systems. (Closes: #850601).
-  * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support.
+  * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support. Thanks to
+    Ubuntu and Didier Roche for doing the work and providing timely info.
     (Closes: #850181)
-  * Plymouth/softWaves: raise messages and password field a little.
+  * Plymouth/softWaves: various visual tweaks, boost logo glow, improvements
+    in password input rendering. Thanks Juliette!
   * Plymouth/Lines: ensure password field doesn’t bump into the Debian image
     even for smaller height screens. (Closes: #774226)
   * Plymouth/Lines: Remove 8 from Debian8 assets.
