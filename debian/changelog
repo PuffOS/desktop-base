@@ -1,4 +1,4 @@
-desktop-base (9.0.1) UNRELEASED; urgency=medium
+desktop-base (9.0.1) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
   * postinst: Report success even when update-grub fails, this is needed
@@ -12,7 +12,7 @@ desktop-base (9.0.1) UNRELEASED; urgency=medium
     even for smaller height screens. (Closes: #774226)
   * Plymouth/Lines: Remove 8 from Debian8 assets.
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Tue, 03 Jan 2017 21:50:10 +0100
+ -- Aurélien COUDERC <zecoucou@free.fr>  Sun, 15 Jan 2017 11:25:27 +0100
 
 desktop-base (9.0.0) unstable; urgency=medium
 
