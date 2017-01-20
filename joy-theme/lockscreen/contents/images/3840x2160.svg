@@ -11,15 +11,15 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1920"
-   height="1080"
+   width="3840"
+   height="2160"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.0 r15299"
    inkscape:export-filename="/home/adrien/Dropbox/wheezy_artwork/exports/proposal_1_full/wallpaper_1920x1080.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
-   sodipodi:docname="1920x1080.svg">
+   sodipodi:docname="3840x2160.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -42,7 +42,7 @@
        fx="960"
        fy="512.36218"
        r="960"
-       gradientTransform="matrix(1.2448906,0,0,0.8766271,-235.09492,63.211612)"
+       gradientTransform="matrix(2.4897812,0,0,1.7532542,-1430.1898,-385.93896)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -52,9 +52,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="766.15945"
-     inkscape:cy="633.94846"
+     inkscape:zoom="0.5"
+     inkscape:cx="2824.5378"
+     inkscape:cy="784.5619"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -62,7 +62,11 @@
      inkscape:window-height="1013"
      inkscape:window-x="0"
      inkscape:window-y="34"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -71,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,30 +83,31 @@
      inkscape:label="Fond"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,27.637817)">
+     transform="translate(960,567.63782)">
     <rect
-       style="fill:url(#radialGradient3765);fill-opacity:1;stroke:none"
+       style="fill:url(#radialGradient3765);fill-opacity:1;stroke:none;stroke-width:2"
        id="rect2985"
-       width="1920"
-       height="1080"
-       x="0"
-       y="-27.637817" />
+       width="3840"
+       height="2160"
+       x="-960"
+       y="-567.63782" />
     <rect
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#cc9acc;stroke-opacity:1"
-       id="rect4511"
-       width="151.52289"
-       height="105.05586"
-       x="-240.41631"
-       y="-248.71429" />
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#cc9acc;stroke-width:2;stroke-opacity:1"
+       id="rect4784"
+       width="3840"
+       height="2160"
+       x="-960"
+       y="-567.63782" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Logo">
+     inkscape:label="Logo"
+     transform="translate(960,540)">
     <g
-       style="overflow:visible;fill:#c8c8c9;fill-opacity:1"
+       style="overflow:visible;opacity:0.25;fill:#c8c8c9;fill-opacity:1"
        id="g3946"
-       transform="matrix(2.7519756,0,0,2.7519756,842.35276,388.27368)">
+       transform="matrix(11.007902,0,0,11.007902,2102.9307,747.62203)">
       <g
          i:rgbTrio="#4F008000FFFF"
          i:dimmedPercent="50"
