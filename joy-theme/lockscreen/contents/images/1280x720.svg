@@ -15,7 +15,7 @@
    height="720"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.0 r15299"
    inkscape:export-filename="/home/adrien/Dropbox/wheezy_artwork/exports/proposal_1_full/wallpaper_1920x1080.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
@@ -42,7 +42,7 @@
        fx="960"
        fy="512.36218"
        r="960"
-       gradientTransform="matrix(0.82992698,0,0,0.58441748,163.27013,212.92877)"
+       gradientTransform="matrix(0.82993122,0,0,0.58442099,163.26607,212.92698)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -52,16 +52,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="536.42851"
-     inkscape:cy="374.90908"
+     inkscape:zoom="1.4"
+     inkscape:cx="1039.7172"
+     inkscape:cy="181.38257"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1007"
+     inkscape:window-height="1013"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="34"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -83,24 +83,24 @@
      inkscape:label="Fond"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-320.00006,-152.36255)">
+     transform="translate(-319.9968,-152.36038)">
     <rect
-       style="fill:url(#radialGradient3765);fill-opacity:1;stroke:none"
+       style="fill:url(#radialGradient3765);fill-opacity:1;stroke:none;stroke-width:0.66667002"
        id="rect2985"
        width="1280"
        height="720"
-       x="320.00006"
-       y="152.36255" />
+       x="319.9968"
+       y="152.36038" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Logo"
-     transform="translate(-320.00006,-180.00037)">
+     transform="translate(-319.9968,-179.9982)">
     <g
-       style="overflow:visible;fill:#c8c8c9;fill-opacity:1"
+       style="overflow:visible;opacity:0.25;fill:#c8c8c9;fill-opacity:1"
        id="g3946"
-       transform="matrix(1.8346502,0,0,1.8346486,881.56851,438.84922)">
+       transform="matrix(3.6693191,0,0,3.6693191,1338.537,614.18922)">
       <g
          i:rgbTrio="#4F008000FFFF"
          i:dimmedPercent="50"
