@@ -4,7 +4,7 @@ DEFAULT_BACKGROUND=desktop-background
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
-all: build-grub
+all: build-grub build-emblems
 
 build-grub clean-grub install-grub:
 	@target=`echo $@ | sed s/-grub//`; \
@@ -14,9 +14,13 @@ build-grub clean-grub install-grub:
 		fi \
 	done$
 
-clean: clean-grub
+build-emblems clean-emblems install-emblems:
+	@target=`echo $@ | sed s/-emblems//`; \
+	$(MAKE) $$target -C emblems-debian || exit 1;
 
-install: install-grub install-local
+clean: clean-grub clean-emblems
+
+install: install-grub install-emblems install-local
 
 install-local:
 	# background files

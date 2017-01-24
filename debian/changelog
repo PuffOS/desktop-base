@@ -1,7 +1,9 @@
 desktop-base (9.0.2) UNRELEASED; urgency=medium
 
   [ Aurélien COUDERC ]
-  * Include size 3840x2160 (4k) wallpaper and lockscreen (Closes: #851930).
+  * Include size 3840x2160 (4k) wallpaper and lockscreen. (Closes: #851930)
+  * Include more sizes of emblem-debian, add emblem-debian-white.
+    (Closes: #833529)
   * Lockscreen/Joy: fix wallpaper image being used instead of lockscreen. 
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Fri, 20 Jan 2017 23:40:01 +0100
@@ -10,7 +12,7 @@ desktop-base (9.0.1) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
   * postinst: Report success even when update-grub fails, this is needed
-    for installation to work inside live systems. (Closes: #850601).
+    for installation to work inside live systems. (Closes: #850601)
   * Plymouth/{softWaves,Lines,Joy}: provide fsckd progress support. Thanks to
     Ubuntu and Didier Roche for doing the work and providing timely info.
     (Closes: #850181)
