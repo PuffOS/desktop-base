@@ -4,7 +4,7 @@ desktop-base (9.0.2) UNRELEASED; urgency=medium
   * Include size 3840x2160 (4k) wallpaper and lockscreen. (Closes: #851930)
   * Include more sizes of emblem-debian, add emblem-debian-white.
     (Closes: #833529)
-  * Lockscreen/Joy: fix wallpaper image being used instead of lockscreen. 
+  * Lockscreen/Joy: fix wallpaper image being used instead of lockscreen.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Fri, 20 Jan 2017 23:40:01 +0100
 
@@ -141,7 +141,7 @@ desktop-base (8.0.0~exp1) experimental; urgency=low
 
   [ Yves-Alexis Perez ]
   * Initial support for Lines theme by Juliette Belin.
-    - add the various ratio SVG wallpapers to backgrounds/ 
+    - add the various ratio SVG wallpapers to backgrounds/
     - debian/{postinst,prerm}: update alternatives priority to make Lines the
       automatic/default one
     - gdm3/background.svg updated to use Lines login screen
@@ -260,9 +260,9 @@ desktop-base (6.0.7) unstable; urgency=low
 
   [ Josselin Mouette ]
   * Build-depend on recent cdbs+debhelper to have dh_installgsettings.
-  * debian/gsettings-override: set the default background using 
+  * debian/gsettings-override: set the default background using
     GSettings.
-  * xy_desktop-base.gschema.override: configure the default background 
+  * xy_desktop-base.gschema.override: configure the default background
     for gdm3 using GSettings as well.
   * All of this closes: #623094.
   * Add myself to uploaders.
@@ -317,7 +317,7 @@ desktop-base (6.0.3) unstable; urgency=low
     - don't set image-style property, default to auto.          closes: #523150
   * cleanup debian/copyright for removed stuff.                 closes: #594533
   * debian/pixmaps:
-    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155 
+    - debian-security updated, thanks to Ulrich Hansen.         closes: #389155
   * DFSG-ify artwork:                                           closes: #587668
     - various themes, thanks to Ulrich Hansen.
     - SpaceFun theme, thanks to Valessio Brito.
@@ -389,10 +389,10 @@ desktop-base (6.0.0) unstable; urgency=low
       written to disk.
   * debian/prerm:
     - rename grub alternative to add png extension.
-  * Makefile: 
+  * Makefile:
     - drop unused rules for KDE3 and Xfce 4.4.
     - add SpaceFun gdm3 theme.
-    - add SpaceFun kdm theme. 
+    - add SpaceFun kdm theme.
     - install grub theme and script.
   * {ksplash,kdm}-theme/moreblue-orbit{-default}:
     - drop “Debian” word from image to only use DFSG-free logo. closes: #587668
@@ -434,7 +434,7 @@ desktop-base (5.0.3) unstable; urgency=medium
   * debian/preinst:
     - handle upgrade in various cases: (/etc/splashy/themes symlink or not,
       and changed or unchanged themes files)
-  * debian/README.Debian: 
+  * debian/README.Debian:
     - announce the change.
     - tell user how to enable MoreBlue orbit theme if splashy is installed
       after desktop-base.
