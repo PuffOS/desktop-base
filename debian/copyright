@@ -46,7 +46,7 @@ They are based on the Debian “Open Use” Logo (without the “Debian” label
 The .desktop files and xml configuration files in this package were compiled by
 desktop-base contributors.
 
-icons/*/emblems/emblem-debian.{png,svg} are different versions of the Debian
+emblems-debian/emblem-debian*.svg are different versions of the Debian
 “Open Use” Logo (without the “Debian” label).
 
 The SDDM QML script is © 2016 David Edmundson and adapted for Debian by

@@ -26,15 +26,6 @@ install-local:
 	# background files
 	mkdir -p $(DESTDIR)/usr/share/images/desktop-base
 	cd $(DESTDIR)/usr/share/images/desktop-base && ln -s $(DEFAULT_BACKGROUND) default
-	# emblems
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
-	$(INSTALL) $(wildcard icons/36x36/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/36x36/emblems
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/64x64/emblems
-	$(INSTALL) $(wildcard icons/64x64/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/64x64/emblems
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/128x128/emblems
-	$(INSTALL) $(wildcard icons/128x128/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/128x128/emblems
-	mkdir -p $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems
-	$(INSTALL) $(wildcard icons/scalable/emblems/*) $(DESTDIR)/usr/share/icons/hicolor/scalable/emblems
 	# desktop files
 	mkdir -p $(DESTDIR)/usr/share/desktop-base
 	$(INSTALL) $(DESKTOPFILES) $(DESTDIR)/usr/share/desktop-base/
