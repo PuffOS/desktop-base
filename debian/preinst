@@ -6,6 +6,39 @@ set -e
 
 if [ "${1}" = "upgrade" ]; then
     if dpkg --compare-versions ${2} le "9.0.0~exp1"; then
+        # Remove alternative for desktop splash we don’t ship anymore
+        update-alternatives --remove-all desktop-splash
+
+        # Remove alternatives for themes we now ship elsewhere as a theme pack
+        ## Wallpaper
+        for background in \
+              lines-wallpaper_1280x1024.svg \
+              lines-wallpaper_1600x1200.svg \
+              lines-wallpaper_1920x1200.svg \
+              lines-wallpaper_2560x1080.svg \
+              lines-wallpaper_1920x1080.svg \
+              ; do
+            update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
+        done
+        update-alternatives --remove \
+            desktop-background.xml \
+            /usr/share/images/desktop-base/lines.xml
+        ## Login background
+        update-alternatives --remove desktop-login-background \
+            /usr/share/desktop-base/lines-theme/login-background.svg
+        update-alternatives --remove desktop-login-background \
+            /usr/share/desktop-base/lines-theme/login-background-with-logo.svg
+
+        ## Grub background
+        while read background; do
+            update-alternatives --remove \
+                desktop-grub \
+                /usr/share/images/desktop-base/$background
+        done << EOF
+lines-grub.png
+lines-grub-1920x1080.png
+EOF
+
         # Remove alternatives for moreblue wallpapers we don’t ship anymore
         while read background; do
             update-alternatives --remove \
@@ -50,69 +83,32 @@ joy-grub.png
 spacefun-grub.png
 spacefun-grub-widescreen.png
 EOF
-        if dpkg --compare-versions ${2} ge "9.0.0~exp1"; then
-            echo "ge 9.0.0~exp1"
-            # Remove alternatives shipped in 9.0.0~exp1 but now integrated
-            # into the theme pack system.
-            # Joy old theme structure
+    fi
+
+    if dpkg --compare-versions ${2} eq "9.0.0~exp1"; then
+        # Remove alternatives shipped in 9.0.0~exp1 but now integrated
+        # into the theme pack system.
+        # Joy old theme structure
+        update-alternatives --remove \
+            desktop-login-background \
+            /usr/share/desktop-base/joy-theme/login-background.svg
+        # Remove login theme alternatives for theme packages
+        # because we’re dropping the secondary link for SDDM preview
+        while read theme background; do
             update-alternatives --remove \
                 desktop-login-background \
-                /usr/share/desktop-base/joy-theme/login-background.svg
-            # Remove login theme alternatives for theme packages
-            # because we’re dropping the secondary link for SDDM preview
-            while read theme background; do
-                update-alternatives --remove \
-                    desktop-login-background \
-                    /usr/share/desktop-base/$theme-theme/login/$background
-            done << EOF
+                /usr/share/desktop-base/$theme-theme/login/$background
+        done << EOF
 softwaves background.svg
 lines background.svg
 lines background-nologo.svg
 joy background.svg
 spacefun background.svg
 EOF
-            # *Last* remove *highest priority* alternative for active theme
-            update-alternatives --remove \
-                desktop-login-background \
-                /usr/share/desktop-base/active-theme/login/background.svg
-        fi
-
-    fi
-
-    if dpkg --compare-versions ${2} lt "9.0.0~"; then
-        # Remove alternative for desktop splash we don’t ship anymore
-        update-alternatives --remove-all desktop-splash
-
-        # Remove alternatives for themes we now ship elsewhere as a theme pack
-        ## Wallpaper
-        for background in \
-              lines-wallpaper_1280x1024.svg \
-              lines-wallpaper_1600x1200.svg \
-              lines-wallpaper_1920x1200.svg \
-              lines-wallpaper_2560x1080.svg \
-              lines-wallpaper_1920x1080.svg \
-              ; do
-            update-alternatives --remove desktop-background /usr/share/images/desktop-base/$background
-        done
+        # *Last* remove *highest priority* alternative for active theme
         update-alternatives --remove \
-            desktop-background.xml \
-            /usr/share/images/desktop-base/lines.xml
-        ## Login background
-        update-alternatives --remove desktop-login-background \
-            /usr/share/desktop-base/lines-theme/login-background.svg
-        update-alternatives --remove desktop-login-background \
-            /usr/share/desktop-base/lines-theme/login-background-with-logo.svg
-
-        ## Grub background
-        while read background; do
-            update-alternatives --remove \
-                desktop-grub \
-                /usr/share/images/desktop-base/$background
-        done << EOF
-lines-grub.png
-lines-grub-1920x1080.png
-EOF
+            desktop-login-background \
+            /usr/share/desktop-base/active-theme/login/background.svg
     fi
-
 
 fi

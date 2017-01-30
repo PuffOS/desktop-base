@@ -1,3 +1,10 @@
+desktop-base (9.0.3) UNRELEASED; urgency=medium
+
+  * Fix minor problems with maintainer scripts, thanks Raphaël Hertzog for the
+    detailed review. (Closes: #853224)
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 30 Jan 2017 22:21:40 +0100
+
 desktop-base (9.0.2) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
