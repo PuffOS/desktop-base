@@ -1,10 +1,22 @@
 desktop-base (10.0.0~exp1) UNRELEASED; urgency=medium
 
-  [ Aurélien COUDERC ]
-  * Fix minor problems with maintainer scripts, thanks Raphaël Hertzog for the
-    detailed review. (Closes: #853224)
   * Build with debhelper, bump compatibility level to 10, drop CDBS build
     dependency.
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 30 Jan 2017 22:21:40 +0100
+
+desktop-base (9.0.3) unstable; urgency=medium
+
+  * Fix a few problems in maintainer scripts, thanks Raphaël Hertzog for the
+    detailed review.
+    No change in behaviour but it will make the scripts more readable and
+    maintainable.
+    - preinst: reorganize if conditions for package version detection in a
+               readable order.
+    - prerm: remove references to non existing $priority variable in loops.
+    - prerm: no need to remove secondary alternatives just before removing
+             a main alternative. Secondary are removed in the process anyway.
+    (Closes: #853224)
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 30 Jan 2017 22:21:40 +0100
 
