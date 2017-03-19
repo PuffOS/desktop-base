@@ -1,14 +1,15 @@
 dir = usr/share/icons/hicolor
 scal_emblems_dir = $(dir)/scalable/emblems
 
+.PHONY: build clean install
+
 EMBLEMS = $(basename $(wildcard *.svg))
 $(info Emblems: '$(EMBLEMS)')
 RESOLUTIONS := 16 22 32 36 48 64 128 256
 $(info Resolutions: '$(RESOLUTIONS)')
 
-# The all target should depend on all PNGs to generate
+# The build: target should depend on all PNGs to generate
 $(info $(foreach SVG,$(EMBLEMS),$(foreach RES,$(RESOLUTIONS),$(SVG)-$(RES)x$(RES).png)))
-.PHONY: build
 build: $(foreach SVG,$(EMBLEMS),$(foreach RES,$(RESOLUTIONS),$(SVG)-$(RES)x$(RES).png))
 
 # Dynamically add rules for PNG generation for each resolution, for each emblem file
@@ -18,11 +19,9 @@ $1-$2x$2.png: $1.svg
 endef
 $(foreach EMBLEM,$(EMBLEMS),$(foreach RES,$(RESOLUTIONS),$(eval $(call SVG_TO_PNG_RULE,$(EMBLEM),$(RES)))))
 
-.PHONY: clean
 clean:
 	rm -f *.png
 
-.PHONY: install
 install:
 	install -d $(DESTDIR)/$(dir)
 	# Iterate over resolutions.
@@ -39,6 +38,7 @@ install:
 			$(INSTALL) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
 		done ; \
 	done
+	# Install SVG emblems in the scalable emblems dir.
 	for EMBLEM in $(EMBLEMS) ; do \
 		EMBLEMS_DIR=$(DESTDIR)/$(scal_emblems_dir) ; \
 		install -d $${EMBLEMS_DIR} ; \

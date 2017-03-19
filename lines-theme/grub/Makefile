@@ -1,5 +1,7 @@
 dir = usr/share/desktop-base/lines-theme/grub
 
+.PHONY: build clean install
+
 files = \
 	grub-4x3.png \
 	grub-16x9.png

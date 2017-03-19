@@ -4,8 +4,11 @@ DEFAULT_BACKGROUND=desktop-background
 PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
+.PHONY: all clean install install-local
 all: build-grub build-emblems
+clean: clean-grub clean-emblems
 
+.PHONY: build-grub clean-grub install-grub
 build-grub clean-grub install-grub:
 	@target=`echo $@ | sed s/-grub//`; \
 	for grub_theme in $(GRUB_THEMES) ; do \
@@ -14,11 +17,11 @@ build-grub clean-grub install-grub:
 		fi \
 	done$
 
+.PHONY: build-emblems clean-emblems install-emblems
 build-emblems clean-emblems install-emblems:
 	@target=`echo $@ | sed s/-emblems//`; \
 	$(MAKE) $$target -C emblems-debian || exit 1;
 
-clean: clean-grub clean-emblems
 
 install: install-grub install-emblems install-local
 
