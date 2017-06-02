@@ -26,7 +26,6 @@ lint_xmls() {
     echo "${nb_files} files will be checked"
 
     while IFS= read -d $'\n' -r xml_file ; do
-        echo "xmllinting file '${xml_file}'"
         xmllint --noout ${xml_file}
         local xmllint_result=$?
         echo "${xml_file},${xmllint_result}" >> ${xml_lint_summary}
