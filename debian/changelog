@@ -1,5 +1,7 @@
 desktop-base (10.0.0~exp1) UNRELEASED; urgency=medium
 
+  * Fix XML errors in some gnome wallpaper description files.
+    (Closes: #862228)
   * Build with debhelper, bump compatibility level to 10, drop CDBS build
     dependency.
   * Add autopkgtests to validate XMLs structure and avoid bugs like #862228.
