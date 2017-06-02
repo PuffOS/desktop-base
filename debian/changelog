@@ -2,6 +2,7 @@ desktop-base (10.0.0~exp1) UNRELEASED; urgency=medium
 
   * Build with debhelper, bump compatibility level to 10, drop CDBS build
     dependency.
+  * Add autopkgtests to validate XMLs structure and avoid bugs like #862228.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 30 Jan 2017 22:21:40 +0100
 
