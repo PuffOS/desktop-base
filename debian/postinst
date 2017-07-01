@@ -32,10 +32,12 @@ spacefun 30
 EOF
 
     # Use active theme as highest priority for background
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background \
-        desktop-background \
-        /usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg 70
+    active_background=/usr/share/desktop-base/active-theme/wallpaper/contents/images/1920x1080.svg
+    if [ -e ${active_background} ]; then
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-background \
+            desktop-background ${active_background} 70
+    fi
     # Alternatives for the background in theme packages
     while read theme filename priority; do
         update-alternatives --install \
@@ -76,10 +78,12 @@ EOF
     # Set up an alternative for the XML version of the background
     # (for GNOME)
     # Highest priority for active theme
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-background.xml \
-        desktop-background.xml \
-        /usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml 50
+    active_background_xml=/usr/share/desktop-base/active-theme/wallpaper/gnome-background.xml
+    if [ -e ${active_background_xml} ]; then
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-background.xml \
+            desktop-background.xml ${active_background_xml} 50
+    fi
     # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install \
@@ -97,10 +101,12 @@ EOF
     # Set up an alternative for the XML version of the lock screen
     # (for GNOME)
     # Highest priority for active theme
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-lockscreen.xml \
-        desktop-lockscreen.xml \
-        /usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml 50
+    active_lockscreen=/usr/share/desktop-base/active-theme/lockscreen/gnome-background.xml
+    if [ -e ${active_lockscreen} ]; then
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-lockscreen.xml \
+            desktop-lockscreen.xml ${active_lockscreen} 50
+    fi
     # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install \
@@ -116,10 +122,12 @@ EOF
 
     # Set up an alternative for the wallpaper for Plasma 5/KDE
     # Highest priority for active theme
-    update-alternatives --install \
-        /usr/share/wallpapers/DebianTheme \
-        desktop-plasma5-wallpaper \
-        /usr/share/desktop-base/active-theme/wallpaper 50
+    active_plasma_wallpaper=/usr/share/desktop-base/active-theme/wallpaper
+    if [ -e ${active_plasma_wallpaper} ]; then
+        update-alternatives --install \
+            /usr/share/wallpapers/DebianTheme \
+            desktop-plasma5-wallpaper ${active_plasma_wallpaper} 50
+    fi
     # Alternatives for theme packages
     while read theme priority; do
         update-alternatives --install \
@@ -136,9 +144,11 @@ EOF
 
     # Login theme
     # Highest priority for active theme
-    update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
-        desktop-login-background \
-        /usr/share/desktop-base/active-theme/login/background.svg 50
+    active_login_background=/usr/share/desktop-base/active-theme/login/background.svg
+    if [ -e ${active_login_background} ]; then
+        update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
+            desktop-login-background ${active_login_background} 50
+    fi
     # Alternatives for theme packages
     while read theme background priority; do
         update-alternatives --install /usr/share/images/desktop-base/login-background.svg \
@@ -163,20 +173,23 @@ EOF
         grub_first_ratio="4x3"
         grub_second_ratio="16x9"
     fi
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-${grub_first_ratio}.png 50 \
-        --slave /usr/share/desktop-base/grub_background.sh \
-        desktop-grub.sh \
-        /usr/share/desktop-base/active-theme/grub/grub_background.sh
-    update-alternatives --install \
-        /usr/share/images/desktop-base/desktop-grub.png \
-        desktop-grub \
-        /usr/share/desktop-base/active-theme/grub/grub-${grub_second_ratio}.png 45 \
-        --slave /usr/share/desktop-base/grub_background.sh \
-        desktop-grub.sh \
-        /usr/share/desktop-base/active-theme/grub/grub_background.sh
+    active_grub_background=/usr/share/desktop-base/active-theme/grub/grub_background.sh
+    active_grub_first_ratio=/usr/share/desktop-base/active-theme/grub/grub-${grub_first_ratio}.png
+    if [ -e ${active_grub_first_ratio} ] && [ -e ${active_grub_background} ]; then
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-grub.png \
+            desktop-grub ${active_grub_first_ratio} 50 \
+            --slave /usr/share/desktop-base/grub_background.sh \
+            desktop-grub.sh ${active_grub_background}
+    fi
+    active_grub_second_ratio=/usr/share/desktop-base/active-theme/grub/grub-${grub_second_ratio}.png
+    if [ -e ${active_grub_second_ratio} ] && [ -e ${active_grub_background} ]; then
+        update-alternatives --install \
+            /usr/share/images/desktop-base/desktop-grub.png \
+            desktop-grub ${active_grub_second_ratio} 45 \
+            --slave /usr/share/desktop-base/grub_background.sh \
+            desktop-grub.sh ${active_grub_background}
+    fi
     # Alternatives for theme packages
     while read theme ratio priority; do
         update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png \

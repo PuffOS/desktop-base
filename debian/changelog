@@ -1,3 +1,10 @@
+desktop-base (9.0.5) UNRELEASED; urgency=medium
+
+  * Ensure postinst doesn’t fails on upgrade even when an incomplete theme pack
+    is active. (Closes: #858643)
+
+ -- Aurélien COUDERC <zecoucou@free.fr>  Sat, 01 Jul 2017 22:08:51 +0200
+
 desktop-base (9.0.4) unstable; urgency=medium
 
   * Fix XML errors in some gnome wallpaper description files.
