@@ -17,7 +17,7 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #------------------------------- Constants -----------------------------------------
 NUM_STARS = 40;
@@ -215,7 +215,7 @@ rocket_flame_index = 0;
 rocket_sprite = Sprite();
 
 # Rocket trajectory
-# Take a point somwhere in the middle to compute the parabola
+# Take a point somewhere in the middle to compute the parabola
 middle_x = Window.GetX() + Window.GetWidth() * 0.42;
 middle_y = Window.GetY() + Window.GetHeight() * 0.42;
 # Parabole coeffs so that y = a.x^2 + b.x + c for the earth, planet and middle points

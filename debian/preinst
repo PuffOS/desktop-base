@@ -65,7 +65,7 @@ joy-inksplat-wallpaper_1920x1080.svg
 spacefun-wallpaper.svg
 spacefun-wallpaper-widescreen.svg
 EOF
-        # Wallpaper XML descriptions (for Gnome)
+        # Wallpaper XML descriptions (for GNOME)
         while read desktopbackground; do
             update-alternatives --remove \
                 desktop-background.xml \

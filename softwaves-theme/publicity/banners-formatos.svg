@@ -17,7 +17,7 @@
    id="svg1900"
    inkscape:version="0.92.1 r15371"
    sodipodi:docname="banners-formatos.svg"
-   inkscape:export-filename="/home/valessio/stretch/c1.png"
+   inkscape:export-filename="/tmp/c1.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
@@ -2635,7 +2635,7 @@
         <g
            id="Logo__x5F__text-9-2-2"
            transform="matrix(0.81634161,0,0,0.81634161,-10.523852,-158.79348)"
-           inkscape:export-filename="/home/valessio/banner728-1.png"
+           inkscape:export-filename="/tmp/banner728-1.png"
            inkscape:export-xdpi="96"
            inkscape:export-ydpi="96">
           <g
@@ -2883,7 +2883,7 @@
        width="170.21156"
        height="25.503004"
        id="rect3721"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
@@ -2956,7 +2956,7 @@
        width="170.21156"
        height="25.503004"
        id="rect3744"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
@@ -3064,14 +3064,14 @@
        width="170.21156"
        height="25.503004"
        id="rect3775"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="g3831"
        enable-background="new    "
        transform="matrix(0.21250732,0,0,0.21250732,-7.4009463,127.26689)"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <path
@@ -3217,7 +3217,7 @@
        width="170.21156"
        height="25.503004"
        id="rect3851"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
@@ -3328,14 +3328,14 @@
        width="170.21156"
        height="25.503004"
        id="rect3886"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="logo_1_"
        enable-background="new    "
        transform="matrix(0.23279712,0,0,0.23279712,129.35249,139.97765)"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <path
@@ -3406,13 +3406,13 @@
        width="170.21156"
        height="25.503004"
        id="rect3917"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
        id="circles"
        transform="matrix(0.21250732,0,0,0.21250732,106.63448,140.76064)"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <circle
@@ -4615,7 +4615,7 @@
        height="66.145836"
        x="195.04761"
        y="0.11042471"
-       inkscape:export-filename="/home/valessio/banner300-1.png"
+       inkscape:export-filename="/tmp/banner300-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -4693,7 +4693,7 @@
        x="116.41526"
        y="154.8134"
        id="text1192"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96"><tspan
          sodipodi:role="line"
@@ -4708,7 +4708,7 @@
        height="23.8125"
        x="77.899918"
        y="141.57886"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <text
@@ -4794,7 +4794,7 @@
        height="13.229167"
        x="164.65131"
        y="179.49649"
-       inkscape:export-filename="/home/valessio/banner320-1.png"
+       inkscape:export-filename="/tmp/banner320-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <g
@@ -6435,7 +6435,7 @@
       <circle
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          id="circle3888"
          r="9.471364"
          cy="151.74706"
@@ -6445,7 +6445,7 @@
       <text
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          transform="rotate(1.928899)"
          id="text6888-4-7"
          y="147.45168"
@@ -6461,7 +6461,7 @@
       <text
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.44156146px;line-height:125%;font-family:Poppl-Laudatio;-inkscape-font-specification:Poppl-Laudatio;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#dfe6e7;fill-opacity:1;stroke:none;stroke-width:0.00320136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          x="161.94482"
@@ -6477,7 +6477,7 @@
     <g
        id="Logo__x5F__text-9-2"
        transform="matrix(0.15668256,0,0,0.15668256,116.96561,107.81312)"
-       inkscape:export-filename="/home/valessio/banner728-1.png"
+       inkscape:export-filename="/tmp/banner728-1.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <g
@@ -6573,7 +6573,7 @@
       <circle
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          id="circle3888-9"
          r="9.471364"
          cy="151.74706"
@@ -6583,7 +6583,7 @@
       <text
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          transform="rotate(1.928899)"
          id="text6888-4-7-3"
          y="147.45523"
@@ -6599,7 +6599,7 @@
       <text
          inkscape:export-ydpi="96"
          inkscape:export-xdpi="96"
-         inkscape:export-filename="/home/valessio/banner728-1.png"
+         inkscape:export-filename="/tmp/banner728-1.png"
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.44156146px;line-height:125%;font-family:Poppl-Laudatio;-inkscape-font-specification:Poppl-Laudatio;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;opacity:1;vector-effect:none;fill:#dfe6e7;fill-opacity:1;stroke:none;stroke-width:0.00320136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          x="161.94482"

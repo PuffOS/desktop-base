@@ -1,6 +1,6 @@
 [Plymouth Theme]
 Name=Default theme for Debian 8.0 Jessie
-Description=A theme that features a white debian logo on a blue-green background surrounded by thin curves
+Description=A theme that features a white Debian logo on a blue-green background surrounded by thin curves
 ModuleName=script
 
 [script]

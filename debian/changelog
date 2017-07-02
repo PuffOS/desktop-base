@@ -2,12 +2,13 @@ desktop-base (9.0.5) UNRELEASED; urgency=medium
 
   * Ensure postinst doesn’t fails on upgrade even when an incomplete theme pack
     is active. (Closes: #858643)
+  * Various check-all-the-things fixes.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Sat, 01 Jul 2017 22:08:51 +0200
 
 desktop-base (9.0.4) unstable; urgency=medium
 
-  * Fix XML errors in some gnome wallpaper description files.
+  * Fix XML errors in some GNOME wallpaper description files.
     (Closes: #862228)
   * Build with debhelper, bump compatibility level to 10, drop CDBS build
     dependency.
@@ -92,7 +93,7 @@ desktop-base (9.0.0~exp1) experimental; urgency=medium
   [ Aurélien COUDERC ]
   * Initial support for Soft Waves theme by Juliette Belin.
     - Default theme for GRUB (Closes: #598776, #773369)
-    - Default theme for Gnome wallpaper and lock screen
+    - Default theme for GNOME wallpaper and lock screen
     - Default theme for Plasma 5 wallpaper (Closes: #831730)
     - Theme available for SDDM login and lock screen
     - debian/copyright updated
@@ -107,7 +108,7 @@ desktop-base (9.0.0~exp1) experimental; urgency=medium
     - Can be configured with alternatives (also works in lightdm).
    (Closes: #415064, #608523, #611170, #670866, #762276)
   * Remove deprecated ksplash and kdm from KDE4. (Closes: #607842)
-  * Remove deprecated splash options from Gnome 2.
+  * Remove deprecated splash options from GNOME 2.
   * Some cleanup in maintainer scripts to correctly handle alternatives.
     (Closes: #773404)
 
@@ -193,7 +194,7 @@ desktop-base (7.0.3) unstable; urgency=low
     - Don't cut off the last hostname letter.
     - Adjust font sizes and colors.
   * Ksplash: don't cut off blurred icons.
-  * Reduce opacity of debian swirl in gdm/kdm background to be
+  * Reduce opacity of Debian swirl in gdm/kdm background to be
     less distracting.
 
   [ Paul Tagliamonte ]
@@ -207,7 +208,7 @@ desktop-base (7.0.3) unstable; urgency=low
 
 desktop-base (7.0.2) unstable; urgency=low
 
-  * Droped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
+  * Dropped the ${misc:Depends}, as Yves-Alexis pointed out, it drags in dconf
     without a reason.
 
  -- Paul Tagliamonte <paultag@debian.org>  Mon, 30 Jul 2012 19:43:20 -0400
@@ -217,7 +218,7 @@ desktop-base (7.0.1) unstable; urgency=low
   [ Eshat Cakar ]
   * Make 1366x768 ksplash background really that resolution. (Closes: #679306)
   * Fix typo in plymouth theme. (Closes: #679357)
-  * Updated ink-splated kde wallpaper, to fix alignment issues.
+  * Updated ink-splated KDE wallpaper, to fix alignment issues.
 
   [ Paul Tagliamonte ]
   * Add ${misc:Depends} to the Depends for the binary package. We're using
@@ -234,7 +235,7 @@ desktop-base (7.0.0) unstable; urgency=low
   * Updated the KDM theme.
   * Updated the ksplash theme.
   * Install Joy wallpapers into /usr/share/wallpapers/
-    This makes them visibile in KDE's wallpaper chooser
+    This makes them visible in KDE's wallpaper chooser
   * Set default wallpaper for new users via plasma scripting
 
   [ Paul Tagliamonte ]
@@ -573,7 +574,7 @@ desktop-base (4.0.4) unstable; urgency=low
 
 desktop-base (4.0.3) unstable; urgency=low
 
-  * Fix kde default wallpaper appearance between kdm to ksplash switch.
+  * Fix KDE default wallpaper appearance between kdm to ksplash switch.
 
  -- Fathi Boudra <fboudra@free.fr>  Thu, 24 May 2007 01:22:06 +0200
 

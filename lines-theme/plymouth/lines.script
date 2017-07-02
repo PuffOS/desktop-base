@@ -12,10 +12,10 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 # 
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
-#  02111-1307, USA.
+#  You should have received a copy of the GNU General Public License along
+#  with this program; if not, write to the Free Software Foundation, Inc.,
+#  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
 # 
 #  Written by: Alberto Milone <alberto.milone@canonical.com>
 #
@@ -1077,7 +1077,7 @@ fun compute_angle_with_accel(ellipse) {
 }
 
 # Computes the opacity factor so that the electrons visibility somehow matches that of the ellipses:
-# Most visible in a middle part, and invisible at the oposite.
+# Most visible in a middle part, and invisible at the opposite.
 fun compute_opacity(ellipse) {
     # map the [start_angle,start_angle+arc] to [0,Pi]
     transformed_angle = Math.Pi / ellipse.anim.arc * (ellipse.anim.angle - ellipse.anim.start_angle);
