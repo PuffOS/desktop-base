@@ -165,11 +165,16 @@ EOF
     # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme
     ## Favor widescreen / hi-res background for efi installations
-    num_grub_efi_installed=$(dpkg-query --list "grub-efi*" 2> /dev/null | grep "^i" | wc -l)
+    grub_installed_query="dpkg-query --list grub-efi*"
+    echo "Detecting installed grub-efi* packages..."
+    ${grub_installed_query} || true # log packages found if any
+    num_grub_efi_installed=$(${grub_installed_query} 2> /dev/null | grep "^i" | wc -l)
     if [ $num_grub_efi_installed -gt 0 ] ; then
+        echo "grub-efi found, using 16/9 as default grub background ratio"
         grub_first_ratio="16x9"
         grub_second_ratio="4x3"
     else
+        echo "grub-efi not found, using 4/3 as default grub background ratio"
         grub_first_ratio="4x3"
         grub_second_ratio="16x9"
     fi
