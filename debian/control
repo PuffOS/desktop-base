@@ -10,7 +10,7 @@ Uploaders: Loïc Minier <lool@dooz.org>,
            Eshat Cakar <info@eshat.de>,
            Aurélien COUDERC <zecoucou@free.fr>
 Build-Depends: debhelper (>= 10), librsvg2-bin
-Standards-Version: 3.9.8
+Standards-Version: 4.0.0
 Homepage: https://www.debian.org/devel/debian-desktop/
 Vcs-Browser: https://anonscm.debian.org/viewvc/debian-desktop/packages/trunk/desktop-base
 Vcs-Svn: svn://anonscm.debian.org/debian-desktop/packages/trunk/desktop-base
