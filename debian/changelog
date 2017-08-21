@@ -1,7 +1,7 @@
 desktop-base (9.0.6) UNRELEASED; urgency=medium
 
   * Improve detection of grub efi to choose default background ratio.
-  * Bump Standards-Version to 4.0.0 (no changes needed).
+  * Bump Standards-Version to 4.0.1 (no changes needed).
   * Drop versioned pre-depends on dpkg for dpkg-maintscript-helper that has
     been available in dpkg since wheezy.
   * Add a debian-theme theme for plymouth themes. This should help switching
