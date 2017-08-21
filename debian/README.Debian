@@ -224,11 +224,6 @@ A theme pack should contain the following elements:
    messages, fsck feedback… so it’s highly recommended to start with an
    existing script and adapt the background setup and animation to the needs
    of your theme.
-./plymouthd.default
--> Should be a drop in replacement for /usr/share/plymouth/plymouthd.defaults
-   selecting your team. This file is not currently used but when we finish
-   integrating plymouth with the themes pack system we’ll be able to handle
-   plymouth theme switching with the rest of the theme elements in Debian.
 
 ./login/background.svg
 -> To provide the login background alternative for LightDM, SDDM…

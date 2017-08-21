@@ -36,6 +36,10 @@ install-local:
 	mkdir -p $(DESTDIR)/usr/share/pixmaps
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
+	# Create a 'debian-theme' symlink in plymouth themes folder, pointing at the
+	# plymouth theme for the currently active 'debian-theme' alternative.
+	mkdir -p $(DESTDIR)/usr/share/plymouth/themes
+	ln -s ../../desktop-base/active-theme/plymouth $(DESTDIR)/usr/share/plymouth/themes/debian-theme
 
 	# Set Plasma 5/KDE default wallpaper
 	install -d $(DESTDIR)/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates
@@ -54,7 +58,6 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
 	$(INSTALL) $(wildcard spacefun-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
 	cd $(DESTDIR)/usr/share/desktop-base/spacefun-theme && ln -s /usr/share/plymouth/themes/spacefun plymouth
-	$(INSTALL) spacefun-theme/plymouthd.defaults $(DESTDIR)/usr/share/desktop-base/spacefun-theme
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
 	$(INSTALL) $(wildcard spacefun-theme/login/*) $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
@@ -78,8 +81,6 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/joy
 	$(INSTALL) $(wildcard joy-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/joy
 	cd $(DESTDIR)/usr/share/desktop-base/joy-theme && ln -s /usr/share/plymouth/themes/joy plymouth
-	$(INSTALL) joy-theme/plymouthd.defaults $(DESTDIR)/usr/share/desktop-base/joy-theme
-
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/login
 	$(INSTALL) $(wildcard joy-theme/login/*) $(DESTDIR)/usr/share/desktop-base/joy-theme/login
@@ -109,7 +110,6 @@ install-local:
 	# Reuse « normal » joy theme
 	cd $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme \
 		&& ln -s /usr/share/plymouth/themes/joy plymouth \
-		&& ln -s /usr/share/desktop-base/joy-theme/plymouthd.defaults plymouthd.defaults
 
 	### Wallpapers
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-inksplat-theme/wallpaper/contents/images
@@ -129,7 +129,6 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
 	$(INSTALL) $(wildcard lines-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/lines
 	cd $(DESTDIR)/usr/share/desktop-base/lines-theme && ln -s /usr/share/plymouth/themes/lines plymouth
-	$(INSTALL) lines-theme/plymouthd.defaults $(DESTDIR)/usr/share/desktop-base/lines-theme
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/login
 	$(INSTALL) $(wildcard lines-theme/login/*) $(DESTDIR)/usr/share/desktop-base/lines-theme/login
@@ -159,7 +158,6 @@ install-local:
 	install -d $(DESTDIR)/usr/share/plymouth/themes/softwaves
 	$(INSTALL) $(wildcard softwaves-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/softwaves
 	cd $(DESTDIR)/usr/share/desktop-base/softwaves-theme && ln -s /usr/share/plymouth/themes/softwaves plymouth
-	$(INSTALL) softwaves-theme/plymouthd.defaults $(DESTDIR)/usr/share/desktop-base/softwaves-theme
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
 	$(INSTALL) $(wildcard softwaves-theme/login/*) $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login

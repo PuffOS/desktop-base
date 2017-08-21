@@ -4,6 +4,8 @@ desktop-base (9.0.6) UNRELEASED; urgency=medium
   * Bump Standards-Version to 4.0.0 (no changes needed).
   * Drop versioned pre-depends on dpkg for dpkg-maintscript-helper that has
     been available in dpkg since wheezy.
+  * Add a debian-theme theme for plymouth themes. This should help switching
+    the plymouth theme with the rest of the global theme package.
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Thu, 06 Jul 2017 17:09:44 +0200
 
