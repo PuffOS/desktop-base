@@ -37,7 +37,7 @@ install-local:
 	$(INSTALL) $(PIXMAPS) $(DESTDIR)/usr/share/pixmaps/
 
 	# Create a 'debian-theme' symlink in plymouth themes folder, pointing at the
-	# plymouth theme for the currently active 'debian-theme' alternative.
+	# plymouth theme for the currently active 'desktop-theme' alternative.
 	mkdir -p $(DESTDIR)/usr/share/plymouth/themes
 	ln -s ../../desktop-base/active-theme/plymouth $(DESTDIR)/usr/share/plymouth/themes/debian-theme
 
