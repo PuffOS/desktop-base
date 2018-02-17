@@ -1,13 +1,10 @@
 Source: desktop-base
 Section: x11
 Priority: optional
-Maintainer: Gustavo Franco <stratus@debian.org>
-Uploaders: Loïc Minier <lool@dooz.org>,
-           Fathi Boudra <fabo@debian.org>,
-           Yves-Alexis Perez <corsac@debian.org>,
+Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
+Uploaders: Yves-Alexis Perez <corsac@debian.org>,
            Josselin Mouette <joss@debian.org>,
            Paul Tagliamonte <paultag@debian.org>,
-           Eshat Cakar <info@eshat.de>,
            Aurélien COUDERC <zecoucou@free.fr>
 Build-Depends: debhelper (>= 10), librsvg2-bin
 Standards-Version: 4.0.1
