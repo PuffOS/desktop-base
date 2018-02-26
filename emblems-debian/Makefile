@@ -34,16 +34,16 @@ install:
 			EMBLEMS_DIR=$${RES_DIR}/emblems ; \
 			install -d $${EMBLEMS_DIR} ; \
 			PNG_SOURCE=$${EMBLEM}-$${RES}x$${RES}.png ; \
-			$(INSTALL) $${PNG_SOURCE} $${EMBLEMS_DIR}/$${EMBLEM}.png ; \
-			$(INSTALL) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
+			$(INSTALL_DATA) $${PNG_SOURCE} $${EMBLEMS_DIR}/$${EMBLEM}.png ; \
+			$(INSTALL_DATA) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
 		done ; \
 	done
 	# Install SVG emblems in the scalable emblems dir.
 	for EMBLEM in $(EMBLEMS) ; do \
 		EMBLEMS_DIR=$(DESTDIR)/$(scal_emblems_dir) ; \
 		install -d $${EMBLEMS_DIR} ; \
-		$(INSTALL) $${EMBLEM}.svg $${EMBLEMS_DIR}/ ; \
-		$(INSTALL) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
+		$(INSTALL_DATA) $${EMBLEM}.svg $${EMBLEMS_DIR}/ ; \
+		$(INSTALL_DATA) $${EMBLEM}.icon $${EMBLEMS_DIR}/ ; \
 	done
 
 include ../Makefile.inc

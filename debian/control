@@ -6,7 +6,7 @@ Uploaders: Yves-Alexis Perez <corsac@debian.org>,
            Josselin Mouette <joss@debian.org>,
            Paul Tagliamonte <paultag@debian.org>,
            Aurélien COUDERC <zecoucou@free.fr>
-Build-Depends: debhelper (>= 10), librsvg2-bin
+Build-Depends: debhelper (>= 11), librsvg2-bin
 Rules-Requires-Root: no
 Standards-Version: 4.1.3
 Homepage: https://www.debian.org/devel/debian-desktop/
