@@ -164,17 +164,15 @@ EOF
 
     # Set up an alternative for the GRUB background/colors config
     # Highest priority for active theme
-    ## Favor widescreen / hi-res background for efi installations
-    grub_installed_query="dpkg-query --list grub-efi*"
-    echo "Detecting installed grub-efi* packages..."
-    ${grub_installed_query} || true # log packages found if any
-    num_grub_efi_installed=$(${grub_installed_query} 2> /dev/null | grep "^i" | wc -l)
-    if [ $num_grub_efi_installed -gt 0 ] ; then
-        echo "grub-efi found, using 16/9 as default grub background ratio"
+    # Favor widescreen / hi-res background for efi installations detected
+    # by the presence of grub-efi* packages (not the grub-efi*-bin which don’t
+    # necessary account for grub being the active bootloader).
+    if dpkg-query --list grub-efi* | grep -v "^... grub-efi[^[:space:]]*-bin" | grep -q "^[ih][HUFWti] " ; then
+        echo "grub-efi* packages found, using 16/9 as default grub background ratio"
         grub_first_ratio="16x9"
         grub_second_ratio="4x3"
     else
-        echo "grub-efi not found, using 4/3 as default grub background ratio"
+        echo "No grub-efi* package found, using 4/3 as default grub background ratio"
         grub_first_ratio="4x3"
         grub_second_ratio="16x9"
     fi
@@ -215,7 +213,12 @@ spacefun 16x9 30
 EOF
 
     # Apply GRUB background update into /boot
-    if which update-grub > /dev/null ; then
+    # Try detecting active grub packages (so not -doc, -common, -bin) as a hint
+    # that GRUB is being used as bootloader before calling update-grub.
+    # Some people use the *-bin packages without using GRUB as bootloader
+    # (see #851893 for more context).
+    if dpkg-query --list "grub-*" | grep -v "^... grub\(-common\|-emu\|[^[:space:]]*\(-bin\|-doc\)\)" | grep -q "^[ih][HUFWti] " \
+            && which update-grub > /dev/null ; then
         # Ensure the background image file has actually been written to disc
         # before updating.
         sync
