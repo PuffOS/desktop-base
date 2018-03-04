@@ -15,7 +15,7 @@ build-grub clean-grub install-grub:
 		if [ -f $$grub_theme/Makefile ] ; then \
 			$(MAKE) $$target -C $$grub_theme || exit 1; \
 		fi \
-	done$
+	done
 
 .PHONY: build-emblems clean-emblems install-emblems
 build-emblems clean-emblems install-emblems:
