@@ -1,13 +1,32 @@
-desktop-base (9.0.6) UNRELEASED; urgency=medium
+desktop-base (9.0.6) unstable; urgency=medium
+
+  * First release with package sources migrated to git and
+    salsa.debian.org!
+    - Updated Vcs-* fields accordingly.
+    - Add gbp.conf configuration for native package tag names.
+    - Add README.contribute for how to contribute with git / salsa.
 
   * Improve detection of grub efi to choose default background ratio.
-  * Bump Standards-Version to 4.0.1 (no changes needed).
+  * Add a debian-theme theme for plymouth themes. This should help switching
+    the plymouth theme with the rest of the global theme.
+  * Try harder detecting if grub is used as bootloader before calling
+    update-grub. (Closes: #851893)
+
+  * Bump debhelper version to 11, fix usage of install in Makefiles in the
+    move.
   * Drop versioned pre-depends on dpkg for dpkg-maintscript-helper that has
     been available in dpkg since wheezy.
-  * Add a debian-theme theme for plymouth themes. This should help switching
-    the plymouth theme with the rest of the global theme package.
+  * Use debian-desktop@l.d.o as Maintainer instead of Gustavo Franco; removed
+    Loïc Minier, Fathi Boudra and Eshat Cakar from uploaders. Thanks to all for
+    your past work on the package! (Closes: #879297)
+  * Bump Standards-Version to 4.1.3 (VCS-* fields already moved to secure URIs
+    with the migration to Salsa).
+  * Use Rules-Requires-Root: no
+  * Fix Lintian issues:
+    - unnecessary-testsuite-autopkgtest-header
+    - package-uses-deprecated-source-override-location
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Thu, 06 Jul 2017 17:09:44 +0200
+ -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 05 Mar 2018 10:20:26 +0100
 
 desktop-base (9.0.5) unstable; urgency=medium
 
