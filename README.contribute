@@ -1,4 +1,4 @@
-For occasional contributions, the preferred way to contribute to this repository is to create a branch on salsa.debian.org, create a merge request and ask for the merge request to be review on debian-desktop@lists.debian.org.
+For occasional contributions, the preferred way to contribute to this repository is to create a branch on salsa.debian.org, create a merge request and ask for the merge request to be reviewed on debian-desktop@lists.debian.org.
 
 For Debian developers and maintainers doing the tag and publication work for the package, the preferred workflow is the following.
 - During development cycle:
