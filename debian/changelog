@@ -12,6 +12,7 @@ desktop-base (9.0.6) unstable; urgency=medium
   * Try harder detecting if grub is used as bootloader before calling
     update-grub. (Closes: #851893)
 
+  * Fix FTBFS due to make >= 4.2 being more picky on typos. (Closes: #897549)
   * Bump debhelper version to 11, fix usage of install in Makefiles in the
     move.
   * Drop versioned pre-depends on dpkg for dpkg-maintscript-helper that has
