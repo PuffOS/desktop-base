@@ -11,6 +11,8 @@ desktop-base (9.0.6) unstable; urgency=medium
     the plymouth theme with the rest of the global theme.
   * Try harder detecting if grub is used as bootloader before calling
     update-grub. (Closes: #851893)
+  * Misspelled identifier gloabl should be global in softwaves.script.
+    (Closes: #898150)
 
   * Fix FTBFS due to make >= 4.2 being more picky on typos. (Closes: #897549)
   * Bump debhelper version to 11, fix usage of install in Makefiles in the
