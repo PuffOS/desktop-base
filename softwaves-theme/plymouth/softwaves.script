@@ -989,7 +989,7 @@ fun rotate_img(source_img, current_step, nb_steps) {
 
 fun update_glow_anim () {
     if (global.anim_start_time != global.progress_time && global.anim_status != "running") {
-        gloabl.anim_start_time = global.progress_time;
+        global.anim_start_time = global.progress_time;
         global.anim_iter = 0;
         global.anim_status = "running";
     }
