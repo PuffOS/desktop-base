@@ -57,6 +57,7 @@ install-local:
 	### Plymouth theme
 	install -d $(DESTDIR)/usr/share/plymouth/themes/spacefun
 	$(INSTALL_DATA) $(wildcard spacefun-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/spacefun
+	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme
 	cd $(DESTDIR)/usr/share/desktop-base/spacefun-theme && ln -s /usr/share/plymouth/themes/spacefun plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/spacefun-theme/login
@@ -80,6 +81,7 @@ install-local:
 	### Plymouth theme
 	install -d $(DESTDIR)/usr/share/plymouth/themes/joy
 	$(INSTALL_DATA) $(wildcard joy-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/joy
+	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme
 	cd $(DESTDIR)/usr/share/desktop-base/joy-theme && ln -s /usr/share/plymouth/themes/joy plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/joy-theme/login
@@ -128,6 +130,7 @@ install-local:
 	### Plymouth theme
 	install -d $(DESTDIR)/usr/share/plymouth/themes/lines
 	$(INSTALL_DATA) $(wildcard lines-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/lines
+	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme
 	cd $(DESTDIR)/usr/share/desktop-base/lines-theme && ln -s /usr/share/plymouth/themes/lines plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/lines-theme/login
@@ -157,6 +160,7 @@ install-local:
 	### Plymouth theme
 	install -d $(DESTDIR)/usr/share/plymouth/themes/softwaves
 	$(INSTALL_DATA) $(wildcard softwaves-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/softwaves
+	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme
 	cd $(DESTDIR)/usr/share/desktop-base/softwaves-theme && ln -s /usr/share/plymouth/themes/softwaves plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/softwaves-theme/login
