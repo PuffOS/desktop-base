@@ -169,6 +169,7 @@ EOF
             /usr/share/desktop-base/$theme-theme
     done << EOF
 softwaves
+moonlight
 lines
 joy
 joy-inksplat

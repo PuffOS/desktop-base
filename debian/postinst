@@ -25,6 +25,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
             /usr/share/desktop-base/$theme-theme $priority
     done << EOF
 futureprototype 50
+moonlight 40
 softwaves 40
 lines 40
 joy 40
@@ -52,6 +53,7 @@ futureprototype 1920x1080.svg 65
 futureprototype 1920x1200.svg 65
 futureprototype 2560x1080.svg 65
 futureprototype 4096x2160.svg 65
+moonlight 1920x1080.svg 65
 softwaves 1024x768.svg 50
 softwaves 1280x720.svg 50
 softwaves 1280x800.svg 50
