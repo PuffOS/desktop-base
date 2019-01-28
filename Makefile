@@ -1,4 +1,4 @@
-GRUB_THEMES=softwaves-theme/grub lines-theme/grub joy-theme/grub spacefun-theme/grub
+GRUB_THEMES=futureprototype-theme/grub softwaves-theme/grub lines-theme/grub joy-theme/grub spacefun-theme/grub
 DEFAULT_BACKGROUND=desktop-background
 
 PIXMAPS=$(wildcard pixmaps/*.png)
@@ -184,5 +184,28 @@ install-local:
 	# Lock screen symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/softwaves-theme/lockscreen SoftWavesLockScreen
+
+	# futurePrototype theme (Buster’s default)
+	### Plymouth theme
+	install -d $(DESTDIR)/usr/share/plymouth/themes/futureprototype
+	$(INSTALL_DATA) $(wildcard futureprototype-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/futureprototype
+	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme
+	cd $(DESTDIR)/usr/share/desktop-base/futureprototype-theme && ln -s /usr/share/plymouth/themes/futureprototype plymouth
+	### Login background
+	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/login
+	$(INSTALL_DATA) $(wildcard futureprototype-theme/login/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/login
+
+	### Wallpapers
+	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper/contents/images
+	$(INSTALL_DATA) futureprototype-theme/wallpaper/metadata.desktop $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper
+	$(INSTALL_DATA) futureprototype-theme/wallpaper/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper
+	$(INSTALL_DATA) $(wildcard futureprototype-theme/wallpaper/contents/images/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper/contents/images/
+	$(INSTALL_DATA) futureprototype-theme/gnome-wp-list.xml $(DESTDIR)/usr/share/gnome-background-properties/debian-futureprototype.xml
+	# Wallpaper symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper FuturePrototype
+
+	### Lockscreen
+	cd $(DESTDIR)/usr/share/desktop-base/futureprototype-theme && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper lockscreen
 
 include Makefile.inc

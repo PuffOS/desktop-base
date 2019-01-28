@@ -11,6 +11,12 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename
     done << EOF
+futureprototype 1280x1024.svg
+futureprototype 1600x1200.svg
+futureprototype 1920x1080.svg
+futureprototype 1920x1200.svg
+futureprototype 2560x1080.svg
+futureprototype 4096x2160.svg
 softwaves 1024x768.svg
 softwaves 1280x720.svg
 softwaves 1280x800.svg
@@ -50,6 +56,7 @@ EOF
             desktop-background.xml \
             /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml
     done << EOF
+futureprototype
 softwaves
 lines
 joy
@@ -68,6 +75,7 @@ EOF
             desktop-lockscreen.xml \
             /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml
     done << EOF
+futureprototype
 softwaves
 lines
 joy
@@ -85,6 +93,7 @@ EOF
             desktop-plasma5-wallpaper \
             /usr/share/desktop-base/$theme-theme/wallpaper
     done << EOF
+futureprototype
 softwaves
 lines
 joy
@@ -104,6 +113,7 @@ EOF
             desktop-login-background \
             /usr/share/desktop-base/$theme-theme/login/$background
     done << EOF
+futureprototype background.svg
 softwaves background.svg
 lines background.svg
 lines background-nologo.svg
@@ -121,6 +131,8 @@ EOF
             desktop-grub \
             /usr/share/desktop-base/$theme-theme/grub/grub-$ratio.png
     done << EOF
+futureprototype 4x3
+futureprototype 16x9
 softwaves 4x3
 softwaves 16x9
 lines 4x3
@@ -156,6 +168,7 @@ EOF
             desktop-theme \
             /usr/share/desktop-base/$theme-theme
     done << EOF
+softwaves
 lines
 joy
 joy-inksplat
@@ -164,6 +177,6 @@ EOF
     ## *Lastly* remove *highest priority* alternative
     update-alternatives --remove \
         desktop-theme \
-        /usr/share/desktop-base/softwaves-theme
+        /usr/share/desktop-base/futureprototype-theme
 
 fi
