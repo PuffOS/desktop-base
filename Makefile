@@ -206,6 +206,12 @@ install-local:
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper FuturePrototype
 
 	### Lockscreen
-	cd $(DESTDIR)/usr/share/desktop-base/futureprototype-theme && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper lockscreen
+	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen/contents/images
+	$(INSTALL_DATA) futureprototype-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen
+	$(INSTALL_DATA) futureprototype-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen
+	$(INSTALL_DATA) $(wildcard futureprototype-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen/contents/images/
+	# Lock screen symlink for KDE
+	install -d $(DESTDIR)/usr/share/wallpapers
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/lockscreen FuturePrototypeLockScreen
 
 include Makefile.inc
