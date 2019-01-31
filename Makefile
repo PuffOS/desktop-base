@@ -221,10 +221,10 @@ install-local:
 
 	# Moonlight theme
 	### Plymouth theme
-	#install -d $(DESTDIR)/usr/share/plymouth/themes/moonlight
-	#$(INSTALL_DATA) $(wildcard moonlight-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/moonlight
-	#install -d $(DESTDIR)/usr/share/desktop-base/moonlight-theme
-	#cd $(DESTDIR)/usr/share/desktop-base/moonlight-theme && ln -s /usr/share/plymouth/themes/moonlight plymouth
+	install -d $(DESTDIR)/usr/share/plymouth/themes/moonlight
+	$(INSTALL_DATA) $(wildcard moonlight-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/moonlight
+	install -d $(DESTDIR)/usr/share/desktop-base/moonlight-theme
+	cd $(DESTDIR)/usr/share/desktop-base/moonlight-theme && ln -s /usr/share/plymouth/themes/moonlight plymouth
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/moonlight-theme/login
 	$(INSTALL_DATA) $(wildcard moonlight-theme/login/*) $(DESTDIR)/usr/share/desktop-base/moonlight-theme/login
