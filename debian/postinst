@@ -101,6 +101,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml $priority
     done << EOF
 futureprototype 40
+moonlight 30
 softwaves 30
 lines 30
 joy 30
@@ -125,6 +126,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml $priority
     done << EOF
 futureprototype 40
+moonlight 30
 softwaves 30
 lines 30
 joy 30
@@ -147,6 +149,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper $priority
     done << EOF
 futureprototype 40
+moonlight 30
 softwaves 30
 lines 30
 joy 30
@@ -168,6 +171,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/login/$background $priority
     done << EOF
 futureprototype background.svg 40
+moonlight background.svg 40
 softwaves background.svg 30
 lines background.svg 30
 lines background-nologo.svg 30
@@ -217,6 +221,8 @@ EOF
     done << EOF
 futureprototype 4x3 40
 futureprototype 16x9 40
+moonlight 4x3 30
+moonlight 16x9 30
 softwaves 4x3 30
 softwaves 16x9 30
 lines 4x3 30

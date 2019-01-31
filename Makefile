@@ -1,4 +1,4 @@
-GRUB_THEMES=futureprototype-theme\
+GRUB_THEMES=futureprototype-theme/grub\
 	moonlight-theme/grub\
 	softwaves-theme/grub\
 	lines-theme/grub\

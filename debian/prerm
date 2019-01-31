@@ -17,6 +17,7 @@ futureprototype 1920x1080.svg
 futureprototype 1920x1200.svg
 futureprototype 2560x1080.svg
 futureprototype 4096x2160.svg
+moonlight 1920x1080.svg
 softwaves 1024x768.svg
 softwaves 1280x720.svg
 softwaves 1280x800.svg
@@ -57,6 +58,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper/gnome-background.xml
     done << EOF
 futureprototype
+moonlight
 softwaves
 lines
 joy
@@ -76,6 +78,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/lockscreen/gnome-background.xml
     done << EOF
 futureprototype
+moonlight
 softwaves
 lines
 joy
@@ -94,6 +97,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/wallpaper
     done << EOF
 futureprototype
+moonlight
 softwaves
 lines
 joy
@@ -114,6 +118,7 @@ EOF
             /usr/share/desktop-base/$theme-theme/login/$background
     done << EOF
 futureprototype background.svg
+moonlight background.svg
 softwaves background.svg
 lines background.svg
 lines background-nologo.svg
@@ -133,6 +138,8 @@ EOF
     done << EOF
 futureprototype 4x3
 futureprototype 16x9
+moonlight 4x3
+moonlight 16x9
 softwaves 4x3
 softwaves 16x9
 lines 4x3
