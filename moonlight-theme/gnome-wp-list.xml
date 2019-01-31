@@ -3,7 +3,7 @@
 <wallpapers>
   <wallpaper>
     <!-- don't include words such as "wallpaper" (avoids translations) -->
-    <name>Soft Waves</name>
+    <name>Moonlight</name>
     <filename>/usr/share/desktop-base/moonlight-theme/wallpaper/gnome-background.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
@@ -11,7 +11,7 @@
   </wallpaper>
   <wallpaper>
     <!-- don't include words such as "wallpaper" (avoids translations) -->
-    <name>Soft Waves Lock Screen</name>
+    <name>Moonlight Lock Screen</name>
     <filename>/usr/share/desktop-base/moonlight-theme/lockscreen/gnome-background.xml</filename>
     <options>zoom</options>
     <pcolor>#ffffff</pcolor>
