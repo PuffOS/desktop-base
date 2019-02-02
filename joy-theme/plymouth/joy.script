@@ -1,6 +1,8 @@
 #  ubuntu-logo.script - boot splash plugin
 # 
 #  Copyright (C) 2009 Canonical Ltd.
+#  Copyright © 2010 Aurélien Couderc <coucouf@debian.org>
+#  Copyright © 2012 Jonathan Carter <jcc@debian.org>
 # 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -21,10 +23,6 @@
 #  Based on the example provided with the "script plugin" written by:
 #              Charlie Brej   <cbrej@cs.man.ac.uk>
 # 
-
-# Set the wallpaper:
-# The wallpaper section below is from the spacefun plymouth theme
-# Copyright 2010 Aurélien COUDERC
 
 bg_image = Image("background.png");
 

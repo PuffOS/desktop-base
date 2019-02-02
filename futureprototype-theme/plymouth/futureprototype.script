@@ -1,6 +1,8 @@
 #  futureprototype.script - boot splash using script plugin
 # 
 #  Copyright (C) 2009 Canonical Ltd.
+#  Copyright © 2010-2016 Aurélien Couderc <coucouf@debian.org>
+#  Copyright © 2014-2016 Juliette Taka <juliette.belin@logilab.fr>
 # 
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -22,8 +24,6 @@
 #  Based on the example provided with the "script plugin" written by:
 #              Charlie Brej   <cbrej@cs.man.ac.uk>
 #
-#  Soft Waves theme scripting by Juliette Taka BELIN and Aurélien COUDERC
-#  futureprototype by Alex Makas based on Soft Waves, only graphics modification really
 
 
 #------------------------------- Constants -----------------------------------------
