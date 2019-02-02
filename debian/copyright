@@ -72,6 +72,7 @@ Files: spacefun-theme/plymouth/logo.png
        futureprototype-theme/sources/plymouth/debian.svg
        futureprototype-theme/sources/plymouth/logo.svg
        moonlight-theme/plymouth/debian.png
+       logos/*
 Copyright: 1999, Software in the Public Interest, Inc.
 License: GPL-3+ or CC-BY-SA-3.0
 

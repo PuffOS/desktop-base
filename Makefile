@@ -10,8 +10,8 @@ PIXMAPS=$(wildcard pixmaps/*.png)
 DESKTOPFILES=$(wildcard *.desktop)
 
 .PHONY: all clean install install-local
-all: build-grub build-emblems
-clean: clean-grub clean-emblems
+all: build-grub build-emblems build-logos
+clean: clean-grub clean-emblems clean-logos
 
 .PHONY: build-grub clean-grub install-grub
 build-grub clean-grub install-grub:
@@ -27,8 +27,13 @@ build-emblems clean-emblems install-emblems:
 	@target=`echo $@ | sed s/-emblems//`; \
 	$(MAKE) $$target -C emblems-debian || exit 1;
 
+.PHONY: build-logos clean-logos install-logos
+build-logos clean-logos install-logos:
+	@target=`echo $@ | sed s/-logos//`; \
+	$(MAKE) $$target -C logos || exit 1;
 
-install: install-grub install-emblems install-local
+
+install: install-grub install-emblems install-logos install-local
 
 install-local:
 	# background files
