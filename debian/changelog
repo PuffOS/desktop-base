@@ -957,4 +957,3 @@ desktop-base (0.1-1) unstable; urgency=low
   * Initial Version (Closes: #165928).
 
  -- Colin Walters <walters@debian.org>  Tue, 22 Oct 2002 15:05:34 -0400
-
