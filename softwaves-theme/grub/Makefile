@@ -16,9 +16,9 @@ install:
 	$(INSTALL_DATA) $(wildcard *.png *.sh) $(DESTDIR)/$(dir)
 
 grub-4x3.png: grub-4x3.svg
-	rsvg-convert $< > $@
+	rsvg-convert $< -o $@
 
 grub-16x9.png: grub-16x9.svg
-	rsvg-convert $< > $@
+	rsvg-convert $< -o $@
 
 include ../../Makefile.inc
