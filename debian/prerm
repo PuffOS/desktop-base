@@ -11,12 +11,7 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename
     done << EOF
-futureprototype 1280x1024.svg
-futureprototype 1600x1200.svg
 futureprototype 1920x1080.svg
-futureprototype 1920x1200.svg
-futureprototype 2560x1080.svg
-futureprototype 4096x2160.svg
 moonlight 1920x1080.svg
 softwaves 1024x768.svg
 softwaves 1280x720.svg

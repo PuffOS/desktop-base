@@ -47,12 +47,7 @@ EOF
             desktop-background \
             /usr/share/desktop-base/$theme-theme/wallpaper/contents/images/$filename $priority
     done << EOF
-futureprototype 1280x1024.svg 65
-futureprototype 1600x1200.svg 65
 futureprototype 1920x1080.svg 65
-futureprototype 1920x1200.svg 65
-futureprototype 2560x1080.svg 65
-futureprototype 4096x2160.svg 65
 moonlight 1920x1080.svg 65
 softwaves 1024x768.svg 50
 softwaves 1280x720.svg 50
