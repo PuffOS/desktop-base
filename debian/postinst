@@ -16,6 +16,12 @@ if [ "${1}" = "configure" ] && [ ! -z "${2}" ]; then
     fi
 fi
 
+# Vendor logo alternative
+update-alternatives --install \
+        /usr/share/images/vendor-logos \
+        vendor-logos \
+        /usr/share/desktop-base/debian-logos 50
+
 if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remove" ]; then
     # Theme package alternatives
     while read theme priority; do

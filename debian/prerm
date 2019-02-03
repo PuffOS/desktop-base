@@ -4,6 +4,10 @@ set -e
 # Tag to allow some debhelper commands to inject relevant code
 #DEBHELPER#
 
+update-alternatives --remove \
+        vendor-logos \
+        /usr/share/desktop-base/debian-logos
+
 if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     # Remove background alternatives for theme packages
     while read theme filename; do

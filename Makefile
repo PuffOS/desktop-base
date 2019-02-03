@@ -30,7 +30,7 @@ build-emblems clean-emblems install-emblems:
 .PHONY: build-logos clean-logos install-logos
 build-logos clean-logos install-logos:
 	@target=`echo $@ | sed s/-logos//`; \
-	$(MAKE) $$target -C logos || exit 1;
+	$(MAKE) $$target -C debian-logos || exit 1;
 
 
 install: install-grub install-emblems install-logos install-local
