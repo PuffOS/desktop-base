@@ -4,6 +4,8 @@ README for desktop-base
 1. What’s provided
    1.1. Themes packs
    1.2. Debian logos
+      1.2.1. Debian logos icons
+      1.2.2. Debian logos images
    1.3. Desktop files
    1.4. Default configurations overrides
    1.5. Plymouth boot splashes
@@ -35,12 +37,68 @@ theme packs structure.
 
 1.2. Debian logos
 
-Several sizes of the Debian logo are shipped as:
-    /usr/share/icons/hicolor/${size}x${size}/emblems/emblem-debian.${ext}
-    /usr/share/icons/hicolor/${size}x${size}/emblems/emblem-debian.icon
+Three version of the logo are shipped as icons:
+- emblem-debian         : the Debian logo in it’s original red-purple color
+- emblem-debian-symbolic: the Debian logo in a black+transparent format that
+                          desktop like GNOME can use and adapt the color
+                          depending on the context.
+- emblem-debian-white   : the Debian logo in white
 
-    The sizes currently provided are 36, 64, 128 as PNG, and scalable for the
-SVG version. Each has a side .icon descriptor file.
+We also ship 3 versions of the logo as images:
+- logo             : logo alone
+- logo-text        : logo + "Debian" name
+- logo-text-version: logo + "Debian" name + Debian version number
+
+All these images and logos are provided both in several bitmap resolutions
+(PNG) and also in vector form (SVG).
+
+The "vendor-logos" alternative is shipped with alternatives for both
+logo images and icons.
+It should be used by derivatives to replace by their own logos.
+
+The alternative has the following structure:
+- Main alternative
+    /usr/share/images/vendor-logos -> /etc/alternatives/vendor-logos
+- Secondary alternatives
+    /usr/share/icons/vendor/128x128/emblems:
+        emblem-vendor.png -> /etc/alternatives/emblem-vendor-128
+        emblem-vendor-symbolic.png -> /etc/alternatives/emblem-vendor-symbolic-128
+        emblem-vendor-white.png -> /etc/alternatives/emblem-vendor-white-128
+    /usr/share/icons/vendor/256x256/emblems:
+        emblem-vendor.png -> /etc/alternatives/emblem-vendor-256
+        emblem-vendor-symbolic.png -> /etc/alternatives/emblem-vendor-symbolic-256
+        emblem-vendor-white.png -> /etc/alternatives/emblem-vendor-white-256
+    /usr/share/icons/vendor/64x64/emblems:
+        emblem-vendor.png -> /etc/alternatives/emblem-vendor-64
+        emblem-vendor-symbolic.png -> /etc/alternatives/emblem-vendor-symbolic-64
+        emblem-vendor-white.png -> /etc/alternatives/emblem-vendor-white-64
+    /usr/share/icons/vendor/scalable/emblems:
+        emblem-vendor.svg -> /etc/alternatives/emblem-vendor-scalable
+        emblem-vendor-symbolic.svg -> /etc/alternatives/emblem-vendor-symbolic-scalable
+        emblem-vendor-white.svg -> /etc/alternatives/emblem-vendor-white-scalable
+
+1.2.1. Debian logos icons
+
+Several sizes of logo icons are shipped:
+    64, 128, 256 and scalable (svg)
+They can be found in:
+    /usr/share/icons/desktop-base/${size}x${size}/emblems/${emblem}.png
+    /usr/share/icons/desktop-base/emblems/${emblem}.svg
+
+[Legacy]
+Several sizes of legacy logo icons are shipped:
+    16, 22, 32, 36, 48, 64, 128, 256 and scalable (svg)
+They can be found in:
+    /usr/share/icons/hicolor/${size}x${size}/emblems/${emblem}.png
+    /usr/share/icons/hicolor/${size}x${size}/emblems/${emblem}.icon
+    /usr/share/icons/hicolor/scalable/emblems/${emblem}.svg
+    /usr/share/icons/hicolor/scalable/emblems/${emblem}.icon
+These will be removed after buster.
+
+1.2.2. Debian logos images
+
+The Debian logo images are shipped in:
+    /usr/share/desktop-base/debian-logos/
 
 A Debian security logo is also shipped in:
     /usr/share/pixmaps/debian-security.png
