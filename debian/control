@@ -8,6 +8,7 @@ Uploaders: Yves-Alexis Perez <corsac@debian.org>,
            Aurélien COUDERC <zecoucou@free.fr>
 Build-Depends: debhelper (>= 11),
                librsvg2-bin,
+               optipng,
 # For the number in debian-logo-text
                fonts-quicksand
 Rules-Requires-Root: no

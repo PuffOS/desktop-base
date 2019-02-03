@@ -23,11 +23,13 @@ build: $(foreach SVG,$(EMBLEMS),$(foreach RES,$(RESOLUTIONS),$(SVG)-$(RES)x$(RES
 # Dynamically add rules for PNG generation for each resolution, for each emblem file
 define SVG_TO_PNG_RULE
 $1-$2x$2.png: $1.svg
-	rsvg-convert $$< -w $2 -h $2 -o $$@
+	rsvg-convert $$< -w $2 -h $2 -o $$@.raw
+	optipng $$@.raw -out $$@
 endef
 $(foreach EMBLEM,$(EMBLEMS),$(foreach RES,$(RESOLUTIONS),$(eval $(call SVG_TO_PNG_RULE,$(EMBLEM),$(RES)))))
 
 clean:
+	rm -f *.png.raw
 	rm -f *.png
 
 install:
