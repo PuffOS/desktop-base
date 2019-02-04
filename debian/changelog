@@ -1,6 +1,12 @@
 desktop-base (9.0.8) UNRELEASED; urgency=medium
 
-  * UNRELEASED
+  * Add Buster’s default theme futurePrototype by Alex Makas.
+  * Add alternate Buster theme moonlight by Juliette Taka Belin.
+  * Add vendor (here Debian) logos and icons and the associated alternatives
+    so that derivates can easily replace with their own. (Closes: #898456)
+  * Optimize PNGs to reduce installed size.
+  * Migrate d/copyright to machine-readable format 1.0.
+  * Bump Standards-Version to 4.3.0 (no change required).
 
  -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 21 May 2018 14:33:40 +0200
 

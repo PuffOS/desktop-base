@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 11),
 # For the number in debian-logo-text
                fonts-quicksand
 Rules-Requires-Root: no
-Standards-Version: 4.1.4
+Standards-Version: 4.3.0
 Homepage: https://www.debian.org/devel/debian-desktop/
 Vcs-Browser: https://salsa.debian.org/debian-desktop-team/desktop-base
 Vcs-Git: https://salsa.debian.org/debian-desktop-team/desktop-base.git
