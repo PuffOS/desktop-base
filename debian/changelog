@@ -1,4 +1,4 @@
-desktop-base (9.0.8) UNRELEASED; urgency=medium
+desktop-base (10.0.0) unstable; urgency=medium
 
   * Add Buster’s default theme futurePrototype by Alex Makas.
   * Add alternate Buster theme moonlight by Juliette Taka Belin.
@@ -8,7 +8,7 @@ desktop-base (9.0.8) UNRELEASED; urgency=medium
   * Migrate d/copyright to machine-readable format 1.0.
   * Bump Standards-Version to 4.3.0 (no change required).
 
- -- Aurélien COUDERC <zecoucou@free.fr>  Mon, 21 May 2018 14:33:40 +0200
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 04 Feb 2019 23:58:47 +0100
 
 desktop-base (9.0.7) unstable; urgency=medium
 
