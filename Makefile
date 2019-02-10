@@ -215,14 +215,17 @@ install-local:
 	install -d $(DESTDIR)/usr/share/wallpapers
 	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper FuturePrototype
 
-	### Lockscreen
-	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen/contents/images
-	$(INSTALL_DATA) futureprototype-theme/lockscreen/metadata.desktop $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen
-	$(INSTALL_DATA) futureprototype-theme/lockscreen/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen
-	$(INSTALL_DATA) $(wildcard futureprototype-theme/lockscreen/contents/images/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/lockscreen/contents/images/
+	### Lockscreen is using the same image as wallpaper
+	cd $(DESTDIR)/usr/share/desktop-base/futureprototype-theme && ln -s wallpaper lockscreen
+
+	### Alternate wallpaper with Debian swirl
+	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper-withlogo/contents/images
+	$(INSTALL_DATA) futureprototype-theme/wallpaper-withlogo/metadata.desktop $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper-withlogo
+	$(INSTALL_DATA) futureprototype-theme/wallpaper-withlogo/gnome-background.xml $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper-withlogo
+	$(INSTALL_DATA) $(wildcard futureprototype-theme/wallpaper-withlogo/contents/images/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/wallpaper-withlogo/contents/images/
 	# Lock screen symlink for KDE
 	install -d $(DESTDIR)/usr/share/wallpapers
-	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/lockscreen FuturePrototypeLockScreen
+	cd $(DESTDIR)/usr/share/wallpapers && ln -s /usr/share/desktop-base/futureprototype-theme/wallpaper-withlogo FuturePrototypeWithLogo
 
 	# Moonlight theme
 	### Plymouth theme
