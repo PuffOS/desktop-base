@@ -31,7 +31,7 @@ NB_SCALE_STEPS = 70;
 NB_REFRESHS_BETWEEN_ANIMS = 3;
 
 DEBIAN_POS_PCT.y = 0.60; # Debian image position in % of screen height
-DEBIAN_HEIGHT_PCT = 0.04; # Debian image height in % of smallest screen dimension
+DEBIAN_HEIGHT_PCT = 0.06; # Debian image height in % of smallest screen dimension
 
 LOGO_CENTER_PCT.x = 0.5; # Debian swirl image position in % of screen height & width
 LOGO_CENTER_PCT.y = 0.38;
