@@ -52,8 +52,8 @@ progress_time = 0;
 progress_pct = 0;
 
 # Variables for glow rotation animation
-anim_start_time = NULL;
-anim_status = "stopped";
+#anim_start_time = NULL;
+#anim_status = "stopped";
 refresh_iter = 0;
 anim_iter = 0;
 
@@ -1042,13 +1042,13 @@ fun scale_glow_img(source_img, current_step, nb_steps) {
 }
 
 fun update_glow_anim () {
-    if (global.anim_start_time != global.progress_time && global.anim_status != "running") {
-        global.anim_start_time = global.progress_time;
-        global.anim_iter = 0;
-        global.anim_status = "running";
-    }
-
-    if (global.anim_status == "running") {
+#    if (global.anim_start_time != global.progress_time && global.anim_status != "running") {
+#        global.anim_start_time = global.progress_time;
+#        global.anim_iter = 0;
+#        global.anim_status = "running";
+#    }
+#
+#    if (global.anim_status == "running") {
         # iter_img = global.logo_glow[global.anim_iter];
         # if (iter_img == NULL) {
         #     # Generate scaled image for the glow behind the logo on demand.
@@ -1076,13 +1076,13 @@ fun update_glow_anim () {
         global.anim_iter++;
 
         if (global.anim_iter >= NB_SCALE_STEPS) {
-            global.anim_status = "stopped";
+            global.anim_iter = 0;
         }
-    }
+#    }
 }
 
 fun update_star_anim (star_sprite, speed) {
-    if (global.anim_status == "running") {
+#    if (global.anim_status == "running") {
 
         x = star_sprite.GetX();
         newX = x - 30 * speed;
@@ -1108,7 +1108,7 @@ fun update_star_anim (star_sprite, speed) {
         
         star_sprite.SetOpacity(newOp);
 
-    }
+#    }
 }
 
 #-----------------------------------------Refresh stuff --------------------------------
