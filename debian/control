@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 11),
                librsvg2-bin,
                optipng,
 # For the number in debian-logo-text
-               fonts-quicksand
+               fonts-quicksand,
 Rules-Requires-Root: no
 Standards-Version: 4.3.0
 Homepage: https://www.debian.org/devel/debian-desktop/
@@ -19,7 +19,9 @@ Vcs-Git: https://salsa.debian.org/debian-desktop-team/desktop-base.git
 
 Package: desktop-base
 Architecture: all
-Depends: librsvg2-common
+Depends: librsvg2-common,
+# For the login background with logo
+         fonts-quicksand,
 Suggests: gnome | kde-standard | xfce4 | wmaker
 Description: common files for the Debian Desktop
  This package contains various miscellaneous files which are used by
