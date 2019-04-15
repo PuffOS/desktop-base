@@ -201,6 +201,7 @@ install-local:
 	$(INSTALL_DATA) $(wildcard futureprototype-theme/plymouth/*) $(DESTDIR)/usr/share/plymouth/themes/futureprototype
 	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme
 	cd $(DESTDIR)/usr/share/desktop-base/futureprototype-theme && ln -s /usr/share/plymouth/themes/futureprototype plymouth
+
 	### Login background
 	install -d $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/login
 	$(INSTALL_DATA) $(wildcard futureprototype-theme/login/*) $(DESTDIR)/usr/share/desktop-base/futureprototype-theme/login

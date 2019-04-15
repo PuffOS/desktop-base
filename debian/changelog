@@ -1,3 +1,18 @@
+desktop-base (10.0.2) unstable; urgency=medium
+
+  * Remove text version of plymouth theme
+    (won't work without additional dependencies)
+  * Remove alternative that won't work yet
+
+ -- Jonathan Carter <jcc@debian.org>  Mon, 15 Apr 2019 09:20:30 +0000
+
+desktop-base (10.0.1) unstable; urgency=medium
+
+  * Add plymouth-label as recommends (Closes: #927077)
+  * Add self to uploaders
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 04 Apr 2019 17:27:08 +0200
+
 desktop-base (10.0.0) unstable; urgency=medium
 
   * Add Buster’s default theme futurePrototype by Alex Makas.
