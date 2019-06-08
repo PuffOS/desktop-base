@@ -3,8 +3,6 @@ Section: x11
 Priority: optional
 Maintainer: Debian Desktop Team <debian-desktop@lists.debian.org>
 Uploaders: Yves-Alexis Perez <corsac@debian.org>,
-           Josselin Mouette <joss@debian.org>,
-           Paul Tagliamonte <paultag@debian.org>,
            Aurélien COUDERC <coucouf@debian.org>,
            Jonathan Carter <jcc@debian.org>
 Build-Depends: debhelper (>= 11),
