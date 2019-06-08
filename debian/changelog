@@ -16,6 +16,17 @@ desktop-base (10.0.2) unstable; urgency=medium
 
 desktop-base (10.0.1) unstable; urgency=medium
 
+  [ Aurélien COUDERC ]
+  * Fix login background for SDDM Debian Maui theme.
+  * Default to wallpaper without logo.
+  * Fix incorrect color on Debian red swirl icon.
+  * Improve vertical placement of messages and password input for the
+    moonlight theme.
+  * Improve login screen on default install with XFCE.
+  * Keep Moonlight/plymouth animation running so it doesn’t stop halfway
+    when waiting for passphrase.
+
+  [ Jonathan Carter ]
   * Add plymouth-label as recommends (Closes: #927077)
   * Add self to uploaders
 
