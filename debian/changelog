@@ -1,3 +1,9 @@
+desktop-base (9999-noupdate) elizabeth; urgency=medium
+
+  * fork from debian
+
+ -- Ali Riza KESKIN <parduscix@yandex.ru>  Mon, 16 Nov 2020 23:39:53 +0000
+
 desktop-base (10.0.3) unstable; urgency=medium
 
   * Remove Josselin Mouette <joss@debian.org> and Paul Tagliamonte
