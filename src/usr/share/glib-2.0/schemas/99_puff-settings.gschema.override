@@ -1,0 +1,13 @@
+[org.gnome.desktop.background]
+picture-uri = 'file:///usr/share/desktop-base/default-background.png'
+
+[org.gnome.desktop.screensaver]
+picture-uri = 'file:///usr/share/desktop-base/default-background.png'
+
+[org.gnome.desktop.interface]
+cursor-theme = 'Adwaita'
+gtk-theme = 'Adwaita-dark'
+
+[org.freedesktop.Tracker3.Miner.Files]
+crawling-interval = -2
+enable-monitors = false

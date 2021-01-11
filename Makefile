@@ -1,2 +1,2 @@
 install:
-	echo "dummy package creation" 
+	 cp -rf src/* $(DESTDIR)/

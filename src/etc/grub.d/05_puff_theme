@@ -1,0 +1,10 @@
+#! /bin/sh
+set -e
+if [ ! "x$GRUB_BACKGROUND" != x ] || [ ! -f "$GRUB_BACKGROUND" ] ; then
+echo 'Using wallpaper: /usr/share/desktop-base/grub/background.jpg' > /dev/stderr
+cat << EOF
+insmod png
+insmod jpg
+background_image /usr/share/desktop-base/grub/background.jpg
+EOF
+fi
