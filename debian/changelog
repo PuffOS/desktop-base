@@ -1,4 +1,4 @@
-desktop-base (9999-noupdate) unstable; urgency=medium
+desktop-base (1:9999-noupdate) unstable; urgency=medium
 
   * fork from debian
 
